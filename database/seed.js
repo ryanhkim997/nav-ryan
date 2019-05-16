@@ -21,7 +21,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/aluminous-749358_1280.jpg',
     priceRange: 2,
-    categories: ['Korean', 'Lunch', 'Dinner'] 
+    categories: [ 'Korean', 'Lunch', 'Dinner', 'Salads' ] 
   },
   { 
     id: 2,
@@ -45,7 +45,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/chicken-soup-1346310_1280.jpg',
     priceRange: 3,
-    categories: ['Korean', 'Lunch', 'Dinner'] 
+    categories: [ 'Korean', 'Dinner', 'Soup', 'Salads' ] 
   },
   { 
     id: 3,
@@ -117,7 +117,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1550388342-5699a35584f4.jpeg',
     priceRange: 3,
-    categories: ['Korean', 'Healthy'] 
+    categories: [ 'Korean', 'Healthy', 'Soup', 'Rice' ] 
   },
   { 
     id: 6,
@@ -141,7 +141,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/bibimbap-1738580_1280.jpg',
     priceRange: 4,
-    categories: ['Korean', 'Healthy'] 
+    categories: [ 'Korean', 'Healthy', 'Soup', 'Lunch', 'Noodles' ] 
   },
   { 
     id: 7,
@@ -165,7 +165,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1550388342-b3fd986e4e67.jpeg',
     priceRange: 1,
-    categories: ['Korean', 'BBQ'] 
+    categories: [ 'Korean', 'BBQ', 'Dinner' ] 
   },
   { 
     id: 8,
@@ -189,7 +189,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1546069901-eacef0df6022.jpeg',
     priceRange: 2,
-    categories: ['Korean', 'BBQ'] 
+    categories: ['Korean', 'BBQ', 'Lunch', 'Dinner'] 
   },
   { 
     id: 9,
@@ -213,7 +213,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/cooking-4124108_1280.jpg',
     priceRange: 1,
-    categories: ['Korean'] 
+    categories: [ 'Korean', 'Rice', 'Soup', 'Lunch' ]
   },
   { 
     id: 10,
@@ -237,7 +237,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1531263539449-56fdf29dfc4d.jpeg',
     priceRange: 1,
-    categories: ['Korean'] 
+    categories: [ 'Korean', 'Dinner', 'BBQ', 'Lunch' ]
   },
   { 
     id: 11,
@@ -261,7 +261,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1553163147-622ab57be1c7.jpeg',
     priceRange: 3,
-    categories: ['Korean', 'Healthy'] 
+    categories: [ 'Korean', 'Salads', 'Vegetarian', 'Lunch', 'Healthy' ] 
   },
   { 
     id: 12,
@@ -285,7 +285,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/herbs-749360_1280.jpg',
     priceRange: 5,
-    categories: ['Korean'] 
+    categories: [ 'Korean', 'Soup', 'Dinner', 'Rice' ] 
   },
   { 
     id: 13,
@@ -309,7 +309,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/kimchi-fried-rice-241051_1280.jpg',
     priceRange: 2,
-    categories: ['Korean'] 
+    categories: [ 'Korean', 'Lunch', 'Rice', 'Noodles', 'Healthy' ] 
   },
   { 
     id: 14,
@@ -333,7 +333,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/tofu-597228_1280.jpg',
     priceRange: 3,
-    categories: ['Korean', 'Healthy'] 
+    categories: ['Korean', 'Healthy', 'Salads'] 
   },
   { 
     id: 15,
@@ -357,7 +357,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1550388342-c75d3a99540d.jpeg',
     priceRange: 4,
-    categories: ['Korean', 'BBQ'] 
+    categories: ['Korean', 'BBQ', 'Dinner'] 
   },
   { 
     id: 16,
@@ -381,7 +381,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1498654896293-37aacf113fd9.jpeg',
     priceRange: 3,
-    categories: ['Korean'] 
+    categories: [ 'Korean', 'Rice', 'Noodles', 'Lunch' ] 
   },
   { 
     id: 17,
@@ -405,7 +405,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/vegetable-1582920_1280.jpg',
     priceRange: 3,
-    categories: ['Korean', 'BBQ'] 
+    categories: ['Korean', 'BBQ', 'Lunch', 'Dinner', 'Drinks'] 
   },
   { 
     id: 18,
@@ -429,7 +429,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/korean-cabbage-in-chili-sauce-1120406_1280.jpg',
     priceRange: 5,
-    categories: ['Korean', 'BBQ'] 
+    categories: [ 'Korean', 'BBQ', 'Drinks', 'Dinner' ] 
   },
   { 
     id: 19,
@@ -448,7 +448,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/toppokki-1607479_1280.jpg',
     priceRange: 2,
-    categories: ['Korean'] 
+    categories: [ 'Korean', 'Lunch', 'Dinner', 'Rice', 'Drinks', 'Salads' ] 
   },
   { 
     id: 20,
@@ -472,7 +472,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1540138279543-b3728f037467.jpeg',
     priceRange: 3,
-    categories: ['Korean'] 
+    categories: [ 'Korean', 'Rice', 'Healthy', 'Salads', 'Lunch'] 
   },
   { 
     id: 21,
@@ -496,7 +496,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/burrito-4126108_1280.jpg',
     priceRange: 3,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Grill', 'Dinner', 'Salads' ]
   },
   { 
     id: 22,
@@ -520,7 +520,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/tacos-245241_1280.jpg',
     priceRange: 1,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Grill', 'Lunch', 'Dinner' ] 
   },
   { 
     id: 23,
@@ -544,7 +544,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/burrito-4126116_1280.jpg',
     priceRange: 3,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Drinks', 'Salads', 'Lunch Specials' ] 
   },
   { 
     id: 24,
@@ -568,7 +568,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/grilled-pineapple-pork-burrito-2944562_1280.jpg',
     priceRange: 4,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Salads', 'Dessert', 'Lunch Specials' ] 
   },
   { 
     id: 25,
@@ -592,7 +592,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/tacos-1613795_1280.jpg',
     priceRange: 1,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Lunch Specials', 'Dessert', 'Grill' ]
   },
   { 
     id: 26,
@@ -616,7 +616,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/tamales-1990080_1280.jpg',
     priceRange: 2,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Dinner', 'Dessert', 'Lunch Specials' ]
   },
   { 
     id: 27,
@@ -640,7 +640,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/burrito-gratin-1564287_1280.jpg',
     priceRange: 1,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Dinner', 'Drinks', 'Grill' ]
   },
   { 
     id: 28,
@@ -664,7 +664,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/taco-2610649_1280.jpg',
     priceRange: 1,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Grill', 'Salads', 'Lunch Specials' ]
   },
   { 
     id: 29,
@@ -688,7 +688,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/food-1090619_1280.jpg',
     priceRange: 3,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Lunch Specials', 'Salads', 'Breakfast' ] 
   },
   { 
     id: 30,
@@ -712,7 +712,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/photo-1464219222984-216ebffaaf85.jpeg',
     priceRange: 5,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Dinner', 'Dessert', 'Drinks' ]
   },
   { 
     id: 31,
@@ -736,7 +736,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/food-2580200_1280.jpg',
     priceRange: 2,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Grill', 'Drinks', 'Breakfast' ]
   },
   { 
     id: 32,
@@ -760,7 +760,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/food-791614_1280.jpg',
     priceRange: 3,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Lunch Specials', 'Breakfast' ]
   },
   { 
     id: 33,
@@ -784,7 +784,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/photo-1536184071535-78906f7172c2.jpeg',
     priceRange: 4,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Grill', 'Breakfast', 'Lunch' ]
   },
   { 
     id: 34,
@@ -808,7 +808,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/mexican-2456038_1280.jpg',
     priceRange: 3,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Salads', 'Drinks', 'Dinner' ]
   },
   { 
     id: 35,
@@ -832,7 +832,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/grill-1599035_1280.jpg',
     priceRange: 3,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Dessert', 'Breakfast', 'Lunch Specials' ]
   },
   { 
     id: 36,
@@ -855,7 +855,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/photo-1552332386-f8dd00dc2f85.jpeg',
     priceRange: 5,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Dinner', 'Salads', 'Dessert' ]
   },
   { 
     id: 37,
@@ -879,7 +879,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/mexican-food-1885616_1280.jpg',
     priceRange: 2,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Dessert', 'Lunch Specials', 'Grill' ]
   }, 
   { 
     id: 38,
@@ -903,7 +903,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/photo-1550951957-3ab761159b8f.jpeg',
     priceRange: 2,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Dinner', 'Salads', 'Drinks' ] 
   },
   { 
     id: 39,
@@ -927,7 +927,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/quesadilla-4034046_1280.jpg',
     priceRange: 3,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Lunch', 'Salads', 'Dinner' ]
   },
   { 
     id: 40,
@@ -951,7 +951,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/tortilla-1386757_1280.jpg',
     priceRange: 3,
-    categories: ['Mexican'] 
+    categories: [ 'Mexican', 'Breakfast', 'Salads', 'Dinner' ] 
   },
   { 
     id: 41,
@@ -975,7 +975,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/broiled-1238582_1280.jpg',
     priceRange: 1,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Late Night', 'Soup', 'Asian' ] 
   },
   { 
     id: 42,
@@ -999,7 +999,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/chinese-food-951889_1280.jpg',
     priceRange: 3,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Late Night', 'Dinner', 'Soup' ] 
   },
   { 
     id: 43,
@@ -1023,7 +1023,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/Szechuan-Chicken_.jpg',
     priceRange: 4,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Salads', 'Lunch Specials' ] 
   },
   { 
     id: 44,
@@ -1047,7 +1047,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/image-951834_1280.jpg',
     priceRange: 1,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Salads', 'Dinner', 'Noodles', 'Late Night' ] 
   },
   { 
     id: 45,
@@ -1071,7 +1071,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/duck-479701_1280.jpg',
     priceRange: 2,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Noodles', 'Lunch', 'Dinner' ] 
   },
   { 
     id: 46,
@@ -1095,7 +1095,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/eggplant-1317917_1280.jpg',
     priceRange: 5,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Late Night', 'Noodles', 'Salads' ] 
   },
   { 
     id: 47,
@@ -1119,7 +1119,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/dumplings-632206_1280.jpg',
     priceRange: 1,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Dinner', 'Lunch Specials', 'Noodles' ] 
   },
   { 
     id: 48,
@@ -1143,7 +1143,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/fried-fish-with-sweet-peppers-906248_1280.jpg',
     priceRange: 3,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Soup', 'Noodles', 'Lunch Specials' ] 
   },
   { 
     id: 49,
@@ -1167,7 +1167,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/gourmet-667599_1280.jpg',
     priceRange: 5,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Dinner', 'Lunch Specials', 'Soup' ] 
   },
   { 
     id: 50,
@@ -1191,7 +1191,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/green-dragon-vegetable-1707089_1280.jpg',
     priceRange: 4,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Noodles', 'Lunch Specials', 'Asian', 'Dinner' ]
   },
   { 
     id: 51,
@@ -1215,7 +1215,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/cooking-1835369_1280.jpg',
     priceRange: 3,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Late Night', 'Soup', 'Lunch Specials' ] 
   },
   { 
     id: 52,
@@ -1239,7 +1239,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/noodles-3557592_1280.jpg',
     priceRange: 4,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Late Night', 'Noodles', 'Soup' ]
   },
   { 
     id: 53,
@@ -1263,7 +1263,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/photo-1525755662778-989d0524087e.jpeg',
     priceRange: 3,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Salads', 'Noodles', 'Soup', 'Late Night', 'Dinner' ] 
   },
   { 
     id: 54,
@@ -1287,7 +1287,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/photo-1541696432-82c6da8ce7bf.jpeg',
     priceRange: 3,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Late Night', 'Vegetarian', 'Salads', 'Noodles' ] 
   },
   { 
     id: 55,
@@ -1311,7 +1311,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/sweet-and-sour-pork-1264563_1280.jpg',
     priceRange: 5,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Salads', 'Soup', 'Lunch Specials', 'Dinner', 'Asian' ] 
   },
   { 
     id: 56,
@@ -1335,7 +1335,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/prawns-959219_1280.jpg',
     priceRange: 2,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Dinner', 'Lunch Specials', 'Asian' ] 
   },
   { 
     id: 57,
@@ -1359,7 +1359,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/dumplings-669901_1280.jpg',
     priceRange: 3,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Lunch', 'Salads', 'Noodles' ] 
   },
   { 
     id: 58,
@@ -1383,7 +1383,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/water-spinach-1628620_1280.jpg',
     priceRange: 1,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Noodles', 'Dinner', 'Soup', 'Late Night', 'Asian' ] 
   },
   { 
     id: 59,
@@ -1407,7 +1407,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/restaurant-1762493_1280.jpg',
     priceRange: 4,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Late Night', 'Noodles', 'Asian', 'Lunch Specials' ] 
   },
   { 
     id: 60,
@@ -1431,7 +1431,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/spring-rolls-2536526_1280.jpg',
     priceRange: 4,
-    categories: ['Chinese'] 
+    categories: [ 'Chinese', 'Asian', 'Lunch Specials', 'Salads' ] 
   },
   { 
     id: 61,
@@ -1455,7 +1455,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/italian-food-2157246_1280.jpg',
     priceRange: 2,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Pasta', 'Soup', 'Pizza' ] 
   },
   { 
     id: 62,
@@ -1479,7 +1479,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pasta-4144384_1280.jpg',
     priceRange: 5,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Pasta', 'Seafood', 'Dinner' ]
   },
   { 
     id: 63,
@@ -1503,7 +1503,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pasta-salad-1967501_1280.jpg',
     priceRange: 3,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Soup', 'Pasta', 'Lunch', 'Seafood' ] 
   },
   { 
     id: 64,
@@ -1527,7 +1527,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1551183053-bf91a1d81141.jpeg',
     priceRange: 5,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Seafood', 'Salads', 'Soup', 'Dinner' ] 
   },
   { 
     id: 65,
@@ -1551,7 +1551,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/tomatoes-1804452_1280.jpg',
     priceRange: 4,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Salads', 'Seafood', 'Pasta', 'Pizza' ] 
   },
   { 
     id: 66,
@@ -1575,7 +1575,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/salad-2487759_1280.jpg',
     priceRange: 5,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Dinner', 'Pasta', 'Lunch', 'Salads' ] 
   },
   { 
     id: 67,
@@ -1599,7 +1599,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1528490060256-c345efae4442.jpeg',
     priceRange: 2,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Dinner', 'Pizza', 'Lunch' ]
   },
   { 
     id: 68,
@@ -1621,7 +1621,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1551443874-e8d6a8e561aa.jpeg',
     priceRange: 5,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Dinner', 'Pizza', 'Lunch' ]
   },
   { 
     id: 69,
@@ -1645,7 +1645,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1458644267420-66bc8a5f21e4.jpeg',
     priceRange: 4,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Pasta', 'Lunch', 'Dinner', 'Salads' ] 
   },
   { 
     id: 70,
@@ -1669,7 +1669,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/spaghetti-660748_1280.jpg',
     priceRange: 2,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Dinner', 'Pasta', 'Dessert', 'Salads' ] 
   },
   { 
     id: 71,
@@ -1693,7 +1693,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1528137871618-79d2761e3fd5.jpeg',
     priceRange: 2,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Seafood', 'Lunch', 'Salads', 'Dinner' ] 
   },
   { 
     id: 72,
@@ -1717,7 +1717,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1539586345401-51d5bfba7ac0.jpeg',
     priceRange: 3,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Salads', 'Soup', 'Lunch', 'Dinner' ] 
   },
   { 
     id: 73,
@@ -1741,7 +1741,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/tomato-mozzarella-2367016_1280.jpg',
     priceRange: 4,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Salads', 'Pizza', 'Soup', 'Dinner' ]
   },
   { 
     id: 74,
@@ -1765,7 +1765,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pasta-329522_1280.jpg',
     priceRange: 2,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Lunch', 'Pasta', 'Dinner' ]
   },
   { 
     id: 75,
@@ -1789,7 +1789,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pizza-1209748_1280.jpg',
     priceRange: 2,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Salads', 'Pizza', 'Soup', 'Dinner' ]
   },
   { 
     id: 76,
@@ -1813,7 +1813,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/salad-2487775_1280.jpg',
     priceRange: 4,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Lunch', 'Salads', 'Seafood' ] 
   },
   { 
     id: 77,
@@ -1837,7 +1837,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/tortellini-3578016_1280.jpg',
     priceRange: 2,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Pasta', 'Dinner', 'Lunch', 'Soup' ] 
   },
   { 
     id: 78,
@@ -1861,7 +1861,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/salami-3296478_1280.jpg',
     priceRange: 3,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Pasta', 'Dinner', 'Pizza', 'Soup' ] 
   },
   { 
     id: 79,
@@ -1885,7 +1885,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/spaghetti-3547078_1280.jpg',
     priceRange: 5,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Seafood', 'Dinner', 'Pizza', 'Lunch' ] 
   },
   { 
     id: 80,
@@ -1909,7 +1909,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pizza-1442946_1280.jpg',
     priceRange: 2,
-    categories: ['Italian'] 
+    categories: [ 'Italian', 'Pizza', 'Lunch' ]  
   },
   { 
     id: 81,
@@ -1933,7 +1933,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-74748_1280.jpg',
     priceRange: 1,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch', 'Dinner' ] 
   },
   { 
     id: 82,
@@ -1957,7 +1957,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-951896_1280.jpg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Drinks', 'Salads', 'Grill' ] 
   },
   { 
     id: 83,
@@ -1981,7 +1981,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1534790566855-4cb788d389ec.jpeg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Drinks', 'Salads', 'Dinner' ] 
   },
   { 
     id: 84,
@@ -2005,7 +2005,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-2762371_1280.jpg',
     priceRange: 2,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch'] 
   },
   { 
     id: 85,
@@ -2029,7 +2029,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-500054_1280.jpg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Dinner' ] 
   },
   { 
     id: 86,
@@ -2053,7 +2053,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-3442227_1280.jpg',
     priceRange: 1,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch' ] 
   },
   { 
     id: 87,
@@ -2077,7 +2077,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-3962997_1280.jpg',
     priceRange: 2,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch', 'Dinner', 'Grill' ] 
   },
   { 
     id: 88,
@@ -2101,7 +2101,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1512152272829-e3139592d56f.jpeg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Dinner' ] 
   },
   { 
     id: 89,
@@ -2125,7 +2125,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-2034433_1280.jpg',
     priceRange: 2,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Dessert', 'Salads' ] 
   },
   { 
     id: 90,
@@ -2149,7 +2149,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-4145977_1280.jpg',
     priceRange: 5,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch', 'Dinner' ] 
   },
   { 
     id: 91,
@@ -2173,7 +2173,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1550984754-8d1b067b0239.jpeg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Dinner', 'Salads', 'Grill' ] 
   },
   { 
     id: 92,
@@ -2197,7 +2197,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/snack-2635035_1280.jpg',
     priceRange: 1,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch' ] 
   },
   { 
     id: 93,
@@ -2221,7 +2221,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1536510233921-8e5043fce771.jpeg',
     priceRange: 5,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Dinner' ] 
   },
   { 
     id: 94,
@@ -2245,7 +2245,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/hamburger-801942_1280.jpg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch', 'Dinner'] 
   },
   { 
     id: 95,
@@ -2269,7 +2269,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1551615593-ef5fe247e8f7.jpeg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Salads', 'Dinner' ] 
   },
   { 
     id: 96,
@@ -2293,7 +2293,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/hamburger-1281855_1280.jpg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Dinner', 'Salads', 'Grill' ] 
   },
   { 
     id: 97,
@@ -2317,7 +2317,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/hamburger-1414423_1280.jpg',
     priceRange: 4,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Dinner', 'Salads' ] 
   },
   { 
     id: 98,
@@ -2341,7 +2341,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1550984754-8d1b067b0239.jpeg',
     priceRange: 1,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch', 'Salads' ] 
   },
   { 
     id: 99,
@@ -2365,7 +2365,7 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-3199088_1280.jpg',
     priceRange: 2,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Grill', 'Lunch', 'Dinner' ] 
   },
   { 
     id: 100,
@@ -2389,6 +2389,6 @@ const data = [
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-3946012_1280.jpg',
     priceRange: 2,
-    categories: ['Burgers'] 
+    categories: [ 'Hamburgers', 'Lunch' ] 
   }
 ];
