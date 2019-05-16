@@ -4,7 +4,8 @@ const data = [
     name: 'Yogida',
     address: { 
       line1: '635 Bryon Ave', 
-      line2: 'North Rose, AR 67243' 
+      line2: 'North Rose, AR 67243',
+      milesAway: 9.3
     },
     phone: '631-998-3176',
     ratings: { 
@@ -14,7 +15,10 @@ const data = [
       timely: 88, 
       correct: 90 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-9:00pm', pickup: '12:00pm-11:00pm' },
+      satSun: { delivery: '10:00am-7:30pm', pickup: '10:00am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/aluminous-749358_1280.jpg',
     priceRange: 2,
     categories: ['Korean', 'Lunch', 'Dinner'] 
@@ -24,7 +28,8 @@ const data = [
     name: 'Lee\'s Kitchen',
     address: { 
       line1: '1893 E Tanner St',
-      line2: 'Wileyburgh, LA 53498' 
+      line2: 'Wileyburgh, LA 53498',
+      milesAway: 1.56
     },
     phone: '856-264-0286',
     ratings: { 
@@ -34,7 +39,10 @@ const data = [
       timely: 91, 
       correct: 97 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '10:30am-10:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/chicken-soup-1346310_1280.jpg',
     priceRange: 3,
     categories: ['Korean', 'Lunch', 'Dinner'] 
@@ -44,7 +52,8 @@ const data = [
     name: 'Han Galbi',
     address: { 
       line1: '878 Christiansen Way',
-      line2: 'West Una, HI 85904' 
+      line2: 'West Una, HI 85904',
+      milesAway: 2.02
     },
     phone: '808-720-0531',
     ratings: { 
@@ -54,7 +63,10 @@ const data = [
       timely: 87, 
       correct: 73 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-7:30pm', pickup: '9:00am-11:00pm' },
+      satSun: { delivery: '10:30am-7:30pm', pickup: '' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1503392968123-ceabe9e5e630.jpeg',
     priceRange: 3,
     categories: ['Korean', 'BBQ', 'Dinner'] 
@@ -64,7 +76,8 @@ const data = [
     name: 'Heart & Seoul',
     address: { 
       line1: '4316 Romaguera Dr',
-      line2: 'Vincent, NV 98700' 
+      line2: 'Vincent, NV 98700',
+      milesAway: 0.56 
     },
     phone: '665-050-4105',
     ratings: { 
@@ -74,7 +87,10 @@ const data = [
       timely: 80, 
       correct: 71 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-8:00pm', pickup: '9:00am-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/food-1380275_1280.jpg',
     priceRange: 1,
     categories: ['Korean', 'Lunch', 'Dinner'] 
@@ -84,7 +100,8 @@ const data = [
     name: 'Dubu',
     address: { 
       line1: '78 Enola St SW', 
-      line2: 'Haleyland, ID 12010' 
+      line2: 'Haleyland, ID 12010',
+      milesAway: 0.24 
     },
     phone: '670-266-9381',
     ratings: { 
@@ -94,7 +111,10 @@ const data = [
       timely: 87, 
       correct: 83 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-9:00pm', pickup: '11:30am-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1550388342-5699a35584f4.jpeg',
     priceRange: 3,
     categories: ['Korean', 'Healthy'] 
@@ -104,7 +124,8 @@ const data = [
     name: 'Bibi Me',
     address: { 
       line1: '667 Carter Rd', 
-      line2: 'Hesselside, IA 13549' 
+      line2: 'Hesselside, IA 13549',
+      milesAway: 7.62 
     },
     phone: '892-887-2183',
     ratings: { 
@@ -114,7 +135,10 @@ const data = [
       timely: 71, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-6:30pm', pickup: '11:30am-11:30pm' },
+      satSun: { delivery: '10:00am-7:30pm', pickup: '10:00am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/bibimbap-1738580_1280.jpg',
     priceRange: 4,
     categories: ['Korean', 'Healthy'] 
@@ -124,7 +148,8 @@ const data = [
     name: 'Kim\'s BBQ',
     address: { 
       line1: '4567 Cordia Way',
-      line2: 'South Jaida, MO 02228' 
+      line2: 'South Jaida, MO 02228',
+      milesAway: 0.55 
     },
     phone: '545-557-1220',
     ratings: { 
@@ -134,7 +159,10 @@ const data = [
       timely: 84, 
       correct: 85 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-9:00pm', pickup: '11:00am-10:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1550388342-b3fd986e4e67.jpeg',
     priceRange: 1,
     categories: ['Korean', 'BBQ'] 
@@ -144,7 +172,8 @@ const data = [
     name: 'Bool BBQ',
     address: { 
       line1: '650 Muller Way NE',
-      line2: 'Tristian, KY 07334' 
+      line2: 'Tristian, KY 07334',
+      milesAway: 1.33
     },
     phone: '585-495-4610',
     ratings: { 
@@ -154,7 +183,10 @@ const data = [
       timely: 78, 
       correct: 86 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-8:30pm', pickup: '9:00am-10:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1546069901-eacef0df6022.jpeg',
     priceRange: 2,
     categories: ['Korean', 'BBQ'] 
@@ -164,7 +196,8 @@ const data = [
     name: 'Giwa',
     address: { 
       line1: '1965 Leffler Lane',
-      line2: 'Gulgowski, MA 69978' 
+      line2: 'Gulgowski, MA 69978',
+      milesAway: 1.55 
     },
     phone: '778-194-6586',
     ratings: { 
@@ -174,7 +207,10 @@ const data = [
       timely: 90, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-7:30pm', pickup: '11:00am-11:30pm' },
+      satSun: { delivery: '11:00am-7:30pm', pickup: '11:00am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/cooking-4124108_1280.jpg',
     priceRange: 1,
     categories: ['Korean'] 
@@ -184,7 +220,8 @@ const data = [
     name: 'Galbi Me',
     address: { 
       line1: '55586 Hodkiewicz Ave',
-      line2: 'New Jena, NY 80579' 
+      line2: 'New Jena, NY 80579',
+      milesAway: 0.54 
     },
     phone: '352-705-6381',
     ratings: { 
@@ -194,7 +231,10 @@ const data = [
       timely: 77, 
       correct: 73 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:00pm', pickup: '10:00am-10:00pm' },
+      satSun: { delivery: '10:30am-7:30pm', pickup: '10:30am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1531263539449-56fdf29dfc4d.jpeg',
     priceRange: 1,
     categories: ['Korean'] 
@@ -204,7 +244,8 @@ const data = [
     name: 'Soon\'s Dubu',
     address: { 
       line1: '9620 Stokes St',
-      line2: 'Concepcion, IL 72333' 
+      line2: 'Concepcion, IL 72333',
+      milesAway: 2.66 
     },
     phone: '445-777-4737',
     ratings: { 
@@ -214,7 +255,10 @@ const data = [
       timely: 94, 
       correct: 99 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-7:30pm', pickup: '10:00am-10:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1553163147-622ab57be1c7.jpeg',
     priceRange: 3,
     categories: ['Korean', 'Healthy'] 
@@ -224,7 +268,8 @@ const data = [
     name: 'Song\'s Kitchen',
     address: { 
       line1: '7562 Jennifer Square',
-      line2: 'Rochester, OK 91873' 
+      line2: 'Rochester, OK 91873',
+      milesAway: 5.5 
     },
     phone: '463-420-0741',
     ratings: { 
@@ -234,7 +279,10 @@ const data = [
       timely: 97, 
       correct: 74 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-6:30pm', pickup: '10:00am-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/herbs-749360_1280.jpg',
     priceRange: 5,
     categories: ['Korean'] 
@@ -244,7 +292,8 @@ const data = [
     name: 'Bibi Please',
     address: { 
       line1: '111 Gideon Hill', 
-      line2: 'Koeppton, HI 08985' 
+      line2: 'Koeppton, HI 08985',
+      milesAway: 2.1 
     },
     phone: '245-210-8909',
     ratings: { 
@@ -254,7 +303,10 @@ const data = [
       timely: 84, 
       correct: 88 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:00pm', pickup: '11:00am-11:30pm' },
+      satSun: { delivery: '12:00pm-6:00pm', pickup: '12:00pm-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/kimchi-fried-rice-241051_1280.jpg',
     priceRange: 2,
     categories: ['Korean'] 
@@ -264,7 +316,8 @@ const data = [
     name: 'House of Tofu',
     address: { 
       line1: '56697 Anya Grove', 
-      line2: 'Robertview, KS 09584' 
+      line2: 'Robertview, KS 09584',
+      milesAway: 0.3
     },
     phone: '974-274-3394',
     ratings: { 
@@ -274,7 +327,10 @@ const data = [
       timely: 92, 
       correct: 74 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-6:30pm', pickup: '9:00am-10:30pm' },
+      satSun: { delivery: '10:30am-7:30pm', pickup: '10:30am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/tofu-597228_1280.jpg',
     priceRange: 3,
     categories: ['Korean', 'Healthy'] 
@@ -284,7 +340,8 @@ const data = [
     name: 'Galbi Jib',
     address: { 
       line1: '6454 Gerlach Dr',
-      line2: 'Botsfordburgh, MS 22811' 
+      line2: 'Botsfordburgh, MS 22811',
+      milesAway: 1.4 
     },
     phone: '958-185-4640',
     ratings: { 
@@ -294,7 +351,10 @@ const data = [
       timely: 78, 
       correct: 94 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:30pm', pickup: '11:00am-11:00pm' },
+      satSun: { delivery: '10:00am-6:00pm', pickup: '10:00am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1550388342-c75d3a99540d.jpeg',
     priceRange: 4,
     categories: ['Korean', 'BBQ'] 
@@ -304,7 +364,8 @@ const data = [
     name: 'The Hot Stone',
     address: { 
       line1: '17264 Mervin Pl',
-      line2: 'Lake Elliott, WI 37525' 
+      line2: 'Lake Elliott, WI 37525',
+      milesAway: 0.88 
     },
     phone: '363-640-8679',
     ratings: { 
@@ -314,7 +375,10 @@ const data = [
       timely: 88, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:30pm', pickup: '11:00am-10:30pm' },
+      satSun: { delivery: '11:30am-8:00pm', pickup: '11:30am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1498654896293-37aacf113fd9.jpeg',
     priceRange: 3,
     categories: ['Korean'] 
@@ -324,7 +388,8 @@ const data = [
     name: 'Pak BBQ',
     address: { 
       line1: '210 Alexandre Blvd',
-      line2: 'Port Lizahaven, MI 15425' 
+      line2: 'Port Lizahaven, MI 15425',
+      milesAway: 1.55 
     },
     phone: '593-221-2065',
     ratings: { 
@@ -334,7 +399,10 @@ const data = [
       timely: 76, 
       correct: 86 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '10:30am-10:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/vegetable-1582920_1280.jpg',
     priceRange: 3,
     categories: ['Korean', 'BBQ'] 
@@ -344,7 +412,8 @@ const data = [
     name: 'Charcoal House',
     address: { 
       line1: '8200 Winston Blvd', 
-      line2: 'South Colby, CO 73586' 
+      line2: 'South Colby, CO 73586',
+      milesAway: 2.1 
     },
     phone: '870-944-8562',
     ratings: { 
@@ -354,7 +423,10 @@ const data = [
       timely: 96, 
       correct: 81 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '11:00am-11:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/korean-cabbage-in-chili-sauce-1120406_1280.jpg',
     priceRange: 5,
     categories: ['Korean', 'BBQ'] 
@@ -364,12 +436,16 @@ const data = [
     name: 'Seoul Palace',
     address: { 
       line1: '635 S Bryon Way', 
-      line2: 'North Rose, AR 67243' 
+      line2: 'North Rose, AR 67243',
+      milesAway: 0.6 
     },
     phone: '631-998-3176',
     ratings: { 
       number: 413, stars: 4.5, good: 80, timely: 78, correct: 71 },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-7:30pm', pickup: '12:00pm-10:30pm' },
+      satSun: { delivery: '11:30am-8:00pm', pickup: '11:30am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/toppokki-1607479_1280.jpg',
     priceRange: 2,
     categories: ['Korean'] 
@@ -379,7 +455,8 @@ const data = [
     name: 'Noodle House',
     address: { 
       line1: '1893 Tanner Dr SW',
-      line2: 'Wileyburgh, LA 53498' 
+      line2: 'Wileyburgh, LA 53498',
+      milesAway: 3.4 
     },
     phone: '856-264-0286',
     ratings: { 
@@ -389,7 +466,10 @@ const data = [
       timely: 91, 
       correct: 97 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-7:30pm', pickup: '10:30am-10:00pm' },
+      satSun: { delivery: '12:00pm-6:30pm', pickup: '12:00pm-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1540138279543-b3728f037467.jpeg',
     priceRange: 3,
     categories: ['Korean'] 
@@ -399,7 +479,8 @@ const data = [
     name: 'Casa Del Mar',
     address: { 
       line1: '878 Christiansen Way',
-      line2: 'West Una, HI 85904' 
+      line2: 'West Una, HI 85904',
+      milesAway: 4.11 
     },
     phone: '382-720-0531',
     ratings: { 
@@ -409,7 +490,10 @@ const data = [
       timely: 97, 
       correct: 73 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:00pm', pickup: '10:00am-11:30pm' },
+      satSun: { delivery: '12:00pm-7:30pm', pickup: '12:00pm-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/burrito-4126108_1280.jpg',
     priceRange: 3,
     categories: ['Mexican'] 
@@ -419,7 +503,8 @@ const data = [
     name: 'Tina\'s Tacos',
     address: { 
       line1: '4316 Romaguera Dr',
-      line2: 'Vincent, NV 98700' 
+      line2: 'Vincent, NV 98700',
+      milesAway: 6.6 
     },
     phone: '665-050-4105',
     ratings: { 
@@ -429,7 +514,10 @@ const data = [
       timely: 79, 
       correct: 91 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:00pm', pickup: '12:00pm-10:30pm' },
+      satSun: { delivery: '12:00pm-6:00pm', pickup: '12:00pm-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/tacos-245241_1280.jpg',
     priceRange: 1,
     categories: ['Mexican'] 
@@ -439,7 +527,8 @@ const data = [
     name: 'Burritos Por Favor',
     address: { 
       line1: '1744 Enola Ave W', 
-      line2: 'Haleyland, ID 00010' 
+      line2: 'Haleyland, ID 00010',
+      milesAway: 0.9 
     },
     phone: '670-266-9381',
     ratings: { 
@@ -449,7 +538,10 @@ const data = [
       timely: 87, 
       correct: 93 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-9:00pm', pickup: '10:00am-10:00pm' },
+      satSun: { delivery: '12:00pm-6:00pm', pickup: '12:00pm-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/burrito-4126116_1280.jpg',
     priceRange: 3,
     categories: ['Mexican'] 
@@ -459,7 +551,8 @@ const data = [
     name: 'El Burro',
     address: { 
       line1: '667 Carter Rd', 
-      line2: 'Hesselside, IA 13549' 
+      line2: 'Hesselside, IA 13549',
+      milesAway: 0.24 
     },
     phone: '892-887-2183',
     ratings: { 
@@ -469,7 +562,10 @@ const data = [
       timely: 71, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-9:00pm', pickup: '12:00pm-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/grilled-pineapple-pork-burrito-2944562_1280.jpg',
     priceRange: 4,
     categories: ['Mexican'] 
@@ -479,7 +575,8 @@ const data = [
     name: 'Red Plate Taco',
     address: { 
       line1: '4567 Cordia Ave',
-      line2: 'South Jaida, MO 02228' 
+      line2: 'South Jaida, MO 02228',
+      milesAway: 10.1 
     },
     phone: '545-557-1220',
     ratings: { 
@@ -489,7 +586,10 @@ const data = [
       timely: 84, 
       correct: 85 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:00pm', pickup: '9:00am-10:00pm' },
+      satSun: { delivery: '11:00am-7:30pm', pickup: '11:00am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/tacos-1613795_1280.jpg',
     priceRange: 1,
     categories: ['Mexican'] 
@@ -499,7 +599,8 @@ const data = [
     name: 'Cocina',
     address: { 
       line1: '650 Muller Dr',
-      line2: 'Tristian, KY 07334' 
+      line2: 'Tristian, KY 07334',
+      milesAway: 8.1 
     },
     phone: '585-495-4610',
     ratings: { 
@@ -509,7 +610,10 @@ const data = [
       timely: 78, 
       correct: 86 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-7:30pm', pickup: '10:30am-10:00pm' },
+      satSun: { delivery: '10:00am-6:30pm', pickup: '10:00am-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/tamales-1990080_1280.jpg',
     priceRange: 2,
     categories: ['Mexican'] 
@@ -519,7 +623,8 @@ const data = [
     name: 'Escobar',
     address: { 
       line1: '1965 Leffler Rd',
-      line2: 'Gulgowskihaven, MA 69978' 
+      line2: 'Gulgowskihaven, MA 69978',
+      milesAway: 0.19 
     },
     phone: '778-194-6586',
     ratings: { 
@@ -529,7 +634,10 @@ const data = [
       timely: 98, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-7:30pm', pickup: '9:00am-11:00pm' },
+      satSun: { delivery: '11:00am-8:00pm', pickup: '11:00am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/burrito-gratin-1564287_1280.jpg',
     priceRange: 1,
     categories: ['Mexican'] 
@@ -539,7 +647,8 @@ const data = [
     name: 'Little Taco',
     address: { 
       line1: '586 Hodkiewicz Pkwy',
-      line2: 'New Jena, NY 80579' 
+      line2: 'New Jena, NY 80579',
+      milesAway: 4.4 
     },
     phone: '352-705-6381',
     ratings: { 
@@ -549,7 +658,10 @@ const data = [
       timely: 97, 
       correct: 73 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-8:00pm', pickup: '11:00am-10:00pm' },
+      satSun: { delivery: '10:00am-8:00pm', pickup: '10:00am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/taco-2610649_1280.jpg',
     priceRange: 1,
     categories: ['Mexican'] 
@@ -559,7 +671,8 @@ const data = [
     name: 'Blue Cabana',
     address: { 
       line1: '9620 E Stokes St',
-      line2: 'Concepcion, IL 72333' 
+      line2: 'Concepcion, IL 72333',
+      milesAway: 2.45 
     },
     phone: '945-777-4737',
     ratings: { 
@@ -569,7 +682,10 @@ const data = [
       timely: 74, 
       correct: 99 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-8:00pm', pickup: '12:00pm-10:30pm' },
+      satSun: { delivery: '12:00pm-9:00pm', pickup: '12:00pm-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/food-1090619_1280.jpg',
     priceRange: 3,
     categories: ['Mexican'] 
@@ -579,7 +695,8 @@ const data = [
     name: 'Casa Enriquez',
     address: { 
       line1: '7562 Jennifer Square',
-      line2: 'Rodriguez, OK 91873' 
+      line2: 'Rodriguez, OK 91873',
+      milesAway: 9.22 
     },
     phone: '063-420-0741',
     ratings: { 
@@ -589,7 +706,10 @@ const data = [
       timely: 97, 
       correct: 74 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '11:00am-11:00pm' },
+      satSun: { delivery: '11:30am-9:00pm', pickup: '11:30am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/photo-1464219222984-216ebffaaf85.jpeg',
     priceRange: 5,
     categories: ['Mexican'] 
@@ -599,7 +719,8 @@ const data = [
     name: 'Sol',
     address: { 
       line1: '111 Gideon Way NE', 
-      line2: 'Motunui, HI 08985' 
+      line2: 'Motunui, HI 08985',
+      milesAway: 4.11 
     },
     phone: '245-210-8909',
     ratings: { 
@@ -609,7 +730,10 @@ const data = [
       timely: 84, 
       correct: 88 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:30pm', pickup: '12:00pm-11:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/food-2580200_1280.jpg',
     priceRange: 2,
     categories: ['Mexican'] 
@@ -619,7 +743,8 @@ const data = [
     name: 'Tito\'s Taqueria',
     address: { 
       line1: '5697 Anya Dr', 
-      line2: 'Robertview, KS 09584' 
+      line2: 'Robertview, KS 09584',
+      milesAway: 0.55 
     },
     phone: '974-274-3394',
     ratings: { 
@@ -629,7 +754,10 @@ const data = [
       timely: 92, 
       correct: 74 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-6:30pm', pickup: '10:00am-10:30pm' },
+      satSun: { delivery: '11:00am-6:00pm', pickup: '11:00am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/food-791614_1280.jpg',
     priceRange: 3,
     categories: ['Mexican'] 
@@ -639,7 +767,8 @@ const data = [
     name: 'Guac You Talking About',
     address: { 
       line1: '6454 Gerlach Dr',
-      line2: 'Botsfordburgh, MS 22811' 
+      line2: 'Botsfordburgh, MS 22811',
+      milesAway: 0.13 
     },
     phone: '958-185-4640',
     ratings: { 
@@ -649,7 +778,10 @@ const data = [
       timely: 78, 
       correct: 94 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-9:00pm', pickup: '11:30am-11:30pm' },
+      satSun: { delivery: '11:00am-6:00pm', pickup: '11:00am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/photo-1536184071535-78906f7172c2.jpeg',
     priceRange: 4,
     categories: ['Mexican'] 
@@ -659,7 +791,8 @@ const data = [
     name: 'Verde',
     address: { 
       line1: '17264 Mervin Blvd',
-      line2: 'Lake Elliott, WI 37525' 
+      line2: 'Lake Elliott, WI 37525',
+      milesAway: 3.1 
     },
     phone: '363-640-8679',
     ratings: { 
@@ -669,7 +802,10 @@ const data = [
       timely: 88, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-7:30pm', pickup: '11:00am-10:00pm' },
+      satSun: { delivery: '10:00am-6:00pm', pickup: '10:00am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/mexican-2456038_1280.jpg',
     priceRange: 3,
     categories: ['Mexican'] 
@@ -679,7 +815,8 @@ const data = [
     name: 'Tacos 4 All',
     address: { 
       line1: '210 Alexandre Lane',
-      line2: 'Port Lizahaven, MI 15425' 
+      line2: 'Port Lizahaven, MI 15425',
+      milesAway: 7.6 
     },
     phone: '593-221-2065',
     ratings: { 
@@ -689,7 +826,10 @@ const data = [
       timely: 76, 
       correct: 86 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-8:00pm', pickup: '11:00am-10:00pm' },
+      satSun: { delivery: '10:00am-8:30pm', pickup: '10:00am-8:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/grill-1599035_1280.jpg',
     priceRange: 3,
     categories: ['Mexican'] 
@@ -699,7 +839,8 @@ const data = [
     name: 'Casa Bonita',
     address: { 
       line1: '8200 N Wolf St', 
-      line2: 'South Colby, CO 73586' 
+      line2: 'South Colby, CO 73586',
+      milesAway: 2.66 
     },
     phone: '870-944-8562',
     ratings: { 
@@ -708,7 +849,10 @@ const data = [
       good: 88, 
       timely: 96, 
       correct: 91 },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '9:00am-11:00pm' },
+      satSun: { delivery: '10:30am-6:00pm', pickup: '10:30am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/photo-1552332386-f8dd00dc2f85.jpeg',
     priceRange: 5,
     categories: ['Mexican'] 
@@ -718,7 +862,8 @@ const data = [
     name: 'Poquito',
     address: { 
       line1: '31 Wisoky Dr',
-      line2: 'West Madisen, MN 01138' 
+      line2: 'West Madisen, MN 01138',
+      milesAway: 0.54 
     },
     phone: '895-678-3232',
     ratings: { 
@@ -728,7 +873,10 @@ const data = [
       timely: 85, 
       correct: 89 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '10:30am-11:30pm' },
+      satSun: { delivery: '11:00am-8:30pm', pickup: '11:00am-8:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/mexican-food-1885616_1280.jpg',
     priceRange: 2,
     categories: ['Mexican'] 
@@ -738,7 +886,8 @@ const data = [
     name: 'Mom\'s Taco Shop',
     address: { 
       line1: '635 Bryon Ave', 
-      line2: 'North Rose, AR 67243' 
+      line2: 'North Rose, AR 67243',
+      milesAway: 1.1 
     },
     phone: '631-998-3176',
     ratings: { 
@@ -748,7 +897,10 @@ const data = [
       timely: 98, 
       correct: 91 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:00pm', pickup: '12:00pm-10:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/photo-1550951957-3ab761159b8f.jpeg',
     priceRange: 2,
     categories: ['Mexican'] 
@@ -758,7 +910,8 @@ const data = [
     name: 'Tanner and Main',
     address: { 
       line1: '1893 Tanner Dr W',
-      line2: 'Wileyburgh, LA 53498' 
+      line2: 'Wileyburgh, LA 53498',
+      milesAway: 1.56
     },
     phone: '856-264-0286',
     ratings: { 
@@ -768,7 +921,10 @@ const data = [
       timely: 91, 
       correct: 97 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-7:30pm', pickup: '11:00am-10:30pm' },
+      satSun: { delivery: '11:30am-9:00pm', pickup: '11:30am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/quesadilla-4034046_1280.jpg',
     priceRange: 3,
     categories: ['Mexican'] 
@@ -778,7 +934,8 @@ const data = [
     name: 'Little Sunset',
     address: { 
       line1: '878 Mola Lane',
-      line2: 'West Una, HI 85904' 
+      line2: 'West Una, HI 85904',
+      milesAway: 5.23 
     },
     phone: '382-720-0531',
     ratings: { 
@@ -788,7 +945,10 @@ const data = [
       timely: 97, 
       correct: 73 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-8:00pm', pickup: '10:00am-11:30pm' },
+      satSun: { delivery: '10:00am-8:30pm', pickup: '10:00am-8:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Mexican/tortilla-1386757_1280.jpg',
     priceRange: 3,
     categories: ['Mexican'] 
@@ -798,7 +958,8 @@ const data = [
     name: 'House of Kee',
     address: {
       line1: '4316 Romaguera Dr',
-      line2: 'Carlton, NV 98700' 
+      line2: 'Carlton, NV 98700',
+      milesAway: 0.23
     },
     phone: '665-050-4105',
     ratings: { 
@@ -808,7 +969,10 @@ const data = [
       timely: 99, 
       correct: 91 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-8:00pm', pickup: '12:00pm-11:30pm' },
+      satSun: { delivery: '11:30am-6:30pm', pickup: '11:30am-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/broiled-1238582_1280.jpg',
     priceRange: 1,
     categories: ['Chinese'] 
@@ -818,7 +982,8 @@ const data = [
     name: 'Lily Garden',
     address: { 
       line1: '177 Enola Lane', 
-      line2: 'Haleyland, ID 00010' 
+      line2: 'Haleyland, ID 00010',
+      milesAway: 5.32 
     },
     phone: '670-266-9381',
     ratings: { 
@@ -828,7 +993,10 @@ const data = [
       timely: 87, 
       correct: 93 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:00pm', pickup: '12:00pm-10:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/chinese-food-951889_1280.jpg',
     priceRange: 3,
     categories: ['Chinese'] 
@@ -838,7 +1006,8 @@ const data = [
     name: 'Szechuan Palace',
     address: { 
       line1: '667 Carter Rd', 
-      line2: 'Hesselside, IA 13549' 
+      line2: 'Hesselside, IA 13549',
+      milesAway: 0.62 
     },
     phone: '892-887-2183',
     ratings: { 
@@ -848,7 +1017,10 @@ const data = [
       timely: 71, 
       correct: 88 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '9:00am-11:00pm' },
+      satSun: { delivery: '10:30am-6:00pm', pickup: '10:30am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/Szechuan-Chicken_.jpg',
     priceRange: 4,
     categories: ['Chinese'] 
@@ -858,7 +1030,8 @@ const data = [
     name: 'Liu\'s Chinese',
     address: { 
       line1: '4567 Cordia Ave',
-      line2: 'South Jaida, MO 02228' 
+      line2: 'South Jaida, MO 02228',
+      milesAway: 7.23 
     },
     phone: '545-557-1220',
     ratings: { 
@@ -868,7 +1041,10 @@ const data = [
       timely: 84, 
       correct: 85 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-7:30pm', pickup: '11:00am-10:00pm' },
+      satSun: { delivery: '10:00am-6:00pm', pickup: '10:00am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/image-951834_1280.jpg',
     priceRange: 1,
     categories: ['Chinese'] 
@@ -878,7 +1054,8 @@ const data = [
     name: 'Rising Moon',
     address: { 
       line1: '650 Muller Way',
-      line2: 'Tristianborough, KY 07334' 
+      line2: 'Tristianborough, KY 07334',
+      milesAway: 4.23 
     },
     phone: '585-495-4610',
     ratings: { 
@@ -888,7 +1065,10 @@ const data = [
       timely: 78, 
       correct: 86 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:00pm', pickup: '11:30am-11:00pm' },
+      satSun: { delivery: '10:00am-9:00pm', pickup: '10:00am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/duck-479701_1280.jpg',
     priceRange: 2,
     categories: ['Chinese'] 
@@ -898,7 +1078,8 @@ const data = [
     name: 'The Red Dragon',
     address: { 
       line1: '1965 Leffler Rd',
-      line2: 'Gulgowski, MA 69978' 
+      line2: 'Gulgowski, MA 69978',
+      milesAway: 1.65 
     },
     phone: '778-194-6586',
     ratings: { 
@@ -908,7 +1089,10 @@ const data = [
       timely: 99, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:00pm', pickup: '12:00pm-10:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/eggplant-1317917_1280.jpg',
     priceRange: 5,
     categories: ['Chinese'] 
@@ -918,7 +1102,8 @@ const data = [
     name: 'Dim Sum Palace',
     address: { 
       line1: '55586 Hodkiewicz Way',
-      line2: 'New Jena, NY 80579' 
+      line2: 'New Jena, NY 80579',
+      milesAway: 0.46 
     },
     phone: '352-705-6381',
     ratings: { 
@@ -928,7 +1113,10 @@ const data = [
       timely: 97, 
       correct: 73 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:30pm', pickup: '12:00pm-10:30pm' },
+      satSun: { delivery: '11:00am-6:00pm', pickup: '11:00am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/dumplings-632206_1280.jpg',
     priceRange: 1,
     categories: ['Chinese'] 
@@ -938,7 +1126,8 @@ const data = [
     name: 'Chef Kee\'s',
     address: { 
       line1: '9620 Stokes St',
-      line2: 'Charles, IL 72333' 
+      line2: 'Charles, IL 72333',
+      milesAway: 1.45 
     },
     phone: '545-777-4737',
     ratings: { 
@@ -948,7 +1137,10 @@ const data = [
       timely: 74, 
       correct: 99 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-8:00pm', pickup: '12:00pm-11:30pm' },
+      satSun: { delivery: '11:30am-6:30pm', pickup: '11:30am-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/fried-fish-with-sweet-peppers-906248_1280.jpg',
     priceRange: 3,
     categories: ['Chinese'] 
@@ -958,7 +1150,8 @@ const data = [
     name: 'Mandarin Impression',
     address: { 
       line1: '7562 Jennifer Ave',
-      line2: 'Chester, OK 91873' 
+      line2: 'Chester, OK 91873',
+      milesAway: 8.23 
     },
     phone: '663-420-0741',
     ratings: { 
@@ -968,7 +1161,10 @@ const data = [
       timely: 97, 
       correct: 74 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:00pm', pickup: '11:30am-11:00pm' },
+      satSun: { delivery: '10:00am-9:00pm', pickup: '10:00am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/gourmet-667599_1280.jpg',
     priceRange: 5,
     categories: ['Chinese'] 
@@ -978,7 +1174,8 @@ const data = [
     name: 'Chop & Stick',
     address: { 
       line1: '111 W Gideon Hill', 
-      line2: 'Kameha, HI 08985' 
+      line2: 'Kameha, HI 08985',
+      milesAway: 2.32 
     },
     phone: '245-210-8909',
     ratings: { 
@@ -988,7 +1185,10 @@ const data = [
       timely: 84, 
       correct: 88 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-8:00pm', pickup: '10:00am-10:00pm' },
+      satSun: { delivery: '11:00am-7:30pm', pickup: '11:00am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/green-dragon-vegetable-1707089_1280.jpg',
     priceRange: 4,
     categories: ['Chinese'] 
@@ -998,7 +1198,8 @@ const data = [
     name: 'Yum Yum Wok',
     address: { 
       line1: '5697 W Anya St', 
-      line2: 'Robertview, KS 09584' 
+      line2: 'Robertview, KS 09584',
+      milesAway: 0.63 
     },
     phone: '974-274-3394',
     ratings: { 
@@ -1008,7 +1209,10 @@ const data = [
       timely: 92, 
       correct: 74 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:30pm', pickup: '12:00pm-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/cooking-1835369_1280.jpg',
     priceRange: 3,
     categories: ['Chinese'] 
@@ -1018,7 +1222,8 @@ const data = [
     name: 'The Feast Room',
     address: { 
       line1: '6454 Gerlach Dr',
-      line2: 'Botsford, MS 22811' 
+      line2: 'Botsford, MS 22811',
+      milesAway: 0.1 
     },
     phone: '958-185-4640',
     ratings: { 
@@ -1028,7 +1233,10 @@ const data = [
       timely: 78, 
       correct: 94 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:00pm', pickup: '12:00pm-11:00pm' },
+      satSun: { delivery: '10:00am-8:00pm', pickup: '10:00am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/noodles-3557592_1280.jpg',
     priceRange: 4,
     categories: ['Chinese'] 
@@ -1038,7 +1246,8 @@ const data = [
     name: 'House of Mao',
     address: { 
       line1: '17264 Mervin Pl',
-      line2: 'Lake Ellington, WI 37525' 
+      line2: 'Lake Ellington, WI 37525',
+      milesAway: 0.03 
     },
     phone: '363-640-8679',
     ratings: { 
@@ -1048,7 +1257,10 @@ const data = [
       timely: 88, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:30pm', pickup: '11:00am-11:30pm' },
+      satSun: { delivery: '10:00am-8:00pm', pickup: '10:00am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/photo-1525755662778-989d0524087e.jpeg',
     priceRange: 3,
     categories: ['Chinese'] 
@@ -1058,7 +1270,8 @@ const data = [
     name: 'Red Table',
     address: { 
       line1: '210 Alexandre Pkwy',
-      line2: 'Port Lizahaven, MI 15425' 
+      line2: 'Port Lizahaven, MI 15425',
+      milesAway: 9.22 
     },
     phone: '593-221-2065',
     ratings: { 
@@ -1068,7 +1281,10 @@ const data = [
       timely: 76, 
       correct: 86 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-9:00pm', pickup: '9:00am-10:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/photo-1541696432-82c6da8ce7bf.jpeg',
     priceRange: 3,
     categories: ['Chinese'] 
@@ -1078,7 +1294,8 @@ const data = [
     name: 'Little Rose',
     address: { 
       line1: '8200 Wolf Pkwy', 
-      line2: 'South Colby, CO 73586' 
+      line2: 'South Colby, CO 73586',
+      milesAway: 0.63 
     },
     phone: '870-944-8562',
     ratings: { 
@@ -1088,7 +1305,10 @@ const data = [
       timely: 96, 
       correct: 91 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:30pm', pickup: '12:00pm-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/sweet-and-sour-pork-1264563_1280.jpg',
     priceRange: 5,
     categories: ['Chinese'] 
@@ -1098,7 +1318,8 @@ const data = [
     name: 'Mei\'s Chinese Kitchen',
     address: { 
       line1: '9231 Wisoky Way',
-      line2: 'West Madisen, MN 01138' 
+      line2: 'West Madisen, MN 01138',
+      milesAway: 0.02 
     },
     phone: '895-678-3232',
     ratings: { 
@@ -1108,7 +1329,10 @@ const data = [
       timely: 85, 
       correct: 89 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-9:00pm', pickup: '10:00am-10:00pm' },
+      satSun: { delivery: '12:00pm-6:00pm', pickup: '12:00pm-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/prawns-959219_1280.jpg',
     priceRange: 2,
     categories: ['Chinese'] 
@@ -1118,7 +1342,8 @@ const data = [
     name: 'Dumpling House',
     address: { 
       line1: '18555 Crist Dr', 
-      line2: 'Ottilieville, SD 51198' 
+      line2: 'Ottilieville, SD 51198',
+      milesAway: 5.24 
     },
     phone: '858-072-2242',
     ratings: { 
@@ -1128,7 +1353,10 @@ const data = [
       timely: 73, 
       correct: 77 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:00pm', pickup: '9:00am-10:00pm' },
+      satSun: { delivery: '11:00am-7:30pm', pickup: '11:00am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/dumplings-669901_1280.jpg',
     priceRange: 3,
     categories: ['Chinese'] 
@@ -1138,7 +1366,8 @@ const data = [
     name: 'Hop Sun',
     address: { 
       line1: '701 Herman Lane',
-      line2: 'West Vergieville, KS 54223' 
+      line2: 'West Vergieville, KS 54223',
+      milesAway: 2.1 
     },
     phone: '941-039-3952',
     ratings: { 
@@ -1148,7 +1377,10 @@ const data = [
       timely: 96, 
       correct: 95 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-7:30pm', pickup: '12:00pm-10:30pm' },
+      satSun: { delivery: '11:30am-8:00pm', pickup: '11:30am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/water-spinach-1628620_1280.jpg',
     priceRange: 1,
     categories: ['Chinese'] 
@@ -1158,7 +1390,8 @@ const data = [
     name: 'Hunan Impression',
     address: { 
       line1: '8275 Kunde Highway',
-      line2: 'North Olenside, IA 65770' 
+      line2: 'North Olenside, IA 65770',
+      milesAway: 0.45 
     },
     phone: '372-796-4107',
     ratings: { 
@@ -1168,7 +1401,10 @@ const data = [
       timely: 91, 
       correct: 94 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:30pm', pickup: '11:00am-10:30pm' },
+      satSun: { delivery: '11:30am-8:00pm', pickup: '11:30am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/restaurant-1762493_1280.jpg',
     priceRange: 4,
     categories: ['Chinese'] 
@@ -1178,7 +1414,8 @@ const data = [
     name: 'East Cafe',
     address: { 
       line1: '1897 S Ebert Hill', 
-      line2: 'Crooksfort, DE 82838' 
+      line2: 'Crooksfort, DE 82838',
+      milesAway: 0.09 
     },
     phone: '933-222-7859',
     ratings: { 
@@ -1188,7 +1425,10 @@ const data = [
       timely: 87, 
       correct: 92 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '10:30am-10:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Chinese/spring-rolls-2536526_1280.jpg',
     priceRange: 4,
     categories: ['Chinese'] 
@@ -1198,7 +1438,8 @@ const data = [
     name: 'Giulia\'s',
     address: { 
       line1: '90043 Quitzon Dr',
-      line2: 'New Delphatown, SD 79368' 
+      line2: 'New Delphatown, SD 79368',
+      milesAway: 3.2 
     },
     phone: '436-720-7155',
     ratings: { 
@@ -1208,7 +1449,10 @@ const data = [
       timely: 79, 
       correct: 95 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-8:30pm', pickup: '10:00am-10:30pm' },
+      satSun: { delivery: '10:00am-6:00pm', pickup: '10:00am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/italian-food-2157246_1280.jpg',
     priceRange: 2,
     categories: ['Italian'] 
@@ -1218,7 +1462,8 @@ const data = [
     name: 'Giovanni',
     address: { 
       line1: '776 Lamont Lane', 
-      line2: 'South Madilyn, DE 24758' 
+      line2: 'South Madilyn, DE 24758',
+      milesAway: 6.21 
     },
     phone: '547-637-0778',
     ratings: { 
@@ -1228,7 +1473,10 @@ const data = [
       timely: 90, 
       correct: 99 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-8:00pm', pickup: '10:30am-10:00pm' },
+      satSun: { delivery: '12:00pm-6:30pm', pickup: '12:00pm-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pasta-4144384_1280.jpg',
     priceRange: 5,
     categories: ['Italian'] 
@@ -1238,7 +1486,8 @@ const data = [
     name: 'Misto',
     address: { 
       line1: '5628 Verda Dr', 
-      line2: 'Kieranville, ID 06319' 
+      line2: 'Kieranville, ID 06319',
+      milesAway: 1.33 
     },
     phone: '405-853-9132',
     ratings: { 
@@ -1248,7 +1497,10 @@ const data = [
       timely: 89, 
       correct: 82 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:30pm', pickup: '10:00am-11:00pm' },
+      satSun: { delivery: '12:00pm-6:30pm', pickup: '12:00pm-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pasta-salad-1967501_1280.jpg',
     priceRange: 3,
     categories: ['Italian'] 
@@ -1258,7 +1510,8 @@ const data = [
     name: 'Aglio Trattoria',
     address: { 
       line1: '1646 Sporer Circle', 
-      line2: 'Lake Myra, FL 10666' 
+      line2: 'Lake Myra, FL 10666',
+      milesAway: 0.62 
     },
     phone: '866-468-6279',
     ratings: { 
@@ -1268,7 +1521,10 @@ const data = [
       timely: 99, 
       correct: 80 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-8:30pm', pickup: '11:00am-11:00pm' },
+      satSun: { delivery: '11:00am-8:00pm', pickup: '11:00am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1551183053-bf91a1d81141.jpeg',
     priceRange: 5,
     categories: ['Italian'] 
@@ -1278,7 +1534,8 @@ const data = [
     name: 'Little Milan',
     address: { 
       line1: '348 Talon Blvd', 
-      line2: 'North Carli, OH 24625' 
+      line2: 'North Carli, OH 24625',
+      milesAway: 0.02 
     },
     phone: '257-891-3409',
     ratings: { 
@@ -1288,7 +1545,10 @@ const data = [
       timely: 79, 
       correct: 80 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-8:00pm', pickup: '10:30am-10:00pm' },
+      satSun: { delivery: '12:00pm-6:30pm', pickup: '12:00pm-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/tomatoes-1804452_1280.jpg',
     priceRange: 4,
     categories: ['Italian'] 
@@ -1298,7 +1558,8 @@ const data = [
     name: 'Red White & Green',
     address: { 
       line1: '87239 Kuvalis Way', 
-      line2: 'Cronaberg, MT 02260' 
+      line2: 'Cronaberg, MT 02260',
+      milesAway: 3.11 
     },
     phone: '964-569-4929',
     ratings: { 
@@ -1308,7 +1569,10 @@ const data = [
       timely: 90, 
       correct: 83 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-9:00pm', pickup: '11:30am-10:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/salad-2487759_1280.jpg',
     priceRange: 5,
     categories: ['Italian'] 
@@ -1318,7 +1582,8 @@ const data = [
     name: 'Nic\'s Pizzeria',
     address: { 
       line1: '24 Ollie Blvd',
-      line2: 'New Unachester, NE 50595' 
+      line2: 'New Unachester, NE 50595',
+      milesAway: 0.22 
     },
     phone: '773-366-5764',
     ratings: { 
@@ -1328,7 +1593,10 @@ const data = [
       timely: 100, 
       correct: 85 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-7:30pm', pickup: '10:00am-10:30pm' },
+      satSun: { delivery: '10:00am-7:30pm', pickup: '10:00am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1528490060256-c345efae4442.jpeg',
     priceRange: 2,
     categories: ['Italian'] 
@@ -1338,7 +1606,8 @@ const data = [
     name: 'Non Ti Pago',
     address: { 
       line1: '30479 Kozey Avenue', 
-      line2: 'Schoenbury, FL 75921' 
+      line2: 'Schoenbury, FL 75921',
+      milesAway: 6.23 
     },
     phone: '397-440-9019',
     ratings: { 
@@ -1346,7 +1615,10 @@ const data = [
       stars: 5, 
       good: 100, timely: 96, correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-7:30pm', pickup: '12:00pm-11:30pm' },
+      satSun: { delivery: '10:00am-9:00pm', pickup: '10:00am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1551443874-e8d6a8e561aa.jpeg',
     priceRange: 5,
     categories: ['Italian'] 
@@ -1356,7 +1628,8 @@ const data = [
     name: 'Mamma In Cuccina',
     address: { 
       line1: '9653 186th St',
-      line2: 'Wittingmouth, ME 26602' 
+      line2: 'Wittingmouth, ME 26602',
+      milesAway: 0.04 
     },
     phone: '925-495-8140',
     ratings: { 
@@ -1366,7 +1639,10 @@ const data = [
       timely: 93, 
       correct: 89 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-9:00pm', pickup: '11:00am-11:30pm' },
+      satSun: { delivery: '11:00am-8:00pm', pickup: '11:00am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1458644267420-66bc8a5f21e4.jpeg',
     priceRange: 4,
     categories: ['Italian'] 
@@ -1376,7 +1652,8 @@ const data = [
     name: 'Pastasciutta',
     address: { 
       line1: '8131 N Rasheed Way', 
-      line2: 'Karleetown, VT 93719' 
+      line2: 'Karleetown, VT 93719',
+      milesAway: 0.55 
     },
     phone: '421-132-0272',
     ratings: { 
@@ -1386,7 +1663,10 @@ const data = [
       timely: 89, 
       correct: 99 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-9:00pm', pickup: '11:00am-11:30pm' },
+      satSun: { delivery: '11:00am-8:00pm', pickup: '11:00am-8:00pm' } 
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/spaghetti-660748_1280.jpg',
     priceRange: 2,
     categories: ['Italian'] 
@@ -1396,7 +1676,8 @@ const data = [
     name: 'Lo Scoglio',
     address: { 
       line1: '8904 Armstrong Dr', 
-      line2: 'Ethylhaven, AZ 83942' 
+      line2: 'Ethylhaven, AZ 83942',
+      milesAway: 9.2 
     },
     phone: '155-459-5088',
     ratings: { 
@@ -1406,7 +1687,10 @@ const data = [
       timely: 82, 
       correct: 95 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-9:00pm', pickup: '11:30am-10:30pm' },
+      satSun: { delivery: '12:00pm-7:30pm', pickup: '12:00pm-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1528137871618-79d2761e3fd5.jpeg',
     priceRange: 2,
     categories: ['Italian'] 
@@ -1416,7 +1700,8 @@ const data = [
     name: 'Valentino\'s',
     address: { 
       line1: '695 Vickie Pkwy',
-      line2: 'Eastbrook, DE 23452' 
+      line2: 'Eastbrook, DE 23452',
+      milesAway: 1.92 
     },
     phone: '853-571-4207',
     ratings: { 
@@ -1426,7 +1711,10 @@ const data = [
       timely: 80, 
       correct: 80 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:30pm', pickup: '10:30am-10:00pm' },
+      satSun: { delivery: '11:00am-9:00pm', pickup: '11:00am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/photo-1539586345401-51d5bfba7ac0.jpeg',
     priceRange: 3,
     categories: ['Italian'] 
@@ -1436,7 +1724,8 @@ const data = [
     name: 'House of Bruschetta',
     address: { 
       line1: '026 Raynor Dr', 
-      line2: 'Julieton, GA 29384' 
+      line2: 'Julieton, GA 29384',
+      milesAway: 5.2 
     },
     phone: '904-920-4283',
     ratings: { 
@@ -1446,7 +1735,10 @@ const data = [
       timely: 83, 
       correct: 73 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:00pm', pickup: '10:00am-10:00pm' },
+      satSun: { delivery: '10:30am-8:00pm', pickup: '10:30am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/tomato-mozzarella-2367016_1280.jpg',
     priceRange: 4,
     categories: ['Italian'] 
@@ -1456,7 +1748,8 @@ const data = [
     name: 'Eatie Some Ziti',
     address: { 
       line1: '318 Johanna Island', 
-      line2: 'Hettiebury, FL 30406' 
+      line2: 'Hettiebury, FL 30406',
+      milesAway: 9.2 
     },
     phone: '869-873-6052',
     ratings: { 
@@ -1466,7 +1759,10 @@ const data = [
       timely: 93, 
       correct: 80 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-8:30pm', pickup: '12:00pm-11:00pm' },
+      satSun: { delivery: '10:00am-6:30pm', pickup: '10:00am-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pasta-329522_1280.jpg',
     priceRange: 2,
     categories: ['Italian'] 
@@ -1476,7 +1772,8 @@ const data = [
     name: 'Little Roma',
     address: { 
       line1: '507 Rolfson Way', 
-      line2: 'Reinhold, WV 22904' 
+      line2: 'Reinhold, WV 22904',
+      milesAway: 1.56 
     },
     phone: '295-642-6934',
     ratings: { 
@@ -1486,7 +1783,10 @@ const data = [
       timely: 77, 
       correct: 90 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-9:00pm', pickup: '10:30am-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pizza-1209748_1280.jpg',
     priceRange: 2,
     categories: ['Italian'] 
@@ -1496,7 +1796,8 @@ const data = [
     name: 'Bella Bella Mozzarella',
     address: { 
       line1: '30 Jairo Circle', 
-      line2: 'Ryanberg, SD 14078' 
+      line2: 'Ryanberg, SD 14078',
+      milesAway: 4.42 
     },
     phone: '655-249-6145',
     ratings: { 
@@ -1506,7 +1807,10 @@ const data = [
       timely: 99, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:00pm', pickup: '10:30am-10:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/salad-2487775_1280.jpg',
     priceRange: 4,
     categories: ['Italian'] 
@@ -1516,7 +1820,8 @@ const data = [
     name: 'The Grapevine',
     address: { 
       line1: '674 Wyatt Causeway',
-      line2: 'Nolachester, WI 18538' 
+      line2: 'Nolachester, WI 18538',
+      milesAway: 6.2 
     },
     phone: '958-638-9610',
     ratings: { 
@@ -1526,7 +1831,10 @@ const data = [
       timely: 88, 
       correct: 83 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-7:30pm', pickup: '9:00am-10:30pm' },
+      satSun: { delivery: '12:00pm-9:00pm', pickup: '12:00pm-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/tortellini-3578016_1280.jpg',
     priceRange: 2,
     categories: ['Italian'] 
@@ -1536,7 +1844,8 @@ const data = [
     name: 'Silo & Olive',
     address: { 
       line1: '7873 Neoma Way', 
-      line2: 'Kristo, ID 15412' 
+      line2: 'Kristo, ID 15412',
+      milesAway: 0.93 
     },
     phone: '666-794-5716',
     ratings: { 
@@ -1546,7 +1855,10 @@ const data = [
       timely: 98, 
       correct: 93 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-9:00pm', pickup: '12:00pm-10:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/salami-3296478_1280.jpg',
     priceRange: 3,
     categories: ['Italian'] 
@@ -1556,7 +1868,8 @@ const data = [
     name: 'Bella Donna',
     address: { 
       line1: '3473 8th St', 
-      line2: 'Lake Vicenta, WA 32382' 
+      line2: 'Lake Vicenta, WA 32382',
+      milesAway: 0.02 
     },
     phone: '754-278-1467',
     ratings: { 
@@ -1566,7 +1879,10 @@ const data = [
       timely: 74, 
       correct: 73 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:30pm', pickup: '11:00am-11:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/spaghetti-3547078_1280.jpg',
     priceRange: 5,
     categories: ['Italian'] 
@@ -1576,7 +1892,8 @@ const data = [
     name: 'Jay\'s Pizza',
     address: { 
       line1: '861 9th Ave', 
-      line2: 'Shawnaberg, NY 47143' 
+      line2: 'Shawnaberg, NY 47143',
+      milesAway: 1.5 
     },
     phone: '951-686-2642',
     ratings: { 
@@ -1586,7 +1903,10 @@ const data = [
       timely: 98, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-8:30pm', pickup: '11:30am-11:00pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Italian/pizza-1442946_1280.jpg',
     priceRange: 2,
     categories: ['Italian'] 
@@ -1596,7 +1916,8 @@ const data = [
     name: 'Whenaburger',
     address: { 
       line1: '3647 Floyd Lane',
-      line2: 'South Lurline, MI 12390' 
+      line2: 'South Lurline, MI 12390',
+      milesAway: 1.75 
     },
     phone: '498-995-7815',
     ratings: { 
@@ -1606,7 +1927,10 @@ const data = [
       timely: 89, 
       correct: 85 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-6:00pm', pickup: '11:00am-11:00pm' },
+      satSun: { delivery: '12:00pm-6:00pm', pickup: '12:00pm-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-74748_1280.jpg',
     priceRange: 1,
     categories: ['Burgers'] 
@@ -1616,7 +1940,8 @@ const data = [
     name: 'Gastro Niche',
     address: { 
       line1: '687 201st St', 
-      line2: 'Dorothyburgh, RI 26767' 
+      line2: 'Dorothyburgh, RI 26767',
+      milesAway: 4.2 
     },
     phone: '963-500-6971',
     ratings: { 
@@ -1626,7 +1951,10 @@ const data = [
       timely: 96, 
       correct: 100 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-6:30pm', pickup: '12:00pm-10:30pm' },
+      satSun: { delivery: '12:00pm-8:00pm', pickup: '12:00pm-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-951896_1280.jpg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1636,7 +1964,8 @@ const data = [
     name: 'Knife and Bun',
     address: { 
       line1: '2923 Sunset Ave', 
-      line2: 'Port Dena, KS 41204' 
+      line2: 'Port Dena, KS 41204',
+      milesAway: 0.66 
     },
     phone: '353-983-1691',
     ratings: { 
@@ -1646,7 +1975,10 @@ const data = [
       timely: 96, 
       correct: 96 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '11:00am-10:00pm' },
+      satSun: { delivery: '10:00am-8:00pm', pickup: '10:00am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1534790566855-4cb788d389ec.jpeg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1656,7 +1988,8 @@ const data = [
     name: 'Four Guys',
     address: { 
       line1: '21201 Carmella Lane', 
-      line2: 'Port Jalyn, UT 35760' 
+      line2: 'Port Jalyn, UT 35760',
+      milesAway: 0.07 
     },
     phone: '940-875-0702',
     ratings: { 
@@ -1666,7 +1999,10 @@ const data = [
       timely: 87, 
       correct: 94 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-7:30pm', pickup: '10:00am-11:00pm' },
+      satSun: { delivery: '11:30am-6:00pm', pickup: '11:30am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-2762371_1280.jpg',
     priceRange: 2,
     categories: ['Burgers'] 
@@ -1676,7 +2012,8 @@ const data = [
     name: 'Cheddar Block',
     address: { 
       line1: '558 19th Ave',
-      line2: 'Maudville, DE 36926' 
+      line2: 'Maudville, DE 36926',
+      milesAway: 1.44 
     },
     phone: '165-742-6165',
     ratings: { 
@@ -1686,7 +2023,10 @@ const data = [
       timely: 79, 
       correct: 90 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-8:30pm', pickup: '10:00am-10:00pm' },
+      satSun: { delivery: '10:00am-9:00pm', pickup: '10:00am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-500054_1280.jpg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1696,7 +2036,8 @@ const data = [
     name: 'Out & In',
     address: { 
       line1: '60627 N Israel Ave',
-      line2: 'Port Abbigail, MN 12783' 
+      line2: 'Port Abbigail, MN 12783',
+      milesAway: 2.5 
     },
     phone: '682-827-9419',
     ratings: { 
@@ -1706,7 +2047,10 @@ const data = [
       timely: 95, 
       correct: 87 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:00pm', pickup: '10:00am-11:30pm' },
+      satSun: { delivery: '11:30am-8:00pm', pickup: '11:30am-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-3442227_1280.jpg',
     priceRange: 1,
     categories: ['Burgers'] 
@@ -1716,7 +2060,8 @@ const data = [
     name: 'Span Check',
     address: { 
       line1: '4030 McLaughlin Dr',
-      line2: 'Kassulkeview, SC 38068' 
+      line2: 'Kassulkeview, SC 38068',
+      milesAway: 3.44 
     },
     phone: '894-544-4038',
     ratings: { 
@@ -1726,7 +2071,10 @@ const data = [
       timely: 81, 
       correct: 92 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:00pm', pickup: '10:00am-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' } 
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-3962997_1280.jpg',
     priceRange: 2,
     categories: ['Burgers'] 
@@ -1736,7 +2084,8 @@ const data = [
     name: 'Stout',
     address: { 
       line1: '853 Elwin Pkwy', 
-      line2: 'Hesselport, ME 44271' 
+      line2: 'Hesselport, ME 44271',
+      milesAway: 1.4 
     },
     phone: '459-802-5578',
     ratings: { 
@@ -1746,7 +2095,10 @@ const data = [
       timely: 74, 
       correct: 86 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-6:00pm', pickup: '11:00am-10:00pm' },
+      satSun: { delivery: '10:30am-6:30pm', pickup: '10:30am-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1512152272829-e3139592d56f.jpeg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1756,7 +2108,8 @@ const data = [
     name: 'Shakes on the Shore',
     address: { 
       line1: '7728 Erich St', 
-      line2: 'Denview, TX 82497' 
+      line2: 'Denview, TX 82497',
+      milesAway: 0.6 
     },
     phone: '902-613-3923',
     ratings: { 
@@ -1766,7 +2119,10 @@ const data = [
       timely: 99,
       correct: 93 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-8:00pm', pickup: '12:00pm-10:30pm' },
+      satSun: { delivery: '12:00pm-7:30pm', pickup: '12:00pm-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-2034433_1280.jpg',
     priceRange: 2,
     categories: ['Burgers'] 
@@ -1776,7 +2132,8 @@ const data = [
     name: 'Mother\'s Office',
     address: { 
       line1: '5826 14th Ave', 
-      line2: 'Lake Golda, AR 11849' 
+      line2: 'Lake Golda, AR 11849',
+      milesAway: 1.55 
     },
     phone: '767-592-4725',
     ratings: { 
@@ -1786,7 +2143,10 @@ const data = [
       timely: 77, 
       correct: 86 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-9:00pm', pickup: '11:30am-11:30pm' },
+      satSun: { delivery: 'Closed', pickup: 'Closed' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-4145977_1280.jpg',
     priceRange: 5,
     categories: ['Burgers'] 
@@ -1796,7 +2156,8 @@ const data = [
     name: 'Brews, Brats and Burgs',
     address: { 
       line1: '197 Conn Pkwy', 
-      line2: 'Montanaview, MA 21454' 
+      line2: 'Montanaview, MA 21454',
+      milesAway: 5.22 
     },
     phone: '873-287-5571',
     ratings: {
@@ -1806,7 +2167,10 @@ const data = [
       timely: 94, 
       correct: 88 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-8:00pm', pickup: '12:00pm-11:00pm' },
+      satSun: { delivery: '12:00pm-8:00pm', pickup: '12:00pm-8:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1550984754-8d1b067b0239.jpeg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1816,7 +2180,8 @@ const data = [
     name: 'Jack in the Circle',
     address: { 
       line1: '565 Brent Lane',
-      line2: 'Lakeland, VT 33281' 
+      line2: 'Lakeland, VT 33281',
+      milesAway: 0.51 
     },
     phone: '982-384-3464',
     ratings: { 
@@ -1826,7 +2191,10 @@ const data = [
       timely: 82, 
       correct: 84 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:30pm', pickup: '11:00am-11:00pm' },
+      satSun: { delivery: '12:00pm-8:30pm', pickup: '12:00pm-8:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/snack-2635035_1280.jpg',
     priceRange: 1,
     categories: ['Burgers'] 
@@ -1836,7 +2204,8 @@ const data = [
     name: 'Mahogany',
     address: { 
       line1: '305 Cassandre Dr',
-      line2: 'Casey, TN 08933' 
+      line2: 'Casey, TN 08933',
+      milesAway: 4.9 
     },
     phone: '391-892-2526',
     ratings: {
@@ -1846,7 +2215,10 @@ const data = [
       timely: 80, 
       correct: 75 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:00am-8:00pm', pickup: '9:00am-11:30pm' },
+      satSun: { delivery: '11:30am-9:00pm', pickup: '11:30am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1536510233921-8e5043fce771.jpeg',
     priceRange: 5,
     categories: ['Burgers'] 
@@ -1856,7 +2228,8 @@ const data = [
     name: 'Big Mike\'s',
     address: { 
       line1: '15165 Amelie St',
-      line2: 'Krisfort, KS 01588' 
+      line2: 'Krisfort, KS 01588',
+      milesAway: 1.56
     },
     phone: '354-273-6266',
     ratings: { 
@@ -1866,7 +2239,10 @@ const data = [
       timely: 94, 
       correct: 90 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:00pm', pickup: '9:00am-10:00pm' },
+      satSun: { delivery: '11:30am-6:00pm', pickup: '11:30am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/hamburger-801942_1280.jpg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1876,7 +2252,8 @@ const data = [
     name: 'Ale House',
     address: { 
       line1: '12987 190th Ct E',
-      line2: 'Maverick, IN 65902' 
+      line2: 'Maverick, IN 65902',
+      milesAway: 0.55 
     },
     phone: '786-979-2973',
     ratings: { 
@@ -1886,7 +2263,10 @@ const data = [
       timely: 96, 
       correct: 80 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-6:30pm', pickup: '11:30am-10:00pm' },
+      satSun: { delivery: '11:00am-6:30pm', pickup: '11:00am-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1551615593-ef5fe247e8f7.jpeg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1896,7 +2276,8 @@ const data = [
     name: 'Craft Table',
     address: { 
       line1: '6782 Jannie Square', 
-      line2: 'Wolfburgh, ID 04508' 
+      line2: 'Wolfburgh, ID 04508',
+      milesAway: 2.4 
     },
     phone: '332-222-0275',
     ratings: { 
@@ -1906,7 +2287,10 @@ const data = [
       timely: 96, 
       correct: 96 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:00am-8:30pm', pickup: '10:00am-11:00pm' },
+      satSun: { delivery: '11:00am-9:00pm', pickup: '11:00am-9:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/hamburger-1281855_1280.jpg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1916,7 +2300,8 @@ const data = [
     name: 'Sesame',
     address: { 
       line1: '1865 W Farrell Ave', 
-      line2: 'Jesseborough, MD 13066' 
+      line2: 'Jesseborough, MD 13066',
+      milesAway: 6.7 
     },
     phone: '881-186-7669',
     ratings: { 
@@ -1926,7 +2311,10 @@ const data = [
       timely: 85, 
       correct: 82 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:30pm', pickup: '11:00am-10:00pm' },
+      satSun: { delivery: '10:00am-6:30pm', pickup: '10:00am-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/hamburger-1414423_1280.jpg',
     priceRange: 4,
     categories: ['Burgers'] 
@@ -1936,7 +2324,8 @@ const data = [
     name: 'Patty House',
     address: { 
       line1: '399 Zulauf St', 
-      line2: 'Carlhaven, RI 62123' 
+      line2: 'Carlhaven, RI 62123',
+      milesAway: 0.33 
     },
     phone: '747-236-8892',
     ratings: { 
@@ -1946,7 +2335,10 @@ const data = [
       timely: 91, 
       correct: 87 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-6:00pm', pickup: '9:00am-10:00pm' },
+      satSun: { delivery: '11:30am-6:00pm', pickup: '11:30am-6:00pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/photo-1550984754-8d1b067b0239.jpeg',
     priceRange: 1,
     categories: ['Burgers'] 
@@ -1956,7 +2348,8 @@ const data = [
     name: 'Buffalo & Brew',
     address: { 
       line1: '7672 Jenkins Ave E',
-      line2: 'Labadie, IA 73489' 
+      line2: 'Labadie, IA 73489',
+      milesAway: 0.09 
     },
     phone: '735-931-4392',
     ratings: { 
@@ -1966,7 +2359,10 @@ const data = [
       timely: 97, 
       correct: 98 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '10:30am-7:30pm', pickup: '11:00am-11:00pm' },
+      satSun: { delivery: '10:30am-6:30pm', pickup: '10:30am-6:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-3199088_1280.jpg',
     priceRange: 2,
     categories: ['Burgers'] 
@@ -1976,7 +2372,8 @@ const data = [
     name: 'Geoff\'s Burgers',
     address: { 
       line1: '2936 N Douglas St',
-      line2: 'East Louiefurt, SC 29233' 
+      line2: 'East Louiefurt, SC 29233',
+      milesAway: 3.32 
     },
     phone: '942-099-8805',
     ratings: { 
@@ -1986,10 +2383,12 @@ const data = [
       timely: 72, 
       correct: 82 
     },
-    schedule: '',
+    schedule: {
+      monFri: { delivery: '11:30am-8:00pm', pickup: '10:30am-10:30pm' },
+      satSun: { delivery: '11:00am-7:30pm', pickup: '11:00am-7:30pm' }
+    },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Burgers/burger-3946012_1280.jpg',
     priceRange: 2,
     categories: ['Burgers'] 
   }
 ];
-
