@@ -1,3 +1,6 @@
+const Restaurant = require('./models.js');
+const db = require('./index.js');
+
 const data = [
   { 
     id: 1,
@@ -7,7 +10,7 @@ const data = [
       line2: 'North Rose, AR 67243',
       milesAway: 9.3
     },
-    phone: '631-998-3176',
+    phone: '(631) 998-3176',
     ratings: { 
       number: 413, 
       stars: 4.5, 
@@ -31,7 +34,7 @@ const data = [
       line2: 'Wileyburgh, LA 53498',
       milesAway: 1.56
     },
-    phone: '856-264-0286',
+    phone: '(856) 264-0286',
     ratings: { 
       number: 466, 
       stars: 5, 
@@ -55,7 +58,7 @@ const data = [
       line2: 'West Una, HI 85904',
       milesAway: 2.02
     },
-    phone: '808-720-0531',
+    phone: '(808) 720-0531',
     ratings: { 
       number: 425, 
       stars: 3.5, 
@@ -65,7 +68,7 @@ const data = [
     },
     schedule: {
       monFri: { delivery: '11:00am-7:30pm', pickup: '9:00am-11:00pm' },
-      satSun: { delivery: '10:30am-7:30pm', pickup: '' }
+      satSun: { delivery: '10:30am-7:30pm', pickup: '10:30am-7:30pm' }
     },
     image: 'https://s3-us-west-1.amazonaws.com/kayjayhogan/Korean/photo-1503392968123-ceabe9e5e630.jpeg',
     priceRange: 3,
@@ -79,7 +82,7 @@ const data = [
       line2: 'Vincent, NV 98700',
       milesAway: 0.56 
     },
-    phone: '665-050-4105',
+    phone: '(665) 950-4105',
     ratings: { 
       number: 188, 
       stars: 2.5, 
@@ -103,7 +106,7 @@ const data = [
       line2: 'Haleyland, ID 12010',
       milesAway: 0.24 
     },
-    phone: '670-266-9381',
+    phone: '(670) 266-9381',
     ratings: { 
       number: 286, 
       stars: 3.5, 
@@ -127,7 +130,7 @@ const data = [
       line2: 'Hesselside, IA 13549',
       milesAway: 7.62 
     },
-    phone: '892-887-2183',
+    phone: '(892) 887-2183',
     ratings: { 
       number: 221, 
       stars: 3, 
@@ -151,7 +154,7 @@ const data = [
       line2: 'South Jaida, MO 02228',
       milesAway: 0.55 
     },
-    phone: '545-557-1220',
+    phone: '(545) 557-1220',
     ratings: { 
       number: 29, 
       stars: 3.5,
@@ -175,7 +178,7 @@ const data = [
       line2: 'Tristian, KY 07334',
       milesAway: 1.33
     },
-    phone: '585-495-4610',
+    phone: '(585) 495-4610',
     ratings: { 
       number: 174, 
       stars: 3.5, 
@@ -199,7 +202,7 @@ const data = [
       line2: 'Gulgowski, MA 69978',
       milesAway: 1.55 
     },
-    phone: '778-194-6586',
+    phone: '(778) 494-6586',
     ratings: { 
       number: 198, 
       stars: 5, 
@@ -223,7 +226,7 @@ const data = [
       line2: 'New Jena, NY 80579',
       milesAway: 0.54 
     },
-    phone: '352-705-6381',
+    phone: '(352) 705-6381',
     ratings: { 
       number: 467, 
       stars: 2.5, 
@@ -247,7 +250,7 @@ const data = [
       line2: 'Concepcion, IL 72333',
       milesAway: 2.66 
     },
-    phone: '445-777-4737',
+    phone: '(445) 707-4737',
     ratings: { 
       number: 166, 
       stars: 5, 
@@ -271,7 +274,7 @@ const data = [
       line2: 'Rochester, OK 91873',
       milesAway: 5.5 
     },
-    phone: '463-420-0741',
+    phone: '(463) 420-0741',
     ratings: { 
       number: 192, 
       stars: 3, 
@@ -295,7 +298,7 @@ const data = [
       line2: 'Koeppton, HI 08985',
       milesAway: 2.1 
     },
-    phone: '245-210-8909',
+    phone: '(245) 210-8909',
     ratings: { 
       number: 389, 
       stars: 4, 
@@ -319,7 +322,7 @@ const data = [
       line2: 'Robertview, KS 09584',
       milesAway: 0.3
     },
-    phone: '974-274-3394',
+    phone: '(974) 274-3394',
     ratings: { 
       number: 140, 
       stars: 3, 
@@ -343,7 +346,7 @@ const data = [
       line2: 'Botsfordburgh, MS 22811',
       milesAway: 1.4 
     },
-    phone: '958-185-4640',
+    phone: '(958) 285-4640',
     ratings: { 
       number: 108, 
       stars: 3.5, 
@@ -367,7 +370,7 @@ const data = [
       line2: 'Lake Elliott, WI 37525',
       milesAway: 0.88 
     },
-    phone: '363-640-8679',
+    phone: '(363) 640-8679',
     ratings: { 
       number: 181, 
       stars: 3, 
@@ -391,7 +394,7 @@ const data = [
       line2: 'Port Lizahaven, MI 15425',
       milesAway: 1.55 
     },
-    phone: '593-221-2065',
+    phone: '(593) 221-2065',
     ratings: { 
       number: 342, 
       stars: 3, 
@@ -415,7 +418,7 @@ const data = [
       line2: 'South Colby, CO 73586',
       milesAway: 2.1 
     },
-    phone: '870-944-8562',
+    phone: '(870) 944-8562',
     ratings: { 
       number: 469, 
       stars: 4, 
@@ -439,9 +442,14 @@ const data = [
       line2: 'North Rose, AR 67243',
       milesAway: 0.6 
     },
-    phone: '631-998-3176',
+    phone: '(631) 998-3176',
     ratings: { 
-      number: 413, stars: 4.5, good: 80, timely: 78, correct: 71 },
+      number: 413, 
+      stars: 4.5, 
+      good: 80, 
+      timely: 78, 
+      correct: 71 
+    },
     schedule: {
       monFri: { delivery: '11:30am-7:30pm', pickup: '12:00pm-10:30pm' },
       satSun: { delivery: '11:30am-8:00pm', pickup: '11:30am-8:00pm' }
@@ -458,7 +466,7 @@ const data = [
       line2: 'Wileyburgh, LA 53498',
       milesAway: 3.4 
     },
-    phone: '856-264-0286',
+    phone: '(856) 264-0286',
     ratings: { 
       number: 466, 
       stars: 5, 
@@ -482,7 +490,7 @@ const data = [
       line2: 'West Una, HI 85904',
       milesAway: 4.11 
     },
-    phone: '382-720-0531',
+    phone: '(382) 720-0531',
     ratings: { 
       number: 425, 
       stars: 3.5, 
@@ -506,7 +514,7 @@ const data = [
       line2: 'Vincent, NV 98700',
       milesAway: 6.6 
     },
-    phone: '665-050-4105',
+    phone: '(665) 350-4105',
     ratings: { 
       number: 188, 
       stars: 2.5, 
@@ -530,7 +538,7 @@ const data = [
       line2: 'Haleyland, ID 00010',
       milesAway: 0.9 
     },
-    phone: '670-266-9381',
+    phone: '(670) 266-9381',
     ratings: { 
       number: 286, 
       stars: 4.5, 
@@ -554,7 +562,7 @@ const data = [
       line2: 'Hesselside, IA 13549',
       milesAway: 0.24 
     },
-    phone: '892-887-2183',
+    phone: '(892) 887-2183',
     ratings: { 
       number: 221, 
       stars: 3, 
@@ -578,7 +586,7 @@ const data = [
       line2: 'South Jaida, MO 02228',
       milesAway: 10.1 
     },
-    phone: '545-557-1220',
+    phone: '(545) 857-1220',
     ratings: { 
       number: 29, 
       stars: 3.5, 
@@ -602,7 +610,7 @@ const data = [
       line2: 'Tristian, KY 07334',
       milesAway: 8.1 
     },
-    phone: '585-495-4610',
+    phone: '(585) 495-4610',
     ratings: { 
       number: 174, 
       stars: 2.5, 
@@ -626,7 +634,7 @@ const data = [
       line2: 'Gulgowskihaven, MA 69978',
       milesAway: 0.19 
     },
-    phone: '778-194-6586',
+    phone: '(778) 594-6586',
     ratings: { 
       number: 198, 
       stars: 5, 
@@ -650,7 +658,7 @@ const data = [
       line2: 'New Jena, NY 80579',
       milesAway: 4.4 
     },
-    phone: '352-705-6381',
+    phone: '(352) 705-6381',
     ratings: { 
       number: 467, 
       stars: 3.5, 
@@ -674,7 +682,7 @@ const data = [
       line2: 'Concepcion, IL 72333',
       milesAway: 2.45 
     },
-    phone: '945-777-4737',
+    phone: '(945) 677-4737',
     ratings: { 
       number: 166, 
       stars: 5, 
@@ -698,7 +706,7 @@ const data = [
       line2: 'Rodriguez, OK 91873',
       milesAway: 9.22 
     },
-    phone: '063-420-0741',
+    phone: '(663) 420-0741',
     ratings: { 
       number: 192, 
       stars: 3, 
@@ -722,7 +730,7 @@ const data = [
       line2: 'Motunui, HI 08985',
       milesAway: 4.11 
     },
-    phone: '245-210-8909',
+    phone: '(808) 210-8909',
     ratings: { 
       number: 389, 
       stars: 4, 
@@ -746,7 +754,7 @@ const data = [
       line2: 'Robertview, KS 09584',
       milesAway: 0.55 
     },
-    phone: '974-274-3394',
+    phone: '(974) 274-3394',
     ratings: { 
       number: 140, 
       stars: 3, 
@@ -770,7 +778,7 @@ const data = [
       line2: 'Botsfordburgh, MS 22811',
       milesAway: 0.13 
     },
-    phone: '958-185-4640',
+    phone: '(958) 385-4640',
     ratings: { 
       number: 108, 
       stars: 3.5, 
@@ -794,7 +802,7 @@ const data = [
       line2: 'Lake Elliott, WI 37525',
       milesAway: 3.1 
     },
-    phone: '363-640-8679',
+    phone: '(363) 640-8679',
     ratings: { 
       number: 181, 
       stars: 3, 
@@ -818,7 +826,7 @@ const data = [
       line2: 'Port Lizahaven, MI 15425',
       milesAway: 7.6 
     },
-    phone: '593-221-2065',
+    phone: '(593) 221-2065',
     ratings: { 
       number: 342, 
       stars: 3, 
@@ -842,7 +850,7 @@ const data = [
       line2: 'South Colby, CO 73586',
       milesAway: 2.66 
     },
-    phone: '870-944-8562',
+    phone: '(870) 944-8562',
     ratings: { 
       number: 469, 
       stars: 4, 
@@ -865,7 +873,7 @@ const data = [
       line2: 'West Madisen, MN 01138',
       milesAway: 0.54 
     },
-    phone: '895-678-3232',
+    phone: '(895) 678-3232',
     ratings: { 
       number: 185, 
       stars: 3, 
@@ -889,7 +897,7 @@ const data = [
       line2: 'North Rose, AR 67243',
       milesAway: 1.1 
     },
-    phone: '631-998-3176',
+    phone: '(631) 998-3176',
     ratings: { 
       number: 413, 
       stars: 4.5, 
@@ -913,7 +921,7 @@ const data = [
       line2: 'Wileyburgh, LA 53498',
       milesAway: 1.56
     },
-    phone: '856-264-0286',
+    phone: '(856) 264-0286',
     ratings: { 
       number: 466, 
       stars: 5, 
@@ -937,7 +945,7 @@ const data = [
       line2: 'West Una, HI 85904',
       milesAway: 5.23 
     },
-    phone: '382-720-0531',
+    phone: '(808) 720-0531',
     ratings: { 
       number: 425, 
       stars: 3.5, 
@@ -961,7 +969,7 @@ const data = [
       line2: 'Carlton, NV 98700',
       milesAway: 0.23
     },
-    phone: '665-050-4105',
+    phone: '(665) 350-4105',
     ratings: { 
       number: 188, 
       stars: 2.5, 
@@ -985,7 +993,7 @@ const data = [
       line2: 'Haleyland, ID 00010',
       milesAway: 5.32 
     },
-    phone: '670-266-9381',
+    phone: '(670) 266-9381',
     ratings: { 
       number: 286, 
       stars: 4.5, 
@@ -1009,7 +1017,7 @@ const data = [
       line2: 'Hesselside, IA 13549',
       milesAway: 0.62 
     },
-    phone: '892-887-2183',
+    phone: '(892) 887-2183',
     ratings: { 
       number: 221, 
       stars: 3, 
@@ -1033,7 +1041,7 @@ const data = [
       line2: 'South Jaida, MO 02228',
       milesAway: 7.23 
     },
-    phone: '545-557-1220',
+    phone: '(545) 557-1220',
     ratings: { 
       number: 29, 
       stars: 3.5, 
@@ -1057,7 +1065,7 @@ const data = [
       line2: 'Tristianborough, KY 07334',
       milesAway: 4.23 
     },
-    phone: '585-495-4610',
+    phone: '(585) 495-4610',
     ratings: { 
       number: 174, 
       stars: 2.5, 
@@ -1081,7 +1089,7 @@ const data = [
       line2: 'Gulgowski, MA 69978',
       milesAway: 1.65 
     },
-    phone: '778-194-6586',
+    phone: '(778) 194-6586',
     ratings: { 
       number: 198, 
       stars: 5, 
@@ -1105,7 +1113,7 @@ const data = [
       line2: 'New Jena, NY 80579',
       milesAway: 0.46 
     },
-    phone: '352-705-6381',
+    phone: '(352) 705-6381',
     ratings: { 
       number: 467, 
       stars: 4, 
@@ -1129,7 +1137,7 @@ const data = [
       line2: 'Charles, IL 72333',
       milesAway: 1.45 
     },
-    phone: '545-777-4737',
+    phone: '(545) 407-4737',
     ratings: { 
       number: 166, 
       stars: 3.5, 
@@ -1153,7 +1161,7 @@ const data = [
       line2: 'Chester, OK 91873',
       milesAway: 8.23 
     },
-    phone: '663-420-0741',
+    phone: '(663) 420-0741',
     ratings: { 
       number: 192, 
       stars: 3, 
@@ -1177,7 +1185,7 @@ const data = [
       line2: 'Kameha, HI 08985',
       milesAway: 2.32 
     },
-    phone: '245-210-8909',
+    phone: '(245) 210-8909',
     ratings: { 
       number: 389, 
       stars: 4, 
@@ -1201,7 +1209,7 @@ const data = [
       line2: 'Robertview, KS 09584',
       milesAway: 0.63 
     },
-    phone: '974-274-3394',
+    phone: '(974) 274-3394',
     ratings: { 
       number: 140, 
       stars: 3, 
@@ -1225,7 +1233,7 @@ const data = [
       line2: 'Botsford, MS 22811',
       milesAway: 0.1 
     },
-    phone: '958-185-4640',
+    phone: '(958) 785-4640',
     ratings: { 
       number: 108, 
       stars: 3.5, 
@@ -1249,7 +1257,7 @@ const data = [
       line2: 'Lake Ellington, WI 37525',
       milesAway: 0.03 
     },
-    phone: '363-640-8679',
+    phone: '(363) 640-8679',
     ratings: { 
       number: 181, 
       stars: 4, 
@@ -1273,7 +1281,7 @@ const data = [
       line2: 'Port Lizahaven, MI 15425',
       milesAway: 9.22 
     },
-    phone: '593-221-2065',
+    phone: '(593) 221-2065',
     ratings: { 
       number: 342, 
       stars: 3, 
@@ -1297,7 +1305,7 @@ const data = [
       line2: 'South Colby, CO 73586',
       milesAway: 0.63 
     },
-    phone: '870-944-8562',
+    phone: '(870) 944-8562',
     ratings: { 
       number: 469, 
       stars: 4, 
@@ -1321,7 +1329,7 @@ const data = [
       line2: 'West Madisen, MN 01138',
       milesAway: 0.02 
     },
-    phone: '895-678-3232',
+    phone: '(895) 678-3232',
     ratings: { 
       number: 185, 
       stars: 3, 
@@ -1345,7 +1353,7 @@ const data = [
       line2: 'Ottilieville, SD 51198',
       milesAway: 5.24 
     },
-    phone: '858-072-2242',
+    phone: '(858) 372-2242',
     ratings: { 
       number: 391, 
       stars: 3.5, 
@@ -1369,7 +1377,7 @@ const data = [
       line2: 'West Vergieville, KS 54223',
       milesAway: 2.1 
     },
-    phone: '941-039-3952',
+    phone: '(941) 939-3952',
     ratings: { 
       number: 335, 
       stars: 5, 
@@ -1393,7 +1401,7 @@ const data = [
       line2: 'North Olenside, IA 65770',
       milesAway: 0.45 
     },
-    phone: '372-796-4107',
+    phone: '(372) 796-4107',
     ratings: { 
       number: 184, 
       stars: 4.5, 
@@ -1417,7 +1425,7 @@ const data = [
       line2: 'Crooksfort, DE 82838',
       milesAway: 0.09 
     },
-    phone: '933-222-7859',
+    phone: '(933) 232-7859',
     ratings: { 
       number: 205, 
       stars: 3.5, 
@@ -1441,7 +1449,7 @@ const data = [
       line2: 'New Delphatown, SD 79368',
       milesAway: 3.2 
     },
-    phone: '436-720-7155',
+    phone: '(436) 720-7155',
     ratings: { 
       number: 158, 
       stars: 5, 
@@ -1465,7 +1473,7 @@ const data = [
       line2: 'South Madilyn, DE 24758',
       milesAway: 6.21 
     },
-    phone: '547-637-0778',
+    phone: '(547) 637-0778',
     ratings: { 
       number: 294, 
       stars: 4.5, 
@@ -1489,7 +1497,7 @@ const data = [
       line2: 'Kieranville, ID 06319',
       milesAway: 1.33 
     },
-    phone: '405-853-9132',
+    phone: '(405) 853-9132',
     ratings: { 
       number: 301, 
       stars: 3.5, 
@@ -1513,7 +1521,7 @@ const data = [
       line2: 'Lake Myra, FL 10666',
       milesAway: 0.62 
     },
-    phone: '866-468-6279',
+    phone: '(866) 468-6279',
     ratings: { 
       number: 479, 
       stars: 3, 
@@ -1537,7 +1545,7 @@ const data = [
       line2: 'North Carli, OH 24625',
       milesAway: 0.02 
     },
-    phone: '257-891-3409',
+    phone: '(257) 891-3409',
     ratings: { 
       number: 73, 
       stars: 3.5, 
@@ -1561,7 +1569,7 @@ const data = [
       line2: 'Cronaberg, MT 02260',
       milesAway: 3.11 
     },
-    phone: '964-569-4929',
+    phone: '(964) 569-4929',
     ratings: { 
       number: 31, 
       stars: 3, 
@@ -1585,7 +1593,7 @@ const data = [
       line2: 'New Unachester, NE 50595',
       milesAway: 0.22 
     },
-    phone: '773-366-5764',
+    phone: '(773) 366-5764',
     ratings: { 
       number: 12, 
       stars: 3.5, 
@@ -1609,7 +1617,7 @@ const data = [
       line2: 'Schoenbury, FL 75921',
       milesAway: 6.23 
     },
-    phone: '397-440-9019',
+    phone: '(397) 440-9019',
     ratings: { 
       number: 463, 
       stars: 5, 
@@ -1631,7 +1639,7 @@ const data = [
       line2: 'Wittingmouth, ME 26602',
       milesAway: 0.04 
     },
-    phone: '925-495-8140',
+    phone: '(925) 495-8140',
     ratings: { 
       number: 474, 
       stars: 4, 
@@ -1655,7 +1663,7 @@ const data = [
       line2: 'Karleetown, VT 93719',
       milesAway: 0.55 
     },
-    phone: '421-132-0272',
+    phone: '(421) 832-0272',
     ratings: { 
       number: 221, 
       stars: 4, 
@@ -1679,7 +1687,7 @@ const data = [
       line2: 'Ethylhaven, AZ 83942',
       milesAway: 9.2 
     },
-    phone: '155-459-5088',
+    phone: '(755) 459-5088',
     ratings: { 
       number: 395, 
       stars: 4.5, 
@@ -1703,7 +1711,7 @@ const data = [
       line2: 'Eastbrook, DE 23452',
       milesAway: 1.92 
     },
-    phone: '853-571-4207',
+    phone: '(853) 571-4207',
     ratings: { 
       number: 165, 
       stars: 5, 
@@ -1723,11 +1731,11 @@ const data = [
     id: 73,
     name: 'House of Bruschetta',
     address: { 
-      line1: '026 Raynor Dr', 
+      line1: '26 Raynor Dr', 
       line2: 'Julieton, GA 29384',
       milesAway: 5.2 
     },
-    phone: '904-920-4283',
+    phone: '(904) 920-4283',
     ratings: { 
       number: 311, 
       stars: 3, 
@@ -1751,7 +1759,7 @@ const data = [
       line2: 'Hettiebury, FL 30406',
       milesAway: 9.2 
     },
-    phone: '869-873-6052',
+    phone: '(869) 873-6052',
     ratings: { 
       number: 299, 
       stars: 3, 
@@ -1775,7 +1783,7 @@ const data = [
       line2: 'Reinhold, WV 22904',
       milesAway: 1.56 
     },
-    phone: '295-642-6934',
+    phone: '(295) 642-6934',
     ratings: { 
       number: 163, 
       stars: 4.5, 
@@ -1799,7 +1807,7 @@ const data = [
       line2: 'Ryanberg, SD 14078',
       milesAway: 4.42 
     },
-    phone: '655-249-6145',
+    phone: '(655) 249-6145',
     ratings: { 
       number: 107, 
       stars: 5, 
@@ -1823,7 +1831,7 @@ const data = [
       line2: 'Nolachester, WI 18538',
       milesAway: 6.2 
     },
-    phone: '958-638-9610',
+    phone: '(958) 638-9610',
     ratings: { 
       number: 428, 
       stars: 3.5, 
@@ -1847,7 +1855,7 @@ const data = [
       line2: 'Kristo, ID 15412',
       milesAway: 0.93 
     },
-    phone: '666-794-5716',
+    phone: '(660) 794-5716',
     ratings: { 
       number: 289, 
       stars: 4.5, 
@@ -1871,7 +1879,7 @@ const data = [
       line2: 'Lake Vicenta, WA 32382',
       milesAway: 0.02 
     },
-    phone: '754-278-1467',
+    phone: '(754) 278-1467',
     ratings: { 
       number: 7, 
       stars: 3.5, 
@@ -1895,7 +1903,7 @@ const data = [
       line2: 'Shawnaberg, NY 47143',
       milesAway: 1.5 
     },
-    phone: '951-686-2642',
+    phone: '(951) 686-2642',
     ratings: { 
       number: 61, 
       stars: 5, 
@@ -1919,7 +1927,7 @@ const data = [
       line2: 'South Lurline, MI 12390',
       milesAway: 1.75 
     },
-    phone: '498-995-7815',
+    phone: '(498) 995-7815',
     ratings: { 
       number: 224, 
       stars: 3.5, 
@@ -1943,7 +1951,7 @@ const data = [
       line2: 'Dorothyburgh, RI 26767',
       milesAway: 4.2 
     },
-    phone: '963-500-6971',
+    phone: '(963) 580-6971',
     ratings: { 
       number: 326, 
       stars: 5, 
@@ -1967,7 +1975,7 @@ const data = [
       line2: 'Port Dena, KS 41204',
       milesAway: 0.66 
     },
-    phone: '353-983-1691',
+    phone: '(353) 983-1691',
     ratings: { 
       number: 116, 
       stars: 4, 
@@ -1991,7 +1999,7 @@ const data = [
       line2: 'Port Jalyn, UT 35760',
       milesAway: 0.07 
     },
-    phone: '940-875-0702',
+    phone: '(940) 875-0702',
     ratings: { 
       number: 197, 
       stars: 4, 
@@ -2015,7 +2023,7 @@ const data = [
       line2: 'Maudville, DE 36926',
       milesAway: 1.44 
     },
-    phone: '165-742-6165',
+    phone: '(465) 742-6165',
     ratings: { 
       number: 277, 
       stars: 2.5, 
@@ -2039,7 +2047,7 @@ const data = [
       line2: 'Port Abbigail, MN 12783',
       milesAway: 2.5 
     },
-    phone: '682-827-9419',
+    phone: '(682) 827-9419',
     ratings: { 
       number: 248, 
       stars: 4.5, 
@@ -2063,7 +2071,7 @@ const data = [
       line2: 'Kassulkeview, SC 38068',
       milesAway: 3.44 
     },
-    phone: '894-544-4038',
+    phone: '(894) 544-4038',
     ratings: { 
       number: 377, 
       stars: 3, 
@@ -2087,7 +2095,7 @@ const data = [
       line2: 'Hesselport, ME 44271',
       milesAway: 1.4 
     },
-    phone: '459-802-5578',
+    phone: '(459) 802-5578',
     ratings: { 
       number: 46, 
       stars: 3.5, 
@@ -2111,7 +2119,7 @@ const data = [
       line2: 'Denview, TX 82497',
       milesAway: 0.6 
     },
-    phone: '902-613-3923',
+    phone: '(902) 613-3923',
     ratings: { 
       number: 78, 
       stars: 3.5, 
@@ -2135,7 +2143,7 @@ const data = [
       line2: 'Lake Golda, AR 11849',
       milesAway: 1.55 
     },
-    phone: '767-592-4725',
+    phone: '(767) 592-4725',
     ratings: { 
       number: 31, 
       stars: 3.5, 
@@ -2159,7 +2167,7 @@ const data = [
       line2: 'Montanaview, MA 21454',
       milesAway: 5.22 
     },
-    phone: '873-287-5571',
+    phone: '(873) 287-5571',
     ratings: {
       number: 29, 
       stars: 4, 
@@ -2183,7 +2191,7 @@ const data = [
       line2: 'Lakeland, VT 33281',
       milesAway: 0.51 
     },
-    phone: '982-384-3464',
+    phone: '(982) 384-3464',
     ratings: { 
       number: 15, 
       stars: 4, 
@@ -2207,7 +2215,7 @@ const data = [
       line2: 'Casey, TN 08933',
       milesAway: 4.9 
     },
-    phone: '391-892-2526',
+    phone: '(391) 892-2526',
     ratings: {
       number: 211, 
       stars: 3.5,
@@ -2231,7 +2239,7 @@ const data = [
       line2: 'Krisfort, KS 01588',
       milesAway: 1.56
     },
-    phone: '354-273-6266',
+    phone: '(354) 273-6266',
     ratings: { 
       number: 184, 
       stars: 3.5, 
@@ -2255,7 +2263,7 @@ const data = [
       line2: 'Maverick, IN 65902',
       milesAway: 0.55 
     },
-    phone: '786-979-2973',
+    phone: '(786) 979-2973',
     ratings: { 
       number: 390, 
       stars: 4.5, 
@@ -2279,7 +2287,7 @@ const data = [
       line2: 'Wolfburgh, ID 04508',
       milesAway: 2.4 
     },
-    phone: '332-222-0275',
+    phone: '(332) 202-0275',
     ratings: { 
       number: 484,
       stars: 5, 
@@ -2303,7 +2311,7 @@ const data = [
       line2: 'Jesseborough, MD 13066',
       milesAway: 6.7 
     },
-    phone: '881-186-7669',
+    phone: '(881) 486-7669',
     ratings: { 
       number: 220, 
       stars: 4, 
@@ -2327,7 +2335,7 @@ const data = [
       line2: 'Carlhaven, RI 62123',
       milesAway: 0.33 
     },
-    phone: '747-236-8892',
+    phone: '(747) 236-8892',
     ratings: { 
       number: 136, 
       stars: 3, 
@@ -2351,7 +2359,7 @@ const data = [
       line2: 'Labadie, IA 73489',
       milesAway: 0.09 
     },
-    phone: '735-931-4392',
+    phone: '(735) 931-4392',
     ratings: { 
       number: 151, 
       stars: 5, 
@@ -2375,7 +2383,7 @@ const data = [
       line2: 'East Louiefurt, SC 29233',
       milesAway: 3.32 
     },
-    phone: '942-099-8805',
+    phone: '(942) 949-8805',
     ratings: { 
       number: 24, 
       stars: 3.5, 
@@ -2392,3 +2400,15 @@ const data = [
     categories: [ 'Hamburgers', 'Lunch' ] 
   }
 ];
+
+const insertRestaurants = () => {
+  Restaurant.insertMany(data)
+  .then(() => {
+    console.log('Successfully seeded database!');
+  })
+  .catch(err => {
+    console.log('Could not seed :(', err);
+  });
+};
+
+insertRestaurants();
