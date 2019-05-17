@@ -4,6 +4,7 @@
   left: 0;
   z-index: 1030;
   display: flex;
+  flex-direction: row;
   width: 100%;
   height: 60px;
   transform: translateZ(0);
@@ -28,19 +29,63 @@
   cursor: pointer;
 }
 
+.nav-down-arrow {
+  color: #0070eb;
+  margin-left: 3px;
+  margin-top: 5px;
+  font-size: 1.1em;
+  
+}
+
+.nav-down-arrow:hover {
+  cursor: pointer;
+}
+
 .nav-search {
   width: 70%;
   height: 60px;
   background-color: white;
 }
 
-.nav-search-address {
-  margin-top: 8px;
-  margin-left: 8px;
-  width: 200px;
+.nav-search-address-container {
+  margin: 8px;
+  min-width: 150px;
   height: 43px;
   float: left;
   background-color: white;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-search-address {
+  padding: 14px;
+  height: 13px;
+  margin: 2px 0;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.nav-search-address:hover {
+  background-color: #f6f6f6;
+}
+
+.nav-loc-icon {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  float: left;
+  text-align: left;
+}
+
+.nav-loc-icon:hover {
+  cursor: pointer;
+}
+
+.nav-search-address-text {
+  letter-spacing: 0.03em;
+}
+
+.nav-search-address-text:hover {
+  cursor: pointer;
 }
 
 .nav-search-input-container {
@@ -64,13 +109,13 @@
   justify-content: center;
 }
 
-.test {
+.nav-search-flex {
   position: relative;
   width: 100%;
   display: flex;
 }
 
-.search-icon {
+.nav-search-icon {
   width: 44px;
   height: 36px;
   position: absolute;
@@ -79,7 +124,7 @@
   transition: color 0.2s ease;
 }
 
-.close-icon {
+.nav-close-icon {
   width: 44px;
   height: 36px;
   position: absolute;
@@ -90,6 +135,52 @@
   transition: color 0.2s ease;
 }
 
-.close-icon svg:hover {
+.nav-close-icon svg:hover {
   cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.nav-sign-in {
+  margin-left: auto;
+  width: 88px;
+  margin-right: 0;
+}
+
+.nav-sign-in-btn {
+  color: #0070eb;
+  border: 2px solid #0070eb;
+  border-radius: 4px;
+  margin-top: 14px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1.595;
+  padding: 6px 16px 5px;
+}
+
+.nav-sign-in-btn:hover {
+  cursor: pointer;
+  border-color: #0058b8;
+  color: #0058b8;
+}
+
+.nav-bag {
+  width: 53px;
+  margin-right: 10px;
+  padding-top: 18px;
+  text-align: center;
+}
+
+.nav-bag-icon {
+  font-size: 22px;
+  width: 22px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-bag-icon:hover {
+  cursor: pointer;
+  color: black;
 }
