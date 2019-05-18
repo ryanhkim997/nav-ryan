@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 999;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -183,4 +183,145 @@
 .nav-bag-icon:hover {
   cursor: pointer;
   color: black;
+}
+
+.nav-app {
+  overflow: hidden;
+  height: 100%
+}
+
+.sign-in-modal-container {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 175ms flyUp ease forwards;
+}
+
+.signin-modal-close {
+  font-size: 1.8em;
+  color: #0070eb;
+}
+
+.signin-modal-close:hover {
+  cursor: pointer;
+  color: #0058b8;
+}
+
+.sign-in-modal {
+  background-color: white;
+  border-radius: 4px;
+  width: 45%;
+  min-width: 476px; 
+  height: 85vh;
+  margin-bottom: 10px;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.signin-form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.signin-form-input {
+  transition: border-color .1s ease;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  width: 100%;
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  color: rgba(0,0,0,.87);
+  background: #fff;
+  padding: 10px 16px;
+  margin: 2px 0 12px 0;
+  box-sizing: border-box;
+}
+
+.signin-form label {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.9em;
+}
+
+.signin-checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.signin-form-check {
+  cursor: pointer;
+  transition: border-color .1s ease, background .1s ease;
+  border-radius: 4px;  
+  margin-right: 5px;
+  background: #fff;
+  border: 2px solid #cacaca;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.signin-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.signin-checkbox-container:hover input ~ .signin-form-check {  
+  border: 2px solid #b1b1b1;
+}
+
+.signin-checkbox-container input:checked ~ .signin-form-check {
+  background-color: #0070eb;
+  border: 2px solid #0070eb;
+}
+
+.signin-form-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.signin-checkbox-container input:checked ~ .signin-form-check:after {
+  display: block;
+}
+
+.signin-checkbox-container .signin-form-check:after {
+  left: 8px;
+  top: 5px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.forgot-pass {
+  color: #0070eb;
+  font-size: 0.9em;
+  float: right;
+}
+
+.forgot-pass:hover {
+  color: #0058b8;
+  cursor: pointer;
+}
+
+#modal-root input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#app-root input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
