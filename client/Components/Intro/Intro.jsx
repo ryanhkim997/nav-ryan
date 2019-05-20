@@ -32,16 +32,50 @@ class Intro extends React.Component {
   }
 
   render() {
-    let { name, image, address, phone } = this.state.restaurant;
+    let { name, image, address, phone, ratings } = this.state.restaurant;
     let address1 = null;
-    if(address) {
+    let stars = null;
+    let starSource = null;
+    let numRatings = 0;
+    let good = 0;
+    let timely = 0;
+    let correct = 0;
+    if(address && ratings) {
       address1 = address['line1'];
+      stars = ratings['stars'];
+      numRatings = ratings['number'];
+      good = ratings['good'];
+      timely = ratings['timely'];
+      correct = ratings['correct'];
     } 
+    if(stars === 2.5) {
+      starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/2halfstars.png";
+    } else if(stars === 3) {
+      starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/3stars.png";
+    } else if(stars === 3.5) {
+      starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/3halfstars.png";
+    } else if(stars === 4) {
+      starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/4stars.png";
+    } else if(stars === 4.5) {
+      starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/4halfstars.png";
+    } else {
+      starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/5stars.png";
+    }
     return(<div className="intro-app">
       <div className="intro-img-container" style={{backgroundImage: `url(${image})`}}></div>
       <div className="intro-summary">
+        <div className="intro-logo-container">
+          <img src="https://s3-us-west-1.amazonaws.com/kayjayhogan/default-img.png"></img>
+        </div>
         <h1>{name}</h1>
         <p><span className="intro-add">{address1}</span><span>{phone}</span></p>
+        <img src={starSource} className="intro-stars"></img>
+        <span className="intro-num-ratings">{numRatings} ratings</span>
+        <span className="intro-rating-breakdown">
+          <span className="intro-percent"><strong>{good}</strong>%</span> Food was good 
+          <span className="intro-percent"><strong>{timely}</strong>%</span> Delivery was on time 
+          <span className="intro-percent"><strong>{correct}</strong>%</span> Order was correct
+        </span>
       </div>
     </div>);
   }

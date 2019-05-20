@@ -4,7 +4,7 @@
   top: 61px;
   display: block;
   width: 75%;
-  border: 1px solid grey;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .intro-img-container {
@@ -20,7 +20,7 @@
 }
 
 .intro-summary h1 {
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
 }
 
 .intro-summary p {
@@ -29,6 +29,44 @@
   font-weight: 300;
   color: rgba(0, 0, 0, 0.87);
 }
+
+.intro-logo-container {    
+  margin-top: -46px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.05);
+  width: 80px;
+  height: 80px;
+  position: relative;
+  float: right;
+}
+
+.intro-logo-container img {
+  width: 80px;
+  border-radius: 3px;
+}
+
 .intro-add {
   margin-right: 16px;
+}
+
+.intro-stars {
+  width: 120px;
+  margin: 10px 5px 0 0;
+  cursor: pointer;
+}
+
+.intro-num-ratings {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.55);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.intro-rating-breakdown {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.intro-percent {
+  font-size: 1.2em;
+  margin-left: 15px;
 }
