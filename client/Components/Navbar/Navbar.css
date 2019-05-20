@@ -17,6 +17,7 @@
 .nav-brand {
   width: 150px;
   margin: 0;
+  background-color: white;
 }
 
 .nav-navbar img {
@@ -224,6 +225,12 @@
   box-sizing: border-box;
 }
 
+.sign-in-modal h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+  font-size: 1.4em;
+}
+
 .signin-form {
   width: 100%;
   margin: 0 auto;
@@ -254,6 +261,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: 5px;
 }
 
 .signin-form-check {
@@ -311,11 +319,119 @@
   color: #0070eb;
   font-size: 0.9em;
   float: right;
+  margin-top: 5px;
 }
 
 .forgot-pass:hover {
   color: #0058b8;
   cursor: pointer;
+}
+
+.create-acct {
+  color: #0070eb;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.create-acct:hover {
+  color: #0058b8;
+  cursor: pointer;
+}
+
+.nav-modal-signin-btn {
+  transition: background-color .1s ease;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  width: 100%;
+  border: 2px solid #f63440;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  background-color: #f63440;
+  padding: 10px 16px;
+  margin: 20px 0 12px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.nav-modal-signin-btn:hover{
+  background-color: #ed0a18;
+  border-color: #ed0a18;
+}
+
+.btn-gh-logo {
+  position: absolute;
+  left: 9px;
+  bottom: 7px;
+}
+
+.signin-form p {
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.nav-fb-btn {
+  transition: background-color .1s ease;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  width: 100%;
+  border: 2px solid #3b5998;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  background-color: #3b5998;
+  padding: 10px 16px;
+  margin: 8px 0 12px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.nav-fb-btn:hover {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+
+.btn-fb-logo{
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+}
+
+.nav-google-btn {
+  transition: background-color .1s ease;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  width: 100%;
+  border: 2px solid #4285f4;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+  background-color: #4285f4;
+  padding: 10px 16px;
+  margin: 8px 0 12px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.nav-google-btn:hover {
+  background-color: #1266f1;
+  border-color: #1266f1;
+}
+
+.btn-google-logo {
+  position: absolute;
+  height: 34px;
+  left: 3px;
+  bottom: 3px;
 }
 
 #modal-root input::placeholder {
