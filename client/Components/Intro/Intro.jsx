@@ -1,5 +1,8 @@
 import React from 'react';
 import axios from 'axios';
+import { FaAngleLeft } from 'react-icons/fa';
+import { FaShareAlt } from 'react-icons/fa';
+import { FaBookmark } from 'react-icons/fa';
 import './Intro.css';
 
 class Intro extends React.Component {
@@ -62,7 +65,15 @@ class Intro extends React.Component {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/5stars.png";
     }
     return(<div className="intro-app">
-      <div className="intro-img-container" style={{backgroundImage: `url(${image})`}}></div>
+      <div className="intro-img-container" style={{backgroundImage: `url(${image})`}}>
+        <div className="intro-icon-container">         
+          <button className="intro-back-btn"><FaAngleLeft /></button>
+        </div>
+        <div className="intro-icon-container">
+          <button className="intro-share-btn"><FaShareAlt /></button>
+          <button className="intro-save-btn"><FaBookmark /></button>
+        </div>
+      </div>
       <div className="intro-summary">
         <div className="intro-logo-container">
           <img src="https://s3-us-west-1.amazonaws.com/kayjayhogan/default-img.png"></img>

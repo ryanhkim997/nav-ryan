@@ -9,10 +9,68 @@
 
 .intro-img-container {
   height: 170px;
-  height: "170px"; 
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-position: center;    
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-icon-container {
+  flex-basis: 0;
+  flex: 1;
+  max-width: 100%;
+  padding: 12px;
+}
+
+.intro-back-btn {
+  color: #0070eb;
+  background: white;
+  height: 36px;
+  width: 36px;
+  border: 0;
+  padding: 4px 3px 0 0;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+
+.intro-save-btn {
+  color: rgba(0, 0, 0, 0.35);
+  background: white;
+  height: 36px;
+  width: 36px;
+  border: 0;
+  padding: 4px 0 0 0;
+  border-radius: 50%;
+  font-size: 1.2em;
+  float: right;
+  margin-left: 15px;
+}
+
+.intro-share-btn {
+  color: #0070eb;
+  background: white;
+  height: 36px;
+  width: 36px;
+  border: 0;
+  padding: 4px 3px 0 0;
+  border-radius: 50%;
+  font-size: 1.5em;
+  float: right;
+  margin-left: 15px;
+}
+
+.intro-back-btn:hover {
+  color: #0058b8;
+  cursor: pointer;
+}
+
+.intro-save-btn:hover {
+  cursor: pointer;
+}
+
+.intro-share-btn:hover {
+  color: #0058b8;
+  cursor: pointer;
 }
 
 .intro-summary {

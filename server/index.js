@@ -5,9 +5,9 @@ const Restaurant = require('../database/models.js');
 const PORT = 3300;
 const app = express();
 
-app.use('/restaurant/:id', express.static(path.resolve(__dirname, '../public')));
+app.use('/restaurants/:id', express.static(path.resolve(__dirname, '../public')));
 
-app.get('/restaurant/:id/info', function(req, res) {
+app.get('/restaurants/:id/info', function(req, res) {
   let { id } = req.params;
   Restaurant.find({ id })
   .then((result) => {
