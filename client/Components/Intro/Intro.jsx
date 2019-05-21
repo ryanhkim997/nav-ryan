@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import SigninModal from '../Modals/Signin/SigninModal.jsx';
+import ShareModal from '../Modals/Share/ShareModal.jsx';
 import { FaAngleLeft } from 'react-icons/fa';
 import { FaShareAlt } from 'react-icons/fa';
 import { FaBookmark } from 'react-icons/fa';
@@ -11,22 +12,37 @@ class Intro extends React.Component {
     super(props);
     this.state = {
       restaurant: {},
-      showModal: false
+      showSigninModal: false,
+      showShareModal: false
     };
     this.fetchRestaurant = this.fetchRestaurant.bind(this);
-    this.handleShow = this.handleShow.bind(this);
-    this.handleHide = this.handleHide.bind(this);
+    this.handleShowSignin = this.handleShowSignin.bind(this);
+    this.handleHideSignin = this.handleHideSignin.bind(this);
+    this.handleShowShare = this.handleShowShare.bind(this);
+    this.handleHideShare = this.handleHideShare.bind(this);
   }
 
-  handleShow() {
+  handleShowSignin() {
     this.setState({
-      showModal: true
+      showSigninModal: true
     });
   }
 
-  handleHide() {
+  handleHideSignin() {
     this.setState({
-      showModal: false
+      showSigninModal: false
+    });
+  }
+
+  handleShowShare() {
+    this.setState({
+      showShareModal: true
+    });
+  }
+
+  handleHideShare() {
+    this.setState({
+      showShareModal: false
     });
   }
 
@@ -82,19 +98,23 @@ class Intro extends React.Component {
     } else {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/5stars.png";
     }
-    // Get modal ready
-    const modal = this.state.showModal ? 
-    (<SigninModal handleHide={this.handleHide}></SigninModal>) : null;
+    // Get signin modal ready
+    const signinModal = this.state.showSigninModal ? 
+    (<SigninModal handleHide={this.handleHideSignin}></SigninModal>) : null;
+    // Get share modal ready
+    const shareModal = this.state.showShareModal ? 
+    (<ShareModal handleHide={this.handleHideShare} restaurant={name}></ShareModal>) : null;
 
     return(<div className="intro-app">
-      {modal}
+      {signinModal}
+      {shareModal}
       <div className="intro-img-container" style={{backgroundImage: `url(${image})`}}>
         <div className="intro-icon-container">         
           <button className="intro-back-btn"><FaAngleLeft /></button>
         </div>
         <div className="intro-icon-container">
-          <button className="intro-share-btn"><FaShareAlt /></button>
-          <button className="intro-save-btn" onClick={this.handleShow}><FaBookmark /></button>
+          <button className="intro-share-btn" onClick={this.handleShowShare}><FaShareAlt /></button>
+          <button className="intro-save-btn" onClick={this.handleShowSignin}><FaBookmark /></button>
         </div>
       </div>
       <div className="intro-summary">
