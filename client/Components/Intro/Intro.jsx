@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import SigninModal from '../Modals/Signin/SigninModal.jsx';
 import { FaAngleLeft } from 'react-icons/fa';
 import { FaShareAlt } from 'react-icons/fa';
 import { FaBookmark } from 'react-icons/fa';
@@ -9,9 +10,24 @@ class Intro extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      restaurant: {}
+      restaurant: {},
+      showModal: false
     };
     this.fetchRestaurant = this.fetchRestaurant.bind(this);
+    this.handleShow = this.handleShow.bind(this);
+    this.handleHide = this.handleHide.bind(this);
+  }
+
+  handleShow() {
+    this.setState({
+      showModal: true
+    });
+  }
+
+  handleHide() {
+    this.setState({
+      showModal: false
+    });
   }
 
   // NOTE: Had to have intro component fetch restaurant instead of receiving prop from App because the image
@@ -35,6 +51,7 @@ class Intro extends React.Component {
   }
 
   render() {
+    // Get info from restaurant and handle async
     let { name, image, address, phone, ratings } = this.state.restaurant;
     let address1 = null;
     let stars = null;
@@ -51,6 +68,7 @@ class Intro extends React.Component {
       timely = ratings['timely'];
       correct = ratings['correct'];
     } 
+    // Set image for star ratings
     if(stars === 2.5) {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/2halfstars.png";
     } else if(stars === 3) {
@@ -64,14 +82,19 @@ class Intro extends React.Component {
     } else {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/5stars.png";
     }
+    // Get modal ready
+    const modal = this.state.showModal ? 
+    (<SigninModal handleHide={this.handleHide}></SigninModal>) : null;
+
     return(<div className="intro-app">
+      {modal}
       <div className="intro-img-container" style={{backgroundImage: `url(${image})`}}>
         <div className="intro-icon-container">         
           <button className="intro-back-btn"><FaAngleLeft /></button>
         </div>
         <div className="intro-icon-container">
           <button className="intro-share-btn"><FaShareAlt /></button>
-          <button className="intro-save-btn"><FaBookmark /></button>
+          <button className="intro-save-btn" onClick={this.handleShow}><FaBookmark /></button>
         </div>
       </div>
       <div className="intro-summary">
