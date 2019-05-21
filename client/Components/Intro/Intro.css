@@ -4,6 +4,7 @@
   top: 61px;
   display: block;
   width: 75%;
+  min-width: 75%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -127,4 +128,93 @@
 .intro-percent {
   font-size: 1.2em;
   margin-left: 15px;
+}
+
+/* tooltip css */
+.intro-tooltip {
+  display:inline-block;
+  position:relative;
+  text-align:center;
+}
+
+.intro-tooltip .intro-tooltip-bottom {
+  min-width: 300px; 
+  top: 40px;
+  left: 110px;
+  transform: translate(-40%, 0);
+  padding: 20px 10px 10px 10px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color:#FFFFFF;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  visibility: hidden; 
+  opacity: 0; 
+  transition: 0.25s ease-out;
+}
+
+.intro-tooltip:hover .intro-tooltip-bottom {
+  visibility: visible; 
+  opacity: 1;
+}
+
+.intro-tooltip .intro-tooltip-bottom i {
+  position: absolute;
+  bottom: 100%;
+  left: 40%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.intro-tooltip .intro-tooltip-bottom i::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%,50%) rotate(45deg);
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-tooltip-header {
+  font-size: 1.1em;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.intro-tooltip-label {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.6em;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.intro-tooltip-breakdown {
+  margin-top: 15px;
+  width: 32%;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.intro-tooltip-breakdown-mid {
+  margin-top: 15px;
+  width: 34%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
 }

@@ -123,8 +123,29 @@ class Intro extends React.Component {
         </div>
         <h1>{name}</h1>
         <p><span className="intro-add">{address1}</span><span>{phone}</span></p>
-        <img src={starSource} className="intro-stars"></img>
-        <span className="intro-num-ratings">{numRatings} ratings</span>
+        <div className="intro-tooltip">
+          <img src={starSource} className="intro-stars"></img>
+          <span className="intro-num-ratings">{numRatings} ratings</span>
+          <div className="intro-tooltip-bottom">
+            <span className="intro-tooltip-header">Here's what people are saying:</span>
+            <div className="intro-tooltip-breakdown">
+              <span className="intro-percent"><strong>{good}</strong>%</span>
+              <br></br>
+              <span className="intro-tooltip-label">Food was good</span>
+            </div>
+            <div className="intro-tooltip-breakdown-mid">
+              <span className="intro-percent"><strong>{timely}</strong>%</span>
+              <br></br>
+              <span className="intro-tooltip-label">Delivery was on time</span> 
+            </div>
+            <div className="intro-tooltip-breakdown">
+              <span className="intro-percent"><strong>{correct}</strong>%</span>
+              <br></br>
+              <span className="intro-tooltip-label">Order was correct</span>
+            </div>
+            <i></i>
+          </div>
+        </div>
         <span className="intro-rating-breakdown">
           <span className="intro-percent"><strong>{good}</strong>%</span> Food was good 
           <span className="intro-percent"><strong>{timely}</strong>%</span> Delivery was on time 
