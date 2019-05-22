@@ -76,6 +76,9 @@ class Intro extends React.Component {
     let good = 0;
     let timely = 0;
     let correct = 0;
+    let sampleCustomer = null;
+    let sampleCustomerInitial = null;
+    let sampleReview = null;
     if(address && ratings) {
       address1 = address['line1'];
       stars = ratings['stars'];
@@ -83,6 +86,9 @@ class Intro extends React.Component {
       good = ratings['good'];
       timely = ratings['timely'];
       correct = ratings['correct'];
+      sampleCustomer = ratings['sampleReview']['name'];
+      sampleCustomerInitial = sampleCustomer.slice(0, 1);
+      sampleReview = ratings['sampleReview']['review'];
     } 
     // Set image for star ratings
     if(stars === 2.5) {
@@ -127,22 +133,33 @@ class Intro extends React.Component {
           <img src={starSource} className="intro-stars"></img>
           <span className="intro-num-ratings">{numRatings} ratings</span>
           <div className="intro-tooltip-bottom">
-            <span className="intro-tooltip-header">Here's what people are saying:</span>
-            <div className="intro-tooltip-breakdown">
-              <span className="intro-percent"><strong>{good}</strong>%</span>
-              <br></br>
-              <span className="intro-tooltip-label">Food was good</span>
+            <div className="intro-tooltip-container">
+              <span className="intro-tooltip-header">Here's what people are saying:</span>
+              <div className="intro-tooltip-breakdown">
+                <span className="intro-tooltip-percent"><strong>{good}</strong>%</span>
+                <br></br>
+                <span className="intro-tooltip-label">Food was good</span>
+              </div>
+              <div className="intro-tooltip-breakdown-mid">
+                <span className="intro-tooltip-percent"><strong>{timely}</strong>%</span>
+                <br></br>
+                <span className="intro-tooltip-label">Delivery was on time</span> 
+              </div>
+              <div className="intro-tooltip-breakdown">
+                <span className="intro-tooltip-percent"><strong>{correct}</strong>%</span>
+                <br></br>
+                <span className="intro-tooltip-label">Order was correct</span>
+              </div>              
             </div>
-            <div className="intro-tooltip-breakdown-mid">
-              <span className="intro-percent"><strong>{timely}</strong>%</span>
-              <br></br>
-              <span className="intro-tooltip-label">Delivery was on time</span> 
+            <div className="intro-tooltip-review-container">
+              <div className="intro-tooltip-avatar">{sampleCustomerInitial}</div>
+              <div className="intro-tooltip-review">
+                <span><strong>{sampleCustomer}:</strong></span>
+                <br></br>
+                <span>{sampleReview}</span>
+              </div>
             </div>
-            <div className="intro-tooltip-breakdown">
-              <span className="intro-percent"><strong>{correct}</strong>%</span>
-              <br></br>
-              <span className="intro-tooltip-label">Order was correct</span>
-            </div>
+            <div className="intro-tooltip-all-reviews">All Reviews ({numRatings})</div>
             <i></i>
           </div>
         </div>

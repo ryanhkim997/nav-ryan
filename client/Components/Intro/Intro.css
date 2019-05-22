@@ -143,7 +143,6 @@
   top: 40px;
   left: 110px;
   transform: translate(-40%, 0);
-  padding: 20px 10px 10px 10px;
   color: rgba(0, 0, 0, 0.87);
   background-color:#FFFFFF;
   font-size: 14px;
@@ -184,11 +183,19 @@
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 }
 
+.intro-tooltip-container {
+  padding: 20px 10px 10px 10px;
+}
+
 .intro-tooltip-header {
   font-size: 1.1em;
   font-weight: 300;
   display: inline-block;
   margin-bottom: 5px;
+}
+
+.intro-tooltip-percent {
+  font-size: 1.2em;
 }
 
 .intro-tooltip-label {
@@ -218,4 +225,47 @@
   border-left: 1px solid rgba(0, 0, 0, 0.4);
   border-right: 1px solid rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
+}
+
+.intro-tooltip-review-container {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-tooltip-avatar {
+  border-radius: 50%;
+  color: #fff;
+  background: #40c2de;
+  width: 40px;
+  height: 40px;
+  border-color: #fff;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 5px 10px 0 15px;
+}
+
+.intro-tooltip-review {
+  flex: 1 0 0%;
+  text-align: left;
+}
+
+.intro-tooltip-review span:first-of-type {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.intro-tooltip-review span {
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.intro-tooltip-all-reviews {
+  color: #0070eb;
+  padding: 16px;
+  font-weight: 300;
+  cursor: pointer;
 }
