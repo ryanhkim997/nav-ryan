@@ -245,3 +245,82 @@
 #modal-root input::placeholder {
   color: rgba(0, 0, 0, 0.2);
 }
+
+/* password modal */
+.password-modal {
+  background-color: white;
+  border-radius: 4px;
+  width: 45%;
+  min-width: 476px; 
+  height: 50vh;
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.password-modal-back {
+  font-size: 1.4em;
+}
+
+.password-modal-text {
+  text-align: center;
+}
+
+.password-modal h2 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.password-modal h5 {
+  margin-top: 5px;
+  font-size: 0.93em;
+}
+
+.password-modal input {
+  font-size: 14px;
+  line-height: 1.45;
+  display: block;
+  width: 100%;
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  color: rgba(0,0,0,.87);
+  background: #fff;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.password-modal button {
+  color: #fff;
+  background-color: #0070eb;
+  border-color: #0070eb;
+  border-radius: 4px;
+  padding: 8px 16px 7px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid transparent;
+  transition: background-color .2s ease,border-color .2s ease,color .2s ease;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.595;
+}
+
+.password-modal button:hover {
+  cursor: pointer;
+  background-color: #0058b8;
+}
+
+.password-modal p {
+  text-align: center;
+  color: #0070eb;
+  font-weight: 300;
+  margin: 30px 0 15px 0;
+  font-size: 0.9em;
+}
+
+.password-modal p:hover {
+  cursor: pointer;
+  color: #0058b8;
+}
