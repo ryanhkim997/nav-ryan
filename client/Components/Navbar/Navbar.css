@@ -64,6 +64,7 @@
   margin: 2px 0;
   text-align: center;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .nav-search-address:hover {
@@ -93,11 +94,21 @@
 }
 
 .nav-address-input input {
-  padding: 12px 16px;
+  padding: 12px 16px 12px 40px;
   width: 100%;
   border: 1px solid #cacaca;
   background: #f6f6f6;
   min-width: 230px;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.nav-input-icon {
+  position: absolute;
+  font-size: 1.5em;
+  color: #cacaca;
+  top: 10px;
+  left: 10px;
 }
 
 .nav-search-address-text {

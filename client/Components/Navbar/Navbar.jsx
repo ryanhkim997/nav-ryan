@@ -43,7 +43,10 @@ class Navbar extends React.Component {
     (<SigninModal handleHide={this.handleHideModal}></SigninModal>) : null;
 
     const addressSearch = this.state.showAddressSearch ? 
-    (<div className="nav-address-input"><input type="text" placholder="Enter address here"></input></div>) : null;
+    (<div className="nav-address-input">
+      <span className="nav-input-icon"><MdLocationOn /></span>
+      <input type="text" placeholder="Enter a new address"></input>
+    </div>) : null;
 
     return(
       <div className="nav-app">
