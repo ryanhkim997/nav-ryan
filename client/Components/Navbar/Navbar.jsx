@@ -12,11 +12,13 @@ class Navbar extends React.Component {
     super(props);
     this.state = {
       showModal: false,
-      showAddressSearch: false
+      showAddressSearch: false,
+      showPopularSearch: false
     };
     this.handleShowModal = this.handleShowModal.bind(this);
     this.handleHideModal = this.handleHideModal.bind(this);
     this.handleAddress = this.handleAddress.bind(this);
+    this.handlePopularSearch = this.handlePopularSearch.bind(this);
   }
 
   handleShowModal() {
@@ -37,6 +39,18 @@ class Navbar extends React.Component {
     });
   }
 
+  handleShowPopularSearch() {
+    this.setState({
+      showPopularSearch: true
+    });
+  }
+
+  handlePopularSearch() {
+    this.setState({
+      showPopularSearch: !this.state.showPopularSearch
+    });
+  }
+
   render() {
 
     const modal = this.state.showModal ? 
@@ -46,6 +60,31 @@ class Navbar extends React.Component {
     (<div className="nav-address-input">
       <span className="nav-input-icon"><MdLocationOn /></span>
       <input type="text" placeholder="Enter a new address"></input>
+    </div>) : null;
+
+    const popularSearch = this.state.showPopularSearch ? 
+    (<div className="nav-popular-search">
+      <div className="nav-popular-header">Popular Searches</div>
+      <div className="nav-popular-option">
+        pizza
+        <span className="nav-popular-icon"><GoSearch /></span> 
+      </div>
+      <div className="nav-popular-option">
+        thai
+        <span className="nav-popular-icon"><GoSearch /></span> 
+      </div>
+      <div className="nav-popular-option">
+        sushi
+        <span className="nav-popular-icon"><GoSearch /></span> 
+      </div>
+      <div className="nav-popular-option">
+        vegan
+        <span className="nav-popular-icon"><GoSearch /></span> 
+      </div>
+      <div className="nav-popular-option">
+        chinese
+        <span className="nav-popular-icon"><GoSearch /></span> 
+      </div>
     </div>) : null;
 
     return(
@@ -67,8 +106,9 @@ class Navbar extends React.Component {
             <div className="nav-search-input-container">
               <div className="nav-search-flex">
                 <span className="nav-search-icon"><GoSearch /></span>          
-                <input placeholder="Pizza, sushi, chinese"></input>
+                <input placeholder="Pizza, sushi, chinese" onClick={this.handlePopularSearch}></input>
                 <span className="nav-close-icon"><MdClose /></span>
+                {popularSearch}
               </div>
             </div>
           </div>
