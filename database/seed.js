@@ -16,7 +16,11 @@ const data = [
       stars: 4.5, 
       good: 96, 
       timely: 88, 
-      correct: 90 
+      correct: 90,
+      sampleReview: {
+        name: "Edgar",
+        review: "Everything I tried was bursting with flavor."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-9:00pm', pickup: '12:00pm-11:00pm' },
@@ -40,7 +44,11 @@ const data = [
       stars: 5, 
       good: 99, 
       timely: 91, 
-      correct: 97 
+      correct: 97,
+      sampleReview: {
+        name: "Jenny",
+        review: "After my meal, I was knocked into a food coma for a month."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '10:30am-10:30pm' },
@@ -64,7 +72,11 @@ const data = [
       stars: 3.5, 
       good: 81, 
       timely: 87, 
-      correct: 73 
+      correct: 73,
+      sampleReview: {
+        name: "Martin",
+        review: "Sadly, some of my favorite dishes are no longer available."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-7:30pm', pickup: '9:00am-11:00pm' },
@@ -88,7 +100,11 @@ const data = [
       stars: 2.5, 
       good: 77, 
       timely: 80, 
-      correct: 71 
+      correct: 71,
+      sampleReview: {
+        name: "Kendra",
+        review: "My meal was way overcooked."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-8:00pm', pickup: '9:00am-11:30pm' },
@@ -112,7 +128,11 @@ const data = [
       stars: 3.5, 
       good: 84, 
       timely: 87, 
-      correct: 83 
+      correct: 83,
+      sampleReview: {
+        name: "Tyler",
+        review: "My go-to spot when I'm craving something healthy."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-9:00pm', pickup: '11:30am-11:30pm' },
@@ -136,7 +156,11 @@ const data = [
       stars: 3, 
       good: 91, 
       timely: 71, 
-      correct: 98 
+      correct: 98, 
+      sampleReview: {
+        name: "Jim",
+        review: "Pretty good, but I think this place might be over-hyped."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-6:30pm', pickup: '11:30am-11:30pm' },
@@ -160,7 +184,11 @@ const data = [
       stars: 3.5,
       good: 82, 
       timely: 84, 
-      correct: 85 
+      correct: 85,
+      sampleReview: {
+        name: "Katie",
+        review: "The menu didn't match the one on their website which is a little confusing."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-9:00pm', pickup: '11:00am-10:00pm' },
@@ -184,7 +212,11 @@ const data = [
       stars: 3.5, 
       good: 93, 
       timely: 78, 
-      correct: 86 
+      correct: 86,
+      sampleReview: {
+        name: "Timothy",
+        review: "My coworkers and I order from here at least twice a week."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-8:30pm', pickup: '9:00am-10:30pm' },
@@ -208,7 +240,11 @@ const data = [
       stars: 5, 
       good: 99, 
       timely: 90, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: "Peter",
+        review: "Make sure to save room for dessert, because that was the best part of the meal!"
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-7:30pm', pickup: '11:00am-11:30pm' },
@@ -232,7 +268,11 @@ const data = [
       stars: 2.5, 
       good: 71, 
       timely: 77, 
-      correct: 73 
+      correct: 73,
+      sampleReview: {
+        name: "Sandra",
+        review: "You get what you pay for, I suppose."
+      }
     },
     schedule: {
       monFri: { delivery: '10:30am-6:00pm', pickup: '10:00am-10:00pm' },
@@ -256,7 +296,11 @@ const data = [
       stars: 5, 
       good: 97, 
       timely: 94, 
-      correct: 99 
+      correct: 99,
+      sampleReview: {
+        name: "Tammy",
+        review: "I would eat here every day if I could afford it!"
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-7:30pm', pickup: '10:00am-10:30pm' },
@@ -280,7 +324,11 @@ const data = [
       stars: 3, 
       good: 75, 
       timely: 97, 
-      correct: 74 
+      correct: 74,
+      sampleReview: {
+        name: "Jeffrey",
+        review: "This place deserves its very average rating."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-6:30pm', pickup: '10:00am-11:30pm' },
@@ -304,7 +352,11 @@ const data = [
       stars: 4, 
       good: 87, 
       timely: 84, 
-      correct: 88 
+      correct: 88,
+      sampleReview: {
+        name: "Will",
+        review: "You can't go wrong with bibimbap."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-8:00pm', pickup: '11:00am-11:30pm' },
@@ -328,7 +380,11 @@ const data = [
       stars: 3, 
       good: 73, 
       timely: 92, 
-      correct: 74 
+      correct: 74,
+      sampleReview: {
+        name: "Lisa",
+        review: "Is their food the best? No. Is it still a great option? Yes."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-6:30pm', pickup: '9:00am-10:30pm' },
@@ -352,7 +408,11 @@ const data = [
       stars: 3.5, 
       good: 84, 
       timely: 78, 
-      correct: 94 
+      correct: 94,
+      sampleReview: {
+        name: "Monica",
+        review: "Not sure the food is worth the price, but good all the same."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-6:30pm', pickup: '11:00am-11:00pm' },
@@ -376,7 +436,11 @@ const data = [
       stars: 3, 
       good: 81, 
       timely: 88, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: "Brent",
+        review: "I had a satisfactory experience and will have to try it again."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-6:30pm', pickup: '11:00am-10:30pm' },
@@ -400,7 +464,11 @@ const data = [
       stars: 3, 
       good: 83, 
       timely: 76, 
-      correct: 86 
+      correct: 86,
+      sampleReview: {
+        name: "Andy",
+        review: "I always crave BBQ for lunch, so I'm a regular."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '10:30am-10:30pm' },
@@ -424,7 +492,11 @@ const data = [
       stars: 4, 
       good: 88, 
       timely: 96, 
-      correct: 81 
+      correct: 81,
+      sampleReview: {
+        name: "Rosa",
+        review: "The food is always cooked to perfection."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '11:00am-11:00pm' },
@@ -448,7 +520,11 @@ const data = [
       stars: 4.5, 
       good: 80, 
       timely: 78, 
-      correct: 71 
+      correct: 71,
+      sampleReview: {
+        name: "Liz",
+        review: "I can't stop ordering from here. I have a genuine problem."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-7:30pm', pickup: '12:00pm-10:30pm' },
@@ -472,7 +548,11 @@ const data = [
       stars: 5, 
       good: 93, 
       timely: 91, 
-      correct: 97 
+      correct: 97,
+      sampleReview: {
+        name: "Carla",
+        review: "It's so good, I nearly left my husband."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-7:30pm', pickup: '10:30am-10:00pm' },
@@ -496,7 +576,11 @@ const data = [
       stars: 3.5, 
       good: 81, 
       timely: 97, 
-      correct: 73 
+      correct: 73,
+      sampleReview: {
+        name: "Mark",
+        review: "It's quick, it's easy, it's an adequate go-to."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-6:00pm', pickup: '10:00am-11:30pm' },
@@ -520,7 +604,11 @@ const data = [
       stars: 2.5, 
       good: 77, 
       timely: 79, 
-      correct: 91 
+      correct: 91,
+      sampleReview: {
+        name: "Laurel",
+        review: "It took two hours for delivery. I won't be ordering from them again."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-6:00pm', pickup: '12:00pm-10:30pm' },
@@ -544,7 +632,11 @@ const data = [
       stars: 4.5, 
       good: 94, 
       timely: 87, 
-      correct: 93 
+      correct: 93,
+      sampleReview: {
+        name: "Yesenia",
+        review: "I love coming here after work! It's just so yummy."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-9:00pm', pickup: '10:00am-10:00pm' },
@@ -568,7 +660,11 @@ const data = [
       stars: 3, 
       good: 91, 
       timely: 71, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: "Katherine",
+        review: "Great spot for a quick lunch."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-9:00pm', pickup: '12:00pm-11:30pm' },
@@ -592,7 +688,11 @@ const data = [
       stars: 3.5, 
       good: 82, 
       timely: 84, 
-      correct: 85 
+      correct: 85,
+      sampleReview: {
+        name: "Esther",
+        review: "Their sides are my favorite."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-6:00pm', pickup: '9:00am-10:00pm' },
@@ -616,7 +716,11 @@ const data = [
       stars: 2.5, 
       good: 73, 
       timely: 78, 
-      correct: 86 
+      correct: 86,
+      sampleReview: {
+        name: "Chris",
+        review: "My entire order was incorrect, which was impressive in a way."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-7:30pm', pickup: '10:30am-10:00pm' },
@@ -640,7 +744,11 @@ const data = [
       stars: 5, 
       good: 99, 
       timely: 98, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: "Joshua",
+        review: "I would literally trade my firstborn for their taco recipe."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-7:30pm', pickup: '9:00am-11:00pm' },
@@ -664,7 +772,11 @@ const data = [
       stars: 3.5, 
       good: 91, 
       timely: 97, 
-      correct: 73 
+      correct: 73,
+      sampleReview: {
+        name: "Melissa",
+        review: "I love this place but to be fair I don't have high standards."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-8:00pm', pickup: '11:00am-10:00pm' },
@@ -688,7 +800,11 @@ const data = [
       stars: 5, 
       good: 77, 
       timely: 74, 
-      correct: 99 
+      correct: 99,
+      sampleReview: {
+        name: "Roxanne",
+        review: "You absolutely cannot go wrong with this place."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-8:00pm', pickup: '12:00pm-10:30pm' },
@@ -712,7 +828,11 @@ const data = [
       stars: 3, 
       good: 75, 
       timely: 97, 
-      correct: 74 
+      correct: 74,
+      sampleReview: {
+        name: "Lucian",
+        review: "I think this place flips a coin to decide whether they're going to get your order correct."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '11:00am-11:00pm' },
@@ -736,7 +856,11 @@ const data = [
       stars: 4, 
       good: 97, 
       timely: 84, 
-      correct: 88 
+      correct: 88,
+      sampleReview: {
+        name: "Boyd",
+        review: "This place makes picking up my food a breeze."
+      }   
     },
     schedule: {
       monFri: { delivery: '10:30am-6:30pm', pickup: '12:00pm-11:00pm' },
@@ -760,7 +884,11 @@ const data = [
       stars: 3, 
       good: 73, 
       timely: 92, 
-      correct: 74 
+      correct: 74,
+      sampleReview: {
+        name: "Michele",
+        review: "My hobbies include hiking, reading, and eating this place's food."
+      }   
     },
     schedule: {
       monFri: { delivery: '11:00am-6:30pm', pickup: '10:00am-10:30pm' },
@@ -784,7 +912,11 @@ const data = [
       stars: 3.5, 
       good: 84, 
       timely: 78, 
-      correct: 94 
+      correct: 94,
+      sampleReview: {
+        name: "Antoinette",
+        review: "I could eat their chips until I explode."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-9:00pm', pickup: '11:30am-11:30pm' },
@@ -808,7 +940,11 @@ const data = [
       stars: 3, 
       good: 91, 
       timely: 88, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: "Micah",
+        review: "This place is good. Period."
+      }   
     },
     schedule: {
       monFri: { delivery: '10:30am-7:30pm', pickup: '11:00am-10:00pm' },
@@ -832,7 +968,11 @@ const data = [
       stars: 3, 
       good: 83, 
       timely: 76, 
-      correct: 86 
+      correct: 86,
+      sampleReview: {
+        name: "Charles",
+        review: "Always hot and fresh."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-8:00pm', pickup: '11:00am-10:00pm' },
@@ -856,7 +996,12 @@ const data = [
       stars: 4, 
       good: 88, 
       timely: 96, 
-      correct: 91 },
+      correct: 91,
+      sampleReview: {
+        name: "Jamie",
+        review: "I cannot get enough of this place, seriously."
+      } 
+    },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '9:00am-11:00pm' },
       satSun: { delivery: '10:30am-6:00pm', pickup: '10:30am-6:00pm' }
@@ -879,7 +1024,11 @@ const data = [
       stars: 3, 
       good: 86, 
       timely: 85, 
-      correct: 89 
+      correct: 89,
+      sampleReview: {
+        name: "Kenneth",
+        review: "I always expect this place to take at least an hour and a half."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '10:30am-11:30pm' },
@@ -903,7 +1052,11 @@ const data = [
       stars: 4.5, 
       good: 90, 
       timely: 98, 
-      correct: 91 
+      correct: 91,
+      sampleReview: {
+        name: "Roberto",
+        review: "Reminds me of my own mom's cooking."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-8:00pm', pickup: '12:00pm-10:00pm' },
@@ -927,7 +1080,11 @@ const data = [
       stars: 5, 
       good: 93, 
       timely: 91, 
-      correct: 97 
+      correct: 97,
+      sampleReview: {
+        name: "Lester",
+        review: "I literally talked to my therapist about how good this place was for 15 minutes."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-7:30pm', pickup: '11:00am-10:30pm' },
@@ -951,7 +1108,11 @@ const data = [
       stars: 3.5, 
       good: 91, 
       timely: 97, 
-      correct: 73 
+      correct: 73,
+      sampleReview: {
+        name: "Layla",
+        review: "I've been a regular customer for years. Love them."
+      }   
     },
     schedule: {
       monFri: { delivery: '11:30am-8:00pm', pickup: '10:00am-11:30pm' },
@@ -975,7 +1136,11 @@ const data = [
       stars: 2.5, 
       good: 77, 
       timely: 99, 
-      correct: 91 
+      correct: 91,
+      sampleReview: {
+        name: "Jeremy",
+        review: "The food was cold when it arrived."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-8:00pm', pickup: '12:00pm-11:30pm' },
@@ -999,7 +1164,11 @@ const data = [
       stars: 4.5, 
       good: 94, 
       timely: 87, 
-      correct: 93 
+      correct: 93,
+      sampleReview: {
+        name: "Lindsay",
+        review: "I've lost friends because this is the only place I'll eat."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-8:00pm', pickup: '12:00pm-10:00pm' },
@@ -1023,7 +1192,11 @@ const data = [
       stars: 3, 
       good: 91, 
       timely: 71, 
-      correct: 88 
+      correct: 88,
+      sampleReview: {
+        name: "Sarah",
+        review: "A good spot for when you want something authentic."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '9:00am-11:00pm' },
@@ -1047,7 +1220,11 @@ const data = [
       stars: 3.5, 
       good: 82, 
       timely: 84, 
-      correct: 85 
+      correct: 85,
+      sampleReview: {
+        name: "Jamal",
+        review: "Their noodles are seriously out of this world."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-7:30pm', pickup: '11:00am-10:00pm' },
@@ -1071,7 +1248,11 @@ const data = [
       stars: 2.5, 
       good: 93, 
       timely: 78, 
-      correct: 86 
+      correct: 86,
+      sampleReview: {
+        name: "Trent",
+        review: "So tasty I once punched a wall."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-6:00pm', pickup: '11:30am-11:00pm' },
@@ -1095,7 +1276,11 @@ const data = [
       stars: 5, 
       good: 99, 
       timely: 99, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: "Maria",
+        review: "Love ordering from here after a night out."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-6:00pm', pickup: '12:00pm-10:00pm' },
@@ -1119,7 +1304,11 @@ const data = [
       stars: 4, 
       good: 91, 
       timely: 97, 
-      correct: 73 
+      correct: 73,
+      sampleReview: {
+        name: "Nelson",
+        review: "This is honestly my favorite spot in town."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-6:30pm', pickup: '12:00pm-10:30pm' },
@@ -1143,7 +1332,11 @@ const data = [
       stars: 3.5, 
       good: 77, 
       timely: 74, 
-      correct: 99 
+      correct: 99,
+      sampleReview: {
+        name: "Benjamin",
+        review: "This place is really good, it just takes forever."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-8:00pm', pickup: '12:00pm-11:30pm' },
@@ -1167,7 +1360,11 @@ const data = [
       stars: 3, 
       good: 75, 
       timely: 97, 
-      correct: 74 
+      correct: 74,
+      sampleReview: {
+        name: "Brandy",
+        review: "I'm not sure if it's possible for them to get a single order correct."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-6:00pm', pickup: '11:30am-11:00pm' },
@@ -1191,7 +1388,11 @@ const data = [
       stars: 4, 
       good: 97, 
       timely: 84, 
-      correct: 88 
+      correct: 88,
+      sampleReview: {
+        name: "Brett",
+        review: "My go-to spot when I want to feel super bougie."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-8:00pm', pickup: '10:00am-10:00pm' },
@@ -1215,7 +1416,11 @@ const data = [
       stars: 3, 
       good: 73, 
       timely: 92, 
-      correct: 74 
+      correct: 74,
+      sampleReview: {
+        name: "Penny",
+        review: "I love ordering from here after a long day of work!"
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-6:30pm', pickup: '12:00pm-11:30pm' },
@@ -1239,7 +1444,11 @@ const data = [
       stars: 3.5, 
       good: 84, 
       timely: 78, 
-      correct: 94 
+      correct: 94,
+      sampleReview: {
+        name: "Shane",
+        review: "The food was lukewarm when it arrived."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-6:00pm', pickup: '12:00pm-11:00pm' },
@@ -1263,7 +1472,11 @@ const data = [
       stars: 4, 
       good: 91, 
       timely: 88, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: "Doris",
+        review: "My family comes over every weekend and we order from this place together."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-6:30pm', pickup: '11:00am-11:30pm' },
@@ -1287,7 +1500,11 @@ const data = [
       stars: 3, 
       good: 83, 
       timely: 76, 
-      correct: 86 
+      correct: 86,
+      sampleReview: {
+        name: "Bradley",
+        review: "I no longer have any dignity so I just order dinner from here literally every night."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-9:00pm', pickup: '9:00am-10:30pm' },
@@ -1311,7 +1528,11 @@ const data = [
       stars: 4, 
       good: 88, 
       timely: 96, 
-      correct: 91 
+      correct: 91,
+      sampleReview: {
+        name: "Kelly",
+        review: "The food was hot when it arrived, so impressed!"
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-6:30pm', pickup: '12:00pm-11:30pm' },
@@ -1335,7 +1556,11 @@ const data = [
       stars: 3, 
       good: 96, 
       timely: 85, 
-      correct: 89 
+      correct: 89,
+      sampleReview: {
+        name: "Thomas",
+        review: "Had to wait forever to get my food for pickup. Not impressed."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-9:00pm', pickup: '10:00am-10:00pm' },
@@ -1359,7 +1584,11 @@ const data = [
       stars: 3.5, 
       good: 81, 
       timely: 73, 
-      correct: 77 
+      correct: 77,
+      sampleReview: {
+        name: "Molly",
+        review: "The food was okay, but I wasn't too impressed."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-6:00pm', pickup: '9:00am-10:00pm' },
@@ -1383,7 +1612,11 @@ const data = [
       stars: 5, 
       good: 96, 
       timely: 96, 
-      correct: 95 
+      correct: 95,
+      sampleReview: {
+        name: "Colleen",
+        review: "The owner knows my name, such great customer service!"
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-7:30pm', pickup: '12:00pm-10:30pm' },
@@ -1407,7 +1640,11 @@ const data = [
       stars: 4.5, 
       good: 97, 
       timely: 91, 
-      correct: 94 
+      correct: 94,
+      sampleReview: {
+        name: "Michael",
+        review: "My go-to place for Chinese, for sure."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-6:30pm', pickup: '11:00am-10:30pm' },
@@ -1431,7 +1668,11 @@ const data = [
       stars: 3.5, 
       good: 73, 
       timely: 87, 
-      correct: 92 
+      correct: 92,
+      sampleReview: {
+        name: "Patrick",
+        review: "The food was lukewarm but otherwise pretty good."
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '10:30am-10:30pm' },
@@ -1455,7 +1696,11 @@ const data = [
       stars: 5, 
       good: 80, 
       timely: 79, 
-      correct: 95 
+      correct: 95,
+      sampleReview: {
+        name: "Barbara",
+        review: "I have never had a bad experience with them, and I order every week."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-8:30pm', pickup: '10:00am-10:30pm' },
@@ -1479,7 +1724,11 @@ const data = [
       stars: 4.5, 
       good: 94, 
       timely: 90, 
-      correct: 99 
+      correct: 99,
+      sampleReview: {
+        name: "Gavin",
+        review: "I can easily eat thirty of their breadsticks in one sitting. I've tried."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-8:00pm', pickup: '10:30am-10:00pm' },
@@ -1503,7 +1752,11 @@ const data = [
       stars: 3.5, 
       good: 81, 
       timely: 89, 
-      correct: 82 
+      correct: 82,
+      sampleReview: {
+        name: "Nancy",
+        review: "Pretty good for the price."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-6:30pm', pickup: '10:00am-11:00pm' },
@@ -1527,7 +1780,11 @@ const data = [
       stars: 3, 
       good: 72, 
       timely: 99, 
-      correct: 80 
+      correct: 80,
+      sampleReview: {
+        name: "Tracy",
+        review: "Not bad, but not my favorite."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-8:30pm', pickup: '11:00am-11:00pm' },
@@ -1551,7 +1808,11 @@ const data = [
       stars: 3.5, 
       good: 81, 
       timely: 79, 
-      correct: 80 
+      correct: 80,
+      sampleReview: {
+        name: "Lee",
+        review: "The food was pretty good, but it took an hour and a half."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-8:00pm', pickup: '10:30am-10:00pm' },
@@ -1575,7 +1836,11 @@ const data = [
       stars: 3, 
       good: 86, 
       timely: 90, 
-      correct: 83 
+      correct: 83,
+      sampleReview: {
+        name: "Wong",
+        review: "Definitely not worth the price."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-9:00pm', pickup: '11:30am-10:00pm' },
@@ -1599,7 +1864,11 @@ const data = [
       stars: 3.5, 
       good: 73, 
       timely: 100, 
-      correct: 85 
+      correct: 85,
+      sampleReview: {
+        name: "Lily",
+        review: "You can never go wrong with pizza."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-7:30pm', pickup: '10:00am-10:30pm' },
@@ -1621,7 +1890,13 @@ const data = [
     ratings: { 
       number: 463, 
       stars: 5, 
-      good: 100, timely: 96, correct: 98 
+      good: 100, 
+      timely: 96, 
+      correct: 98,
+      sampleReview: {
+        name: "Brandon",
+        review: "It's so good I once cried for half an hour."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-7:30pm', pickup: '12:00pm-11:30pm' },
@@ -1645,7 +1920,11 @@ const data = [
       stars: 4, 
       good: 81, 
       timely: 93, 
-      correct: 89 
+      correct: 89,
+      sampleReview: {
+        name: "Courtney",
+        review: "Love getting lunch from here!"
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-9:00pm', pickup: '11:00am-11:30pm' },
@@ -1669,7 +1948,11 @@ const data = [
       stars: 4, 
       good: 83, 
       timely: 89, 
-      correct: 99 
+      correct: 99,
+      sampleReview: {
+        name: "Chelsea",
+        review: "The food got here so fast! I'm impressed."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-9:00pm', pickup: '11:00am-11:30pm' },
@@ -1693,7 +1976,11 @@ const data = [
       stars: 4.5, 
       good: 97, 
       timely: 82, 
-      correct: 95 
+      correct: 95,
+      sampleReview: {
+        name: "Norman",
+        review: "I'm definitely ordering from here again."
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-9:00pm', pickup: '11:30am-10:30pm' },
@@ -1717,7 +2004,11 @@ const data = [
       stars: 5, 
       good: 72, 
       timely: 80, 
-      correct: 80 
+      correct: 80,
+      sampleReview: {
+        name: "Mikey",
+        review: "The food was so good I did a painting of it."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-6:30pm', pickup: '10:30am-10:00pm' },
@@ -1741,7 +2032,11 @@ const data = [
       stars: 3, 
       good: 83, 
       timely: 83, 
-      correct: 73 
+      correct: 73,
+      sampleReview: {
+        name: "Julia",
+        review: "It took so long to get here. I probably won't get it again."
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-6:00pm', pickup: '10:00am-10:00pm' },
@@ -1765,7 +2060,11 @@ const data = [
       stars: 3, 
       good: 82, 
       timely: 93, 
-      correct: 80 
+      correct: 80,
+      sampleReview: {
+        name: "Kinsey",
+        review: "Not sure I understand the hype about this place. It was just ok."
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-8:30pm', pickup: '12:00pm-11:00pm' },
@@ -1789,7 +2088,11 @@ const data = [
       stars: 4.5, 
       good: 79, 
       timely: 77, 
-      correct: 90 
+      correct: 90,
+      sampleReview: {
+        name: 'Casey',
+        review: 'My favorite dinner spot for sure!'
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-9:00pm', pickup: '10:30am-11:30pm' },
@@ -1813,7 +2116,11 @@ const data = [
       stars: 5, 
       good: 95, 
       timely: 99, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: 'Steve',
+        review: 'I absolutely love this place. Can\'t stop ordering from here.'
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-6:00pm', pickup: '10:30am-10:30pm' },
@@ -1837,7 +2144,11 @@ const data = [
       stars: 3.5, 
       good: 87, 
       timely: 88, 
-      correct: 83 
+      correct: 83,
+      sampleReview: {
+        name: 'Diana',
+        review: 'The food took kind of a long time, but I thought it tasted fine.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-7:30pm', pickup: '9:00am-10:30pm' },
@@ -1861,7 +2172,11 @@ const data = [
       stars: 4.5, 
       good: 91, 
       timely: 98, 
-      correct: 93 
+      correct: 93,
+      sampleReview: {
+        name: 'Simone',
+        review: 'I order lunch from here almost every day!'
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-9:00pm', pickup: '12:00pm-10:30pm' },
@@ -1885,7 +2200,11 @@ const data = [
       stars: 3.5, 
       good: 91, 
       timely: 74, 
-      correct: 73 
+      correct: 73,
+      sampleReview: {
+        name: 'Brittany',
+        review: 'It\'s not worth the price in my opinion.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-6:30pm', pickup: '11:00am-11:00pm' },
@@ -1909,7 +2228,11 @@ const data = [
       stars: 5, 
       good: 100, 
       timely: 98, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: 'Jonathan',
+        review: 'My fav pizza place for sure.'
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-8:30pm', pickup: '11:30am-11:00pm' },
@@ -1933,7 +2256,11 @@ const data = [
       stars: 3.5, 
       good: 85, 
       timely: 89, 
-      correct: 85 
+      correct: 85,
+      sampleReview: {
+        name: 'Greg',
+        review: 'A pretty good fast-food place.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-6:00pm', pickup: '11:00am-11:00pm' },
@@ -1957,7 +2284,11 @@ const data = [
       stars: 5, 
       good: 95, 
       timely: 96, 
-      correct: 100 
+      correct: 100,
+      sampleReview: {
+        name: 'Freddy',
+        review: 'Love their burgers despite how insufferably bougie they are.'
+      }   
     },
     schedule: {
       monFri: { delivery: '10:00am-6:30pm', pickup: '12:00pm-10:30pm' },
@@ -1981,7 +2312,11 @@ const data = [
       stars: 4, 
       good: 89, 
       timely: 96, 
-      correct: 96 
+      correct: 96,
+      sampleReview: {
+        name: 'Rachel',
+        review: 'My recent go-to lunch spot!'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '11:00am-10:00pm' },
@@ -2005,7 +2340,11 @@ const data = [
       stars: 4, 
       good: 90, 
       timely: 87, 
-      correct: 94 
+      correct: 94,
+      sampleReview: {
+        name: 'Phil',
+        review: 'My coworkers always want this place for lunch.'
+      } 
     },
     schedule: {
       monFri: { delivery: '10:00am-7:30pm', pickup: '10:00am-11:00pm' },
@@ -2029,7 +2368,11 @@ const data = [
       stars: 2.5, 
       good: 73, 
       timely: 79, 
-      correct: 90 
+      correct: 90,
+      sampleReview: {
+        name: 'Lyanna',
+        review: 'The food was so cold when it arrived I used it as an icepack.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-8:30pm', pickup: '10:00am-10:00pm' },
@@ -2053,7 +2396,11 @@ const data = [
       stars: 4.5, 
       good: 98, 
       timely: 95, 
-      correct: 87 
+      correct: 87,
+      sampleReview: {
+        name: 'Oscar',
+        review: 'I order from here every time I\'m in town.'
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-6:00pm', pickup: '10:00am-11:30pm' },
@@ -2077,7 +2424,11 @@ const data = [
       stars: 3, 
       good: 77, 
       timely: 81, 
-      correct: 92 
+      correct: 92,
+      sampleReview: {
+        name: 'Jasmine',
+        review: 'Pretty good, just not my favorite.'
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-6:00pm', pickup: '10:00am-11:30pm' },
@@ -2101,7 +2452,11 @@ const data = [
       stars: 3.5, 
       good: 82, 
       timely: 74, 
-      correct: 86 
+      correct: 86,
+      sampleReview: {
+        name: 'Ashley',
+        review: 'Their fries are the best in town.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-6:00pm', pickup: '11:00am-10:00pm' },
@@ -2125,7 +2480,11 @@ const data = [
       stars: 3.5, 
       good: 71, 
       timely: 99,
-      correct: 93 
+      correct: 93,
+      sampleReview: {
+        name: 'Nathan',
+        review: 'So. Darn. Yummy.'
+      }   
     },
     schedule: {
       monFri: { delivery: '10:30am-8:00pm', pickup: '12:00pm-10:30pm' },
@@ -2149,7 +2508,11 @@ const data = [
       stars: 3.5, 
       good: 80, 
       timely: 77, 
-      correct: 86 
+      correct: 86,
+      sampleReview: {
+        name: 'Cassandra',
+        review: 'My husband and I order from here every weekend.'
+      } 
     },
     schedule: {
       monFri: { delivery: '11:00am-9:00pm', pickup: '11:30am-11:30pm' },
@@ -2173,7 +2536,11 @@ const data = [
       stars: 4, 
       good: 83, 
       timely: 94, 
-      correct: 88 
+      correct: 88,
+      sampleReview: {
+        name: 'Violet',
+        review: 'The food was hot when it arrived, so tasty!'
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-8:00pm', pickup: '12:00pm-11:00pm' },
@@ -2197,7 +2564,11 @@ const data = [
       stars: 4, 
       good: 93, 
       timely: 82, 
-      correct: 84 
+      correct: 84,
+      sampleReview: {
+        name: 'David',
+        review: 'The best after a night of drinking.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-8:30pm', pickup: '11:00am-11:00pm' },
@@ -2221,7 +2592,11 @@ const data = [
       stars: 3.5,
       good: 88, 
       timely: 80, 
-      correct: 75 
+      correct: 75,
+      sampleReview: {
+        name: 'Reece',
+        review: 'I\'ve recommended this place to all my friends already.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:00am-8:00pm', pickup: '9:00am-11:30pm' },
@@ -2245,7 +2620,11 @@ const data = [
       stars: 3.5, 
       good: 71, 
       timely: 94, 
-      correct: 90 
+      correct: 90,
+      sampleReview: {
+        name: 'Kevin',
+        review: 'The food got here really quick but it didn\'t taste that good.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-6:00pm', pickup: '9:00am-10:00pm' },
@@ -2269,7 +2648,11 @@ const data = [
       stars: 4.5, 
       good: 97, 
       timely: 96, 
-      correct: 80 
+      correct: 80,
+      sampleReview: {
+        name: 'Hannah',
+        review: 'I only have one word to describe this place: YUMMY!'
+      }  
     },
     schedule: {
       monFri: { delivery: '10:30am-6:30pm', pickup: '11:30am-10:00pm' },
@@ -2293,7 +2676,11 @@ const data = [
       stars: 5, 
       good: 95, 
       timely: 96, 
-      correct: 96 
+      correct: 96,
+      sampleReview: {
+        name: 'Jessie',
+        review: 'This is easily my favorite restaurant.'
+      }  
     },
     schedule: {
       monFri: { delivery: '10:00am-8:30pm', pickup: '10:00am-11:00pm' },
@@ -2317,7 +2704,11 @@ const data = [
       stars: 4, 
       good: 82, 
       timely: 85, 
-      correct: 82 
+      correct: 82,
+      sampleReview: {
+        name: 'Jackie',
+        review: 'The food was pretty good. I\'ll definitely order again.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-6:30pm', pickup: '11:00am-10:00pm' },
@@ -2341,7 +2732,11 @@ const data = [
       stars: 3, 
       good: 73, 
       timely: 91, 
-      correct: 87 
+      correct: 87,
+      sampleReview: {
+        name: 'Annie',
+        review: 'Not bad, but not the best.'
+      }  
     },
     schedule: {
       monFri: { delivery: '11:30am-6:00pm', pickup: '9:00am-10:00pm' },
@@ -2365,7 +2760,11 @@ const data = [
       stars: 5, 
       good: 95, 
       timely: 97, 
-      correct: 98 
+      correct: 98,
+      sampleReview: {
+        name: 'A.J.',
+        review: 'I physically fought my friend over the last french fry because it was so good.'
+      } 
     },
     schedule: {
       monFri: { delivery: '10:30am-7:30pm', pickup: '11:00am-11:00pm' },
@@ -2389,7 +2788,11 @@ const data = [
       stars: 3.5, 
       good: 92, 
       timely: 72, 
-      correct: 82 
+      correct: 82,
+      sampleReview: {
+        name: 'Nicholas',
+        review: 'A pretty solid lunch spot.'
+      } 
     },
     schedule: {
       monFri: { delivery: '11:30am-8:00pm', pickup: '10:30am-10:30pm' },

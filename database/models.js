@@ -14,7 +14,11 @@ let restaurantSchema = new mongoose.Schema({
     stars: Number,
     good: Number,
     timely: Number,
-    correct: Number
+    correct: Number,
+    sampleReview: {
+      name: String,
+      review: String,
+    }
   },
   schedule: {
     monFri: {
