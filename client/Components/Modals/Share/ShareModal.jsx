@@ -36,10 +36,22 @@ class ShareModal extends React.Component {
           <span className="share-modal-close" onClick={this.props.handleHide}><MdClose /></span>
           <h3>Share {this.props.restaurant}</h3>
           <div className="share-options-container">
-            <div className="share-option"><FaFacebookSquare /> <span className="share-option-label">Facebook</span></div>
-            <div className="share-option"><FaTwitter /> <span className="share-option-label">Twitter</span></div>
-            <div className="share-option"><MdEmail /> <span className="share-option-label">Email</span></div>
-            <div className="share-option" onClick={this.handleCopy}><FaBolt/> <span style={copyLinkLabelStyle} className="share-option-label">{this.state.copyLinkLabel}</span></div>
+            <div className="share-option">
+              <FaFacebookSquare /> 
+              <span className="share-option-label">Facebook</span>
+            </div>
+            <div className="share-option">
+              <FaTwitter /> 
+              <span className="share-option-label">Twitter</span>
+            </div>
+            <div className="share-option">
+              <MdEmail /> 
+              <span className="share-option-label">Email</span>
+            </div>
+            <div className="share-option" onClick={this.handleCopy}>
+              <FaBolt/> 
+              <span style={copyLinkLabelStyle} className="share-option-label">{this.state.copyLinkLabel}</span>
+            </div>
           </div>
         </div>
       </div>
