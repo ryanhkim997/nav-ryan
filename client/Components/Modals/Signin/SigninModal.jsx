@@ -9,14 +9,24 @@ class SigninModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      forgotPassword: false
+      forgotPassword: false,
+      createAccount: false
     };
     this.handlePassword = this.handlePassword.bind(this);
+    this.handleAccount = this.handleAccount.bind(this);
   }
 
   handlePassword() {
     this.setState({
-      forgotPassword: !this.state.forgotPassword
+      forgotPassword: !this.state.forgotPassword,
+      createAccount: false
+    });
+  }
+
+  handleAccount() {
+    this.setState({
+      createAccount: !this.state.createAccount,
+      forgotPassword: false
     });
   }
 
@@ -34,6 +44,21 @@ class SigninModal extends React.Component {
           <button>Submit</button>
           <p>Contact Customer Care</p>
         </div>)
+    } else if(this.state.createAccount) {
+      modal = (
+      <div className="account-modal">
+        <span className="signin-modal-close" onClick={this.props.handleHide}><MdClose /></span>
+        <h2>Create your account</h2>
+        <input type="text" className="signin-form-name" style={{marginRight: "1%"}} placeholder="First name"></input>
+        <input type="text" className="signin-form-name" style={{marginLeft: "1%"}} placeholder="Last name"></input>
+        <input type="email" className="signin-form-input" placeholder="Email"></input>
+        <input type="password" className="signin-form-input" placeholder="Password (8 character minimum)"></input>
+        <label className="signin-checkbox-container">
+          <input type="checkbox"/>
+          <span className="signin-form-check"></span>
+          Keep me signed in
+        </label>
+      </div>)
     } else {
       modal = (     
         <div className="sign-in-modal">
@@ -63,7 +88,7 @@ class SigninModal extends React.Component {
               <img className="btn-google-logo" src="https://www.grubhub.com/img-hashed/google_logo-3892242713d78c209d3433f31634e504.svg" />
               Continue with Google
             </button>
-            <p className="create-acct">Create your account</p>
+            <p className="create-acct" onClick={this.handleAccount}>Create your account</p>
           </div>
         </div>)
     }

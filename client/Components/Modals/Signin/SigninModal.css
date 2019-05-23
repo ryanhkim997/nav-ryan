@@ -324,3 +324,35 @@
   cursor: pointer;
   color: #0058b8;
 }
+
+/* create account modal */
+.account-modal {
+  background-color: white;
+  border-radius: 4px;
+  width: 45%;
+  min-width: 476px; 
+  height: 95vh;
+  margin-bottom: 10px;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.signin-form-name {
+  transition: border-color .1s ease;
+  font-size: 14px;
+  line-height: 1.4;
+  display: inline-block;
+  width: 49%;
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  color: rgba(0,0,0,.87);
+  background: #fff;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.signin-checkbox-container {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.9em;
+}
