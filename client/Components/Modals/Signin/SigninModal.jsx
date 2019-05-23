@@ -40,7 +40,7 @@ class SigninModal extends React.Component {
 
   render() {
     let modal;
-    if(this.state.forgotPassword) {
+    if (this.state.forgotPassword) {
       modal = (
         <div className="password-modal">
           <span className="password-modal-back" onClick={this.handleForgotPassword}><FaArrowLeft /></span>
@@ -52,7 +52,7 @@ class SigninModal extends React.Component {
           <button>Submit</button>
           <p>Contact Customer Care</p>
         </div>)
-    } else if(this.state.createAccount) {
+    } else if (this.state.createAccount) {
       modal = (
       <div className="account-modal">
         <span className="signin-modal-close" onClick={this.props.handleHide}><MdClose /></span>

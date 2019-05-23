@@ -46,8 +46,8 @@ class Intro extends React.Component {
     });
   }
 
-  // NOTE: Had to have intro component fetch restaurant instead of receiving prop from App because the image
-  // was being fetched asynchronously and wasn't responding to CSS styling.
+  /* NOTE: Had to have intro component fetch restaurant instead of receiving prop from App because the image
+  was being fetched asynchronously and wasn't responding to CSS styling. */
   fetchRestaurant() {
     let url = window.location.href;
     axios.get(`${url}info`)
@@ -79,7 +79,7 @@ class Intro extends React.Component {
     let sampleCustomer = null;
     let sampleCustomerInitial = null;
     let sampleReview = null;
-    if(address && ratings) {
+    if (address && ratings) {
       address1 = address['line1'];
       stars = ratings['stars'];
       numRatings = ratings['number'];
@@ -91,15 +91,15 @@ class Intro extends React.Component {
       sampleReview = ratings['sampleReview']['review'];
     } 
     // Set image for star ratings
-    if(stars === 2.5) {
+    if (stars === 2.5) {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/2halfstars.png";
-    } else if(stars === 3) {
+    } else if (stars === 3) {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/3stars.png";
-    } else if(stars === 3.5) {
+    } else if (stars === 3.5) {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/3halfstars.png";
-    } else if(stars === 4) {
+    } else if (stars === 4) {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/4stars.png";
-    } else if(stars === 4.5) {
+    } else if (stars === 4.5) {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/4halfstars.png";
     } else {
       starSource = "https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/5stars.png";
