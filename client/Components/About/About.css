@@ -1,0 +1,50 @@
+.about-app {
+  box-sizing: border-box;
+  padding: 12px;
+  width: 75%;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #FBFBFC;
+  padding-top: 60px; /* MAKE THIS MARGIN-TOP WHEN COMBINING */
+}
+
+.about-app h3 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.about-category {
+  color: #0070eb;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.about-category:hover {
+  color: #0058b8;
+  cursor: pointer;
+}
+
+.about-price-container {
+  position: relative;
+  margin-top: 5px;
+}
+
+.about-price-range, .about-price-base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  text-align: left;
+  font-size: 0.9em;
+  font-family: Arial;
+  letter-spacing: 0.05em;
+}
+
+.about-price-range {
+  color: rgba(0, 0, 0, 0.87);
+  z-index: 1;
+}
+
+.about-price-base {
+  color: #cacaca;
+  z-index: 0;
+}

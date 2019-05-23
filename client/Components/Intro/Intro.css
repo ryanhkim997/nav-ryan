@@ -1,7 +1,5 @@
 .intro-app {
-  position: absolute;
-  left: 0;
-  top: 61px;
+  margin-top: 61px;
   display: block;
   width: 75%;
   min-width: 75%;
