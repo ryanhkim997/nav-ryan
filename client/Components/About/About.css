@@ -7,6 +7,11 @@
   padding-top: 60px; /* MAKE THIS MARGIN-TOP WHEN COMBINING */
 }
 
+.about-column {
+  display: inline-block;
+  width: 50%;
+}
+
 .about-app h3 {
   font-size: 1.3em;
   margin-bottom: 8px;
@@ -18,7 +23,8 @@
   font-size: 0.9em;
 }
 
-.about-category:hover {
+.about-category:hover, .about-address-container p:hover,
+.about-phone-container p:hover {
   color: #0058b8;
   cursor: pointer;
 }
@@ -47,4 +53,28 @@
 .about-price-base {
   color: #cacaca;
   z-index: 0;
+}
+
+.about-app img {
+  width: 100%;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.about-address-container {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.about-address-container p, .about-phone-container p {
+  color: #0070eb;
+  font-weight: 300;
+  font-size: 0.85em;
+  margin: 3px;
+}
+
+.about-phone-container {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
