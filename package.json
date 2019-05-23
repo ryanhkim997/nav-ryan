@@ -11,7 +11,8 @@
     "react-build": "webpack -w -d",
     "seed-db": "node database/seed.js",
     "start": "nodemon server/index.js",
-    "test": "jest"
+    "test": "jest",
+    "test:c": "jest --coverage"
   },
   "jest": {
     "setupFilesAfterEnv": [

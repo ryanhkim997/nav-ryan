@@ -1,0 +1,856 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the App Component should grab a snapshot of the component 1`] = `
+<div>
+  <div
+    className="nav-app"
+  >
+    <div
+      className="nav-navbar"
+    >
+      <div
+        className="nav-brand"
+      >
+        <img
+          src="https://s3-us-west-1.amazonaws.com/kayjayhogan/GH.png"
+        />
+      </div>
+      <div
+        className="nav-search"
+      >
+        <div
+          className="nav-search-address-container"
+        >
+          <div
+            className="nav-search-address"
+            onClick={[Function]}
+          >
+            <span
+              className="nav-loc-icon"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+            </span>
+            <span
+              className="nav-search-address-text"
+            >
+              6060 Center Dr
+            </span>
+            <span
+              className="nav-down-arrow"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 10 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div
+          className="nav-search-input-container"
+        >
+          <div
+            className="nav-search-flex"
+          >
+            <span
+              className="nav-search-icon"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 16 16"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </span>
+            <input
+              onClick={[Function]}
+              placeholder="Pizza, sushi, chinese"
+            />
+            <span
+              className="nav-close-icon"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="nav-buttons"
+      >
+        <div
+          className="nav-sign-in"
+        >
+          <button
+            className="nav-sign-in-btn"
+            onClick={[Function]}
+          >
+            <strong>
+              Sign In
+            </strong>
+          </button>
+        </div>
+        <div
+          className="nav-bag"
+        >
+          <span
+            className="nav-bag-icon"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="intro-app"
+  >
+    <div
+      className="intro-img-container"
+      style={
+        Object {
+          "backgroundImage": "url(undefined)",
+        }
+      }
+    >
+      <div
+        className="intro-icon-container"
+      >
+        <button
+          className="intro-back-btn"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 256 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="intro-icon-container"
+      >
+        <button
+          className="intro-share-btn"
+          onClick={[Function]}
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"
+            />
+          </svg>
+        </button>
+        <button
+          className="intro-save-btn"
+          onClick={[Function]}
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 384 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      className="intro-summary"
+    >
+      <div
+        className="intro-logo-container"
+      >
+        <img
+          src="https://s3-us-west-1.amazonaws.com/kayjayhogan/default-img.png"
+        />
+      </div>
+      <h1 />
+      <p>
+        <span
+          className="intro-add"
+        />
+        <span />
+      </p>
+      <div
+        className="intro-tooltip"
+      >
+        <img
+          className="intro-stars"
+          src="https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/5stars.png"
+        />
+        <span
+          className="intro-num-ratings"
+        >
+          0
+           ratings
+        </span>
+        <div
+          className="intro-tooltip-bottom"
+        >
+          <div
+            className="intro-tooltip-container"
+          >
+            <span
+              className="intro-tooltip-header"
+            >
+              Here's what people are saying:
+            </span>
+            <div
+              className="intro-tooltip-breakdown"
+            >
+              <span
+                className="intro-tooltip-percent"
+              >
+                <strong>
+                  0
+                </strong>
+                %
+              </span>
+              <br />
+              <span
+                className="intro-tooltip-label"
+              >
+                Food was good
+              </span>
+            </div>
+            <div
+              className="intro-tooltip-breakdown-mid"
+            >
+              <span
+                className="intro-tooltip-percent"
+              >
+                <strong>
+                  0
+                </strong>
+                %
+              </span>
+              <br />
+              <span
+                className="intro-tooltip-label"
+              >
+                Delivery was on time
+              </span>
+            </div>
+            <div
+              className="intro-tooltip-breakdown"
+            >
+              <span
+                className="intro-tooltip-percent"
+              >
+                <strong>
+                  0
+                </strong>
+                %
+              </span>
+              <br />
+              <span
+                className="intro-tooltip-label"
+              >
+                Order was correct
+              </span>
+            </div>
+          </div>
+          <div
+            className="intro-tooltip-review-container"
+          >
+            <div
+              className="intro-tooltip-avatar"
+            />
+            <div
+              className="intro-tooltip-review"
+            >
+              <span>
+                <strong>
+                  :
+                </strong>
+              </span>
+              <br />
+              <span />
+            </div>
+          </div>
+          <div
+            className="intro-tooltip-all-reviews"
+          >
+            All Reviews (
+            0
+            )
+          </div>
+          <i />
+        </div>
+      </div>
+      <span
+        className="intro-rating-breakdown"
+      >
+        <span
+          className="intro-percent"
+        >
+          <strong>
+            0
+          </strong>
+          %
+        </span>
+         Food was good
+        <span
+          className="intro-percent"
+        >
+          <strong>
+            0
+          </strong>
+          %
+        </span>
+         Delivery was on time
+        <span
+          className="intro-percent"
+        >
+          <strong>
+            0
+          </strong>
+          %
+        </span>
+         Order was correct
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Testing the Intro Component should grab a snapshot of the component 1`] = `
+<div
+  className="intro-app"
+>
+  <div
+    className="intro-img-container"
+    style={
+      Object {
+        "backgroundImage": "url(undefined)",
+      }
+    }
+  >
+    <div
+      className="intro-icon-container"
+    >
+      <button
+        className="intro-back-btn"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 256 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="intro-icon-container"
+    >
+      <button
+        className="intro-share-btn"
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 448 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96-42.981-96-96-96z"
+          />
+        </svg>
+      </button>
+      <button
+        className="intro-save-btn"
+        onClick={[Function]}
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 384 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div
+    className="intro-summary"
+  >
+    <div
+      className="intro-logo-container"
+    >
+      <img
+        src="https://s3-us-west-1.amazonaws.com/kayjayhogan/default-img.png"
+      />
+    </div>
+    <h1 />
+    <p>
+      <span
+        className="intro-add"
+      />
+      <span />
+    </p>
+    <div
+      className="intro-tooltip"
+    >
+      <img
+        className="intro-stars"
+        src="https://s3-us-west-1.amazonaws.com/kayjayhogan/Stars/5stars.png"
+      />
+      <span
+        className="intro-num-ratings"
+      >
+        0
+         ratings
+      </span>
+      <div
+        className="intro-tooltip-bottom"
+      >
+        <div
+          className="intro-tooltip-container"
+        >
+          <span
+            className="intro-tooltip-header"
+          >
+            Here's what people are saying:
+          </span>
+          <div
+            className="intro-tooltip-breakdown"
+          >
+            <span
+              className="intro-tooltip-percent"
+            >
+              <strong>
+                0
+              </strong>
+              %
+            </span>
+            <br />
+            <span
+              className="intro-tooltip-label"
+            >
+              Food was good
+            </span>
+          </div>
+          <div
+            className="intro-tooltip-breakdown-mid"
+          >
+            <span
+              className="intro-tooltip-percent"
+            >
+              <strong>
+                0
+              </strong>
+              %
+            </span>
+            <br />
+            <span
+              className="intro-tooltip-label"
+            >
+              Delivery was on time
+            </span>
+          </div>
+          <div
+            className="intro-tooltip-breakdown"
+          >
+            <span
+              className="intro-tooltip-percent"
+            >
+              <strong>
+                0
+              </strong>
+              %
+            </span>
+            <br />
+            <span
+              className="intro-tooltip-label"
+            >
+              Order was correct
+            </span>
+          </div>
+        </div>
+        <div
+          className="intro-tooltip-review-container"
+        >
+          <div
+            className="intro-tooltip-avatar"
+          />
+          <div
+            className="intro-tooltip-review"
+          >
+            <span>
+              <strong>
+                :
+              </strong>
+            </span>
+            <br />
+            <span />
+          </div>
+        </div>
+        <div
+          className="intro-tooltip-all-reviews"
+        >
+          All Reviews (
+          0
+          )
+        </div>
+        <i />
+      </div>
+    </div>
+    <span
+      className="intro-rating-breakdown"
+    >
+      <span
+        className="intro-percent"
+      >
+        <strong>
+          0
+        </strong>
+        %
+      </span>
+       Food was good
+      <span
+        className="intro-percent"
+      >
+        <strong>
+          0
+        </strong>
+        %
+      </span>
+       Delivery was on time
+      <span
+        className="intro-percent"
+      >
+        <strong>
+          0
+        </strong>
+        %
+      </span>
+       Order was correct
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Testing the Navbar Component should grab a snapshot of the component 1`] = `
+<div
+  className="nav-app"
+>
+  <div
+    className="nav-navbar"
+  >
+    <div
+      className="nav-brand"
+    >
+      <img
+        src="https://s3-us-west-1.amazonaws.com/kayjayhogan/GH.png"
+      />
+    </div>
+    <div
+      className="nav-search"
+    >
+      <div
+        className="nav-search-address-container"
+      >
+        <div
+          className="nav-search-address"
+          onClick={[Function]}
+        >
+          <span
+            className="nav-loc-icon"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+          </span>
+          <span
+            className="nav-search-address-text"
+          >
+            6060 Center Dr
+          </span>
+          <span
+            className="nav-down-arrow"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 10 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6l-5 5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div
+        className="nav-search-input-container"
+      >
+        <div
+          className="nav-search-flex"
+        >
+          <span
+            className="nav-search-icon"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </span>
+          <input
+            onClick={[Function]}
+            placeholder="Pizza, sushi, chinese"
+          />
+          <span
+            className="nav-close-icon"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="nav-buttons"
+    >
+      <div
+        className="nav-sign-in"
+      >
+        <button
+          className="nav-sign-in-btn"
+          onClick={[Function]}
+        >
+          <strong>
+            Sign In
+          </strong>
+        </button>
+      </div>
+      <div
+        className="nav-bag"
+      >
+        <span
+          className="nav-bag-icon"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
