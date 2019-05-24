@@ -6,9 +6,11 @@ class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      restaurant: {}
+      restaurant: {},
+      showFullSchedule: false
     };
     this.fetchRestaurant = this.fetchRestaurant.bind(this);
+    this.handleShowSchedule = this.handleShowSchedule.bind(this);
   }
 
   fetchRestaurant() {
@@ -29,15 +31,21 @@ class About extends React.Component {
     this.fetchRestaurant();
   }
 
+  handleShowSchedule() {
+    this.setState({
+      showFullSchedule: true
+    });
+  }
+
   render() {
-    let { name, categories, priceRange, address, phone } = this.state.restaurant;
+    let { name, categories, priceRange, address, phone, schedule } = this.state.restaurant;
     // handle getting categories despite async
     let listOfCategories = categories ? 
     (categories.map((category, i) => {
       if (i === categories.length - 1) {
-        return <span className="about-category">{category}</span>
+        return <span key={i} className="about-category">{category}</span>
       } else {
-        return <span className="about-category">{category}, </span>
+        return <span key={i} className="about-category">{category}, </span>
       }
     })) : null;
     // handle getting price range despite async
@@ -62,16 +70,74 @@ class About extends React.Component {
       address2 = address['line2'];
       miles = address['milesAway'] + " mi";
     }
+    // handle hours (part of which is based on the user's current day) despite async
+    let weekdayDelivery;
+    let weekdayPickup;
+    let weekendDelivery;
+    let weekendPickup;
+
+    if(schedule) {
+      weekdayDelivery = schedule['monFri']['delivery'];
+      weekdayPickup = schedule['monFri']['pickup'];
+      weekendDelivery = schedule['satSun']['delivery'];
+      weekendPickup = schedule['satSun']['pickup'];
+    }
+    let d = new Date();
+    let day = d.getDay();
+    let todaysHours;
+    if(day >= 1 && day <= 5) {
+      todaysHours = 
+      <div>
+        <span className="about-hours-delivery">Delivery: <span>{weekdayDelivery}</span></span>
+        <span className="about-hours-pickup">Pickup: <span>{weekdayPickup}</span></span>
+      </div>
+    } else {
+      todaysHours = 
+      <div>
+        <span className="about-hours-delivery">Delivery: <span>{weekendDelivery}</span></span>
+        <span className="about-hours-pickup">Pickup: <span>{weekendPickup}</span></span>
+      </div>
+    }
+
+    let hours = this.state.showFullSchedule ?     
+    (<div className="about-hours-container">
+      <div className="about-hours-option">
+        Mon-Fri
+        <div className="about-hours">
+          <div>
+            <span className="about-hours-delivery">Delivery: <span>{weekdayDelivery}</span></span>
+            <span className="about-hours-pickup">Pickup: <span>{weekdayPickup}</span></span>
+          </div>
+        </div>  
+      </div>
+      <div className="about-hours-option">
+        Sat-Sun
+        <div className="about-hours">
+          <div>
+            <span className="about-hours-delivery">Delivery: <span>{weekendDelivery}</span></span>
+            <span className="about-hours-pickup">Pickup: <span>{weekendPickup}</span></span>
+          </div>
+        </div>
+      </div>
+    </div>) : 
+    (
+    <div>
+      <div className="about-today-container">
+        Today
+        <div className="about-hours">{todaysHours}</div>    
+      </div>
+      <p onClick={this.handleShowSchedule}>See the full schedule</p>
+    </div>);
 
     return(
     <div className="about-app">
-      <div className="about-column">
-        <h3>About {name}</h3>
-        {listOfCategories}
-        <div className="about-price-container">
-          <div className="about-price-range">{price}</div>
-          <div className="about-price-base">$$$$$</div>
-        </div>
+      <h3>About {name}</h3>
+      {listOfCategories}
+      <div className="about-price-container">
+        <div className="about-price-range">{price}</div>
+        <div className="about-price-base">$$$$$</div>
+      </div>
+      <div className="about-left">
         <img src="https://s3-us-west-1.amazonaws.com/kayjayhogan/map-default.png"></img>  
         <div className="about-address-container">
           <p>{address1}</p>
@@ -82,8 +148,9 @@ class About extends React.Component {
           <p>{phone}</p>
         </div>
       </div>
-      <div className="about-column">
-      hi
+      <div className="about-right">
+        <h4>Hours</h4>
+        {hours}
       </div>
     </div>);
   }

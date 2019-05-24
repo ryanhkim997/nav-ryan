@@ -7,9 +7,18 @@
   padding-top: 60px; /* MAKE THIS MARGIN-TOP WHEN COMBINING */
 }
 
-.about-column {
+.about-left, .about-right {
   display: inline-block;
-  width: 50%;
+  vertical-align: top;
+  width: 48%;
+}
+
+.about-left {
+  margin-right: 1%;
+}
+
+.about-right {
+  margin-left: 1%;
 }
 
 .about-app h3 {
@@ -20,11 +29,12 @@
 .about-category {
   color: #0070eb;
   font-weight: 300;
+  letter-spacing: 0.02em;
   font-size: 0.9em;
 }
 
-.about-category:hover, .about-address-container p:hover,
-.about-phone-container p:hover {
+.about-category:hover, .about-phone-container p:hover, .about-right p:hover,
+.about-address-container:hover p {
   color: #0058b8;
   cursor: pointer;
 }
@@ -70,11 +80,68 @@
 .about-address-container p, .about-phone-container p {
   color: #0070eb;
   font-weight: 300;
+  letter-spacing: 0.02em;
   font-size: 0.85em;
   margin: 3px;
 }
 
 .about-phone-container {
   padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.about-right {
+  margin-top: 30px;
+}
+
+.about-right h4 {
+  color: rgba(0, 0, 0, 0.55);
+  padding-left: 10px;
+}
+
+.about-hours-container, .about-today-container {
+  padding: 0 10px 35px 10px;
+  font-size: 0.9em;
+}
+
+.about-today-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.about-hours {
+  float: right;
+  text-align: right;
+}
+
+.about-hours-pickup {
+  color: rgba(0, 0, 0, 0.55);
+  margin-top: 4px;
+}
+
+.about-hours-pickup, .about-hours-delivery {
+  font-size: 1em;
+  display: block;
+}
+
+.about-hours-pickup span, .about-hours-delivery span {
+  width: 120px;
+  display: inline-block;
+  text-align: right;
+  margin-left: 5px;
+}
+
+.about-right p {
+  color: #0070eb;
+  font-weight: 300;
+  font-size: 0.9em;
+  padding-left: 10px;
+  letter-spacing: 0.02em;
+}
+
+.about-hours-option {
+  overflow: hidden;
+  padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
