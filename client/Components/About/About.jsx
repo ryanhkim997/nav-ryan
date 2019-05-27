@@ -13,6 +13,7 @@ class About extends React.Component {
     this.handleShowSchedule = this.handleShowSchedule.bind(this);
   }
 
+  // DOES THIS NEED TO CHANGE?
   fetchRestaurant() {
     let url = window.location.href;
     axios.get(`${url}info`)
