@@ -49,8 +49,9 @@ class Intro extends React.Component {
   /* NOTE: Had to have intro component fetch restaurant instead of receiving prop from App because the image
   was being fetched asynchronously and wasn't responding to CSS styling. */
   fetchRestaurant() {
-    let url = window.location.href;
-    axios.get(`${url}info`)
+    const id = window.location.href.split("id=")[1];
+		console.log("from 3300/bundle.js : " , window.location.href);
+    axios.get(`http://localhost:3300/api/restaurants/${id}`)
     .then(({ data }) => {
       let restaurantInfo = data[0];
       this.setState({

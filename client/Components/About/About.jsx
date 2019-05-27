@@ -15,8 +15,9 @@ class About extends React.Component {
 
   // DOES THIS NEED TO CHANGE?
   fetchRestaurant() {
-    let url = window.location.href;
-    axios.get(`${url}info`)
+    const id = window.location.href.split("id=")[1];
+		console.log("from 3300/bundle.js : " , window.location.href);
+    axios.get(`http://localhost:3300/api/restaurants/${id}`)
     .then(({ data }) => {
       let restaurantInfo = data[0];
       this.setState({

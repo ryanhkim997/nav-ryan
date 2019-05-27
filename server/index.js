@@ -7,13 +7,12 @@ const Restaurant = require('../database/models.js');
 const PORT = 3300;
 const app = express();
 
-// DOES THIS NEED TO CHANGE??
-app.use('/restaurants/:id', express.static(path.resolve(__dirname, '../public')));
+app.use('/restaurants/nav_intro', express.static(path.resolve(__dirname, '../public')));
 app.use(cors());
 app.use(parser.json());
 app.use(parser.urlencoded({ extended: true }));
 
-app.get('/restaurants/:id/info', function(req, res) {
+app.get('/api/restaurants/:id', function(req, res) {
   let { id } = req.params;
   Restaurant.find({ id })
   .then((result) => {
@@ -23,13 +22,6 @@ app.get('/restaurants/:id/info', function(req, res) {
     res.status(404).send('Could not complete get request: ', err);
   })
 });
-
-// REQUEST FROM PROXY SERVER??
-// app.get('/api/data/:id', (req,res) => {
-// 	const {id} = req.params;
-// 	let myMSG = `DB response, Nav/Intro, ID = ${id}`;
-// 	res.send({msg: myMSG});
-// });
 
 // NOTE: The below has no UI support but is in place for basic requirements.
 app.post('/restaurants', function(req, res) {
