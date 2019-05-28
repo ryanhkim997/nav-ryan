@@ -255,6 +255,7 @@
 .intro-tooltip-review {
   flex: 1 0 0%;
   text-align: left;
+  margin-right: 5px;
 }
 
 .intro-tooltip-review span:first-of-type {
