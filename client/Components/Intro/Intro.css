@@ -19,6 +19,7 @@
   flex: 1;
   max-width: 100%;
   padding: 12px;
+  margin-right: 60px;
 }
 
 .intro-back-btn {
@@ -30,6 +31,7 @@
   padding: 4px 3px 0 0;
   border-radius: 50%;
   font-size: 1.5em;
+  margin-left: 60px;
 }
 
 .intro-save-btn {
@@ -77,12 +79,12 @@
 }
 
 .intro-summary h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 72px;
   font-size: 1.7em;
 }
 
 .intro-summary p {
-  margin: 0;
+  margin: 0 0 0 72px;
   font-size: 0.9em;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.87);
@@ -90,6 +92,7 @@
 
 .intro-logo-container {    
   margin-top: -46px;
+  margin-right: 72px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.05);
   width: 80px;
   height: 80px;
@@ -135,6 +138,7 @@
   display:inline-block;
   position:relative;
   text-align:center;
+  margin-left: 72px;
 }
 
 .intro-tooltip .intro-tooltip-bottom {

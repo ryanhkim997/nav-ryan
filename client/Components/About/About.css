@@ -1,10 +1,15 @@
+#about-root {
+  background-color: #FBFBFC;
+  width: 75%;
+  box-sizing: border-box;
+}
+
 .about-app {
   box-sizing: border-box;
   padding: 12px;
   width: 75%;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #FBFBFC;
-  padding-top: 60px; /* MAKE THIS MARGIN-TOP WHEN COMBINING */
+  margin: 60px; 
 }
 
 .about-left, .about-right {

@@ -13,7 +13,6 @@ class About extends React.Component {
     this.handleShowSchedule = this.handleShowSchedule.bind(this);
   }
 
-  // DOES THIS NEED TO CHANGE?
   fetchRestaurant() {
     const id = window.location.href.split("id=")[1];
 		console.log("from 3300/bundle.js : " , window.location.href);
