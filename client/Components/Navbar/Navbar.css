@@ -1,0 +1,268 @@
+.nav-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  transform: translateZ(0);
+  box-shadow: 
+    0px 0px 0px 1px rgba(67, 41, 163, 0.1),
+    0px 1px 8px 0px rgba(67, 41, 163, 0.1);
+  transition: all .2s ease;
+}
+
+.nav-brand {
+  width: 150px;
+  margin: 0;
+  background-color: white;
+}
+
+.nav-navbar img {
+  width: 100px;
+  margin: 20px auto;
+  display: block;
+}
+
+.nav-navbar img:hover {
+  cursor: pointer;
+}
+
+.nav-down-arrow {
+  color: #0070eb;
+  margin-left: 3px;
+  margin-top: 5px;
+  font-size: 1.1em;
+  
+}
+
+.nav-down-arrow:hover {
+  cursor: pointer;
+}
+
+.nav-search {
+  width: 70%;
+  height: 60px;
+  background-color: white;
+}
+
+.nav-search-address-container {
+  margin: 8px;
+  min-width: 150px;
+  height: 43px;
+  float: left;
+  background-color: white;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-search-address {
+  padding: 14px;
+  height: 13px;
+  margin: 2px 0;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-search-address:hover {
+  background-color: #f6f6f6;
+}
+
+.nav-loc-icon {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  float: left;
+  text-align: left;
+}
+
+.nav-loc-icon:hover {
+  cursor: pointer;
+}
+
+.nav-address-input {
+  top: 61px;
+  position: absolute;
+  box-shadow: 0px 0px 0px 1px rgba(67, 41, 163, 0.12), 
+  0px 1px 12px 0px rgba(67, 41, 163, 0.12);
+  margin-left: 0;
+  min-width: 352px;
+  max-width: 352px; 
+  border-radius: 0 0 4px 4px;
+}
+
+.nav-address-input input {
+  padding: 12px 16px 12px 40px;
+  width: 100%;
+  border: 1px solid #cacaca;
+  background: #f6f6f6;
+  min-width: 230px;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.nav-input-icon {
+  position: absolute;
+  font-size: 1.5em;
+  color: #cacaca;
+  top: 10px;
+  left: 10px;
+}
+
+.nav-search-address-text {
+  letter-spacing: 0.03em;
+}
+
+.nav-search-address-text:hover {
+  cursor: pointer;
+}
+
+.nav-search-input-container {
+  margin: 12px;
+  width: 370px;
+  height: 36px;
+  border-radius: 4px;
+  float: left;
+  background-color: white;
+}
+
+.nav-search-input-container input {
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+  padding: 0 36px;
+  height: 34px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-search-flex {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.nav-search-icon {
+  width: 44px;
+  height: 36px;
+  position: absolute;
+  padding: 10px 15px;
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.2s ease;
+}
+
+.nav-close-icon {
+  width: 44px;
+  height: 36px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding: 10px 15px;
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.2s ease;
+}
+
+.nav-close-icon svg:hover {
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.nav-sign-in {
+  margin-left: auto;
+  width: 88px;
+  margin-right: 0;
+}
+
+.nav-sign-in-btn {
+  color: #0070eb;
+  border: 2px solid #0070eb;
+  border-radius: 4px;
+  margin-top: 14px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1.595;
+  padding: 6px 16px 5px;
+}
+
+.nav-sign-in-btn:hover {
+  cursor: pointer;
+  border-color: #0058b8;
+  color: #0058b8;
+}
+
+.nav-bag {
+  width: 53px;
+  margin-right: 10px;
+  padding-top: 18px;
+  text-align: center;
+}
+
+.nav-bag-icon {
+  font-size: 22px;
+  width: 22px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-bag-icon:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.nav-popular-search {
+  max-height: 708.5px;
+  overflow: auto;
+  background-color: #f6f6f6;
+  min-width: 370px;
+  width: 100%;
+  position: absolute;
+  top: 36px;
+  left: 0px;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 0 rgba(72,71,70,.5);
+  border: 1px solid #cacaca;
+  padding: 0;
+}
+
+.nav-popular-header {
+  background-color: white;
+  border-top: 1px solid rgba(0,0,0,.2);
+  padding: 12px 16px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.nav-popular-header:hover, .nav-popular-option:hover {
+  cursor: pointer;
+  background-color: #fbfbfb;
+}
+
+.nav-popular-option {
+  background-color: white;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 12px 16px;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+.nav-popular-icon {
+  float: right;
+}
+
+.nav-app {
+  overflow: hidden;
+  height: 100%
+}
+
+#app-root input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}

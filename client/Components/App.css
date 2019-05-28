@@ -1,0 +1,9 @@
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  margin: 0;
+}
+
+#modal-root {
+  position: relative;
+  z-index: 1000;
+}
