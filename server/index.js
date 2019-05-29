@@ -1,16 +1,16 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const parser = require('body-parser');
 const db = require('../database/index.js');
 const Restaurant = require('../database/models.js');
 const PORT = 3300;
 const app = express();
 
-app.use('/restaurants/nav_intro', express.static(path.resolve(__dirname, '../public')));
 app.use(cors());
-app.use(parser.json());
-app.use(parser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use('/restaurants/nav_intro', express.static(path.resolve(__dirname, '../public')));
 
 app.get('/api/restaurants/:id', function(req, res) {
   let { id } = req.params;

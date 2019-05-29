@@ -1,6 +1,10 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/grubhub', {useNewUrlParser: true});
-// mongoose.connect('mongodb+srv://kjhogan:kjhogan@cluster0-hvkil.mongodb.net/test?retryWrites=true', {useNewUrlParser: true});
+// mongoose.connect('mongodb://127.0.0.1:27017/grubhub', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://kjhogan:kjhogan@cluster0-hvkil.mongodb.net/test?retryWrites=true', {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useCreateIndex: true
+});
 
 const db = mongoose.connection;
 db.on('error', (err) => console.log('Could not connect to database: ', err));
