@@ -77,9 +77,9 @@ describe('Testing the Intro Component', () => {
     expect(getSpy).toBeCalled();
   });
 
-  // it('should return a single-node wrapper.', ()=> {
-	// 	expect(shallow(<Intro />).length).toEqual(1)
-	// })
+  it('should return a single-node wrapper.', ()=> {
+		expect(shallow(<Intro />).length).toEqual(1)
+  });
    
 });
 
@@ -92,26 +92,52 @@ describe('Testing the About Component', () => {
     );
     expect(getSpy).toBeCalled();
   });
+
+  it('should show full schedule upon clicking link', () => {
+    const wrapper = shallow(<About />);
+    expect(wrapper.state('showFullSchedule')).toBe(false);
+    wrapper.find('#see-full-sched').simulate('click');
+    expect(wrapper.state('showFullSchedule')).toBe(true);
+  });
    
 });
 
-// describe('Testing the ShareModal Component', () => {
+describe('Testing the Modal component', ()=> {
 
-//    it('renders the restaurant passed to it', ()=> {
-//     const wrapper = mount(
-//       <ShareModal restaurant={testRestaurant.name} />
-//     );
-//     const header = wrapper.find('h3');
-//     expect(header.text()).toBe('Test Restaurant');
-//    });
+	it('should return a single-node wrapper.', ()=> {
+    var modalRoot = global.document.createElement('div');
+		modalRoot.setAttribute('id', 'modal-root');
+		var body = global.document.querySelector('body');
+		body.appendChild(modalRoot);
+		expect(shallow(<Modal />).length).toEqual(1)
+	})
+
+})
+
+describe('Testing the ShareModal Component', () => {
+
+   it('renders the restaurant passed to it', ()=> {
+    const wrapper = mount(
+      <ShareModal restaurant={testRestaurant.name} />
+    );
+    const header = wrapper.find('h3');
+    expect(header.text()).toBe('Share Test Restaurant');
+   });
    
-// });
+});
 
 
 describe('Testing the SigninModal Component', () => {
 
   it('should return a single-node wrapper.', ()=> {
 		expect(shallow(<SigninModal />).length).toEqual(1)
+  });
+
+  it('should render a "forgot password" page upon clicking a link', ()=> {
+    const wrapper = shallow(<SigninModal />);
+    expect(wrapper.state('forgotPassword')).toBe(false);
+    wrapper.find('.forgot-pass').simulate('click');
+    expect(wrapper.state('forgotPassword')).toBe(true);  
   });
    
 });

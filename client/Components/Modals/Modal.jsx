@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-const modalRoot = document.getElementById('modal-root')
+// const modalRoot = document.getElementById('modal-root')
 
 class SigninModal extends React.Component {
 
@@ -10,7 +10,7 @@ class SigninModal extends React.Component {
   }
 
   componentDidMount() {
-    modalRoot.appendChild(this.el);
+    document.getElementById('modal-root').appendChild(this.el);
   }
 
   componentWillUnmount() {
