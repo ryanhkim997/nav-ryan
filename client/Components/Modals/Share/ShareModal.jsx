@@ -48,7 +48,7 @@ class ShareModal extends React.Component {
               <MdEmail /> 
               <span className="share-option-label">Email</span>
             </div>
-            <div className="share-option" onClick={this.handleCopy}>
+            <div className="share-option" id="share-copy-link" onClick={this.handleCopy}>
               <FaBolt/> 
               <span style={copyLinkLabelStyle} className="share-option-label">{this.state.copyLinkLabel}</span>
             </div>
