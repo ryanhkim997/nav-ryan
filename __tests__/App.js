@@ -47,12 +47,6 @@ describe('Testing the App Component', () => {
     expect(shallow(<App />).length).toEqual(1)
   });
 
-  // it('should grab a snapshot of the component', ()=> {
-  //   const component = renderer.create(<App />)
-  //   let tree = component.toJSON();
-  //   expect(tree).toMatchSnapshot();
-  // });
-
   it('should return a single-node wrapper.', ()=> {
 		expect(shallow(<App />).length).toEqual(1)
 	})
@@ -65,16 +59,45 @@ describe('Testing the Navbar Component', () => {
 		expect(shallow(<Navbar />).length).toEqual(1)
   });
    
+  it('should show the signin modal upon clicking button', () => {
+    const wrapper = shallow(<Navbar />);
+    expect(wrapper.state('showModal')).toBe(false);
+    wrapper.find('.nav-sign-in-btn').simulate('click');
+    expect(wrapper.state('showModal')).toBe(true); 
+  });
+
+  it('should show and hide address search bar appropriately upon clicking address', () => {
+    const wrapper = shallow(<Navbar />);
+    expect(wrapper.state('showAddressSearch')).toBe(false);
+    // click and show
+    wrapper.find('.nav-search-address').simulate('click');
+    expect(wrapper.state('showAddressSearch')).toBe(true); 
+    // click and hide
+    wrapper.find('.nav-search-address').simulate('click');
+    expect(wrapper.state('showAddressSearch')).toBe(false); 
+  });
+
+  it('should show and hide popular search list appropriately upon clicking search bar', () => {
+    const wrapper = shallow(<Navbar />);
+    expect(wrapper.state('showPopularSearch')).toBe(false);
+    // click and show
+    wrapper.find('#nav-search-input').simulate('click');
+    expect(wrapper.state('showPopularSearch')).toBe(true); 
+    // click and hide
+    wrapper.find('#nav-search-input').simulate('click');
+    expect(wrapper.state('showPopularSearch')).toBe(false); 
+  });
+
 });
 
 describe('Testing the Intro Component', () => {
 
   it('should fetch restaurant when rendered', ()=> {
-    const getSpy = jest.spyOn(axios, 'get');
-    const introInstance = shallow(
-      <Intro />
-    );
-    expect(getSpy).toBeCalled();
+    const wrapper = mount(<Intro />);
+		let instance = wrapper.instance();
+		jest.spyOn(instance, 'fetchRestaurant');
+		instance.componentDidMount();
+		expect(instance.fetchRestaurant).toHaveBeenCalledTimes(1);
   });
 
   it('should return a single-node wrapper.', ()=> {
@@ -116,13 +139,20 @@ describe('Testing the Modal component', ()=> {
 
 describe('Testing the ShareModal Component', () => {
 
-   it('renders the restaurant passed to it', ()=> {
+   it('should render the restaurant passed to it', ()=> {
     const wrapper = mount(
       <ShareModal restaurant={testRestaurant.name} />
     );
     const header = wrapper.find('h3');
     expect(header.text()).toBe('Share Test Restaurant');
    });
+
+   it('should know when user wants to copy URL link', () => {
+    const wrapper = shallow(<ShareModal />);
+    expect(wrapper.state('copyLinkLabel')).toEqual('Copy link');
+    wrapper.find('#share-copy-link').simulate('click');
+    expect(wrapper.state('copyLinkLabel')).toEqual('Link copied');
+  });
    
 });
 
@@ -138,6 +168,19 @@ describe('Testing the SigninModal Component', () => {
     expect(wrapper.state('forgotPassword')).toBe(false);
     wrapper.find('.forgot-pass').simulate('click');
     expect(wrapper.state('forgotPassword')).toBe(true);  
+  });
+
+  it('should toggle password show during signup if user requests it', ()=> {
+    const wrapper = mount(<SigninModal />);
+    expect(wrapper.state('showPassword')).toBe(false);
+    // click 'sign up' to show correct modal
+    wrapper.find('.create-acct').simulate('click');
+    // click 'show password' to toggle on
+    wrapper.find('.account-show-password').simulate('click');
+    expect(wrapper.state('showPassword')).toBe(true);  
+    // click 'show password' again to toggle off
+    wrapper.find('.account-show-password').simulate('click');
+    expect(wrapper.state('showPassword')).toBe(false);  
   });
    
 });

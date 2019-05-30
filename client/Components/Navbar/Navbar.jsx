@@ -39,12 +39,6 @@ class Navbar extends React.Component {
     });
   }
 
-  handleShowPopularSearch() {
-    this.setState({
-      showPopularSearch: true
-    });
-  }
-
   handlePopularSearch() {
     this.setState({
       showPopularSearch: !this.state.showPopularSearch
@@ -106,7 +100,7 @@ class Navbar extends React.Component {
             <div className="nav-search-input-container">
               <div className="nav-search-flex">
                 <span className="nav-search-icon"><GoSearch /></span>          
-                <input placeholder="Pizza, sushi, chinese" onClick={this.handlePopularSearch}></input>
+                <input id="nav-search-input" placeholder="Pizza, sushi, chinese" onClick={this.handlePopularSearch}></input>
                 <span className="nav-close-icon"><MdClose /></span>
                 {popularSearch}
               </div>
