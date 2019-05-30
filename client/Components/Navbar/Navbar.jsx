@@ -101,7 +101,7 @@ class Navbar extends React.Component {
               <div className="nav-search-flex">
                 <span className="nav-search-icon"><GoSearch /></span>          
                 <input id="nav-search-input" placeholder="Pizza, sushi, chinese" onClick={this.handlePopularSearch}></input>
-                <span className="nav-close-icon"><MdClose /></span>
+                <span className="nav-close-icon" onClick={this.handlePopularSearch}><MdClose /></span>
                 {popularSearch}
               </div>
             </div>
