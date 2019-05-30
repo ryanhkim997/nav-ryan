@@ -10,7 +10,7 @@
   "scripts": {
     "react-build": "webpack -w -d",
     "seed-db": "node database/seed.js",
-    "start": "nodemon server/index.js",
+    "start": "env-cmd nodemon server/index.js",
     "test": "jest",
     "test:c": "jest --coverage"
   },
@@ -29,6 +29,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cors": "^2.8.5",
+    "env-cmd": "^9.0.1",
     "express": "^4.16.4",
     "mongoose": "^5.5.8",
     "react": "^16.8.6",

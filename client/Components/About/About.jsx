@@ -16,7 +16,7 @@ class About extends React.Component {
   fetchRestaurant() {
     const id = window.location.href.split("id=")[1];
 		console.log("from 3300/bundle.js : " , window.location.href);
-    axios.get(`http://localhost:3300/api/restaurants/${id}`)
+    axios.get(`https://nav-about.herokuapp.com/api/restaurants/${id}`)
     .then(({ data }) => {
       let restaurantInfo = data[0];
       this.setState({

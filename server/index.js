@@ -3,7 +3,7 @@ const path = require('path');
 const cors = require('cors');
 const db = require('../database/index.js');
 const Restaurant = require('../database/models.js');
-const PORT = 3300;
+const PORT = process.env.PORT || 3300;
 const app = express();
 
 app.use(cors());
