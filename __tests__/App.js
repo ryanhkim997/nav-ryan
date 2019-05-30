@@ -77,6 +77,17 @@ describe('Testing the Navbar Component', () => {
     expect(wrapper.state('showAddressSearch')).toBe(false); 
   });
 
+  it('should show and hide popular search list appropriately upon clicking search bar', () => {
+    const wrapper = shallow(<Navbar />);
+    expect(wrapper.state('showPopularSearch')).toBe(false);
+    // click and show
+    wrapper.find('#nav-search-input').simulate('click');
+    expect(wrapper.state('showPopularSearch')).toBe(true); 
+    // click and hide
+    wrapper.find('#nav-search-input').simulate('click');
+    expect(wrapper.state('showPopularSearch')).toBe(false); 
+  });
+
 });
 
 describe('Testing the Intro Component', () => {
@@ -157,6 +168,19 @@ describe('Testing the SigninModal Component', () => {
     expect(wrapper.state('forgotPassword')).toBe(false);
     wrapper.find('.forgot-pass').simulate('click');
     expect(wrapper.state('forgotPassword')).toBe(true);  
+  });
+
+  it('should toggle password show during signup if user requests it', ()=> {
+    const wrapper = mount(<SigninModal />);
+    expect(wrapper.state('showPassword')).toBe(false);
+    // click 'sign up' to show correct modal
+    wrapper.find('.create-acct').simulate('click');
+    // click 'show password' to toggle on
+    wrapper.find('.account-show-password').simulate('click');
+    expect(wrapper.state('showPassword')).toBe(true);  
+    // click 'show password' again to toggle off
+    wrapper.find('.account-show-password').simulate('click');
+    expect(wrapper.state('showPassword')).toBe(false);  
   });
    
 });
