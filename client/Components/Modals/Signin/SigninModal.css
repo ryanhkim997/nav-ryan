@@ -29,6 +29,7 @@
   min-width: 520px; 
   height: 85vh;
   max-height: 570px;
+  max-width: 576px;
   margin-bottom: 10px;
   padding: 2%;
   box-sizing: border-box;
@@ -332,6 +333,7 @@
   border-radius: 4px;
   width: 45%;
   min-width: 520px; 
+  max-width: 576px;
   height: 95vh;
   max-height: 570px;
   margin-bottom: 10px;

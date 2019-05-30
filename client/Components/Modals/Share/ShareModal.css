@@ -26,6 +26,7 @@
   border-radius: 4px;
   width: 45%;
   min-width: 476px; 
+  max-width: 576px;
   height: 50vh;
   max-height: 384px;
   margin-bottom: 10px;
