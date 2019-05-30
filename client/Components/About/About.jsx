@@ -127,7 +127,7 @@ class About extends React.Component {
         Today
         <div className="about-hours">{todaysHours}</div>    
       </div>
-      <p onClick={this.handleShowSchedule}>See the full schedule</p>
+      <p id="see-full-sched" onClick={this.handleShowSchedule}>See the full schedule</p>
     </div>);
 
     return(
