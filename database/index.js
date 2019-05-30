@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 // mongoose.connect('mongodb://127.0.0.1:27017/grubhub', {useNewUrlParser: true});
-mongoose.connect('mongodb+srv://kjhogan:kjhogan@cluster0-hvkil.mongodb.net/test?retryWrites=true', {
+mongoose.connect(`mongodb+srv://kjhogan:${process.env.DB_PASSWORD}@cluster0-hvkil.mongodb.net/test?retryWrites=true`, {
   useNewUrlParser: true,
   useFindAndModify: false,
   useCreateIndex: true
