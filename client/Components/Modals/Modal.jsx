@@ -14,7 +14,7 @@ class SigninModal extends React.Component {
   }
 
   componentWillUnmount() {
-    modalRoot.removeChild(this.el);
+    document.getElementById('modal-root').removeChild(this.el);
   }
 
   render() {
