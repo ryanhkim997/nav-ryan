@@ -93,7 +93,7 @@ class Navbar extends React.Component {
               <div className="nav-search-address" onClick={this.handleAddress}>
                 <span className="nav-loc-icon"><MdLocationOn /></span>
                 <span className="nav-search-address-text">6060 Center Dr</span>
-                <span className="nav-down-arrow"><GoChevronDown /></span>
+                <span className="nav-down-arrow" onClick={this.handleAddress}><GoChevronDown /></span>
               </div>
             </div>
             {addressSearch}
