@@ -30,13 +30,16 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bluebird": "^3.7.1",
     "cors": "^2.8.5",
     "env-cmd": "^9.0.1",
     "express": "^4.16.4",
+    "fs": "0.0.1-security",
     "mongoose": "^5.5.8",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-icons": "^3.7.0"
+    "react-icons": "^3.7.0",
+    "stream": "0.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

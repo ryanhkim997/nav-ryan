@@ -13,10 +13,11 @@ class About extends React.Component {
     this.handleShowSchedule = this.handleShowSchedule.bind(this);
   }
 
-  fetchRestaurant() {
-    const id = window.location.href.split("id=")[1];
-		console.log("from 3300/bundle.js : " , window.location.href);
-    axios.get(`https://nav-about.herokuapp.com/api/restaurants/${id}`)
+  fetchRestaurant(id) {
+    // const id = window.location.href.split("id=")[1];
+		// console.log("from 3300/bundle.js : " , window.location.href);
+    // axios.get(`https://nav-about.herokuapp.com/api/restaurants/${id}`)
+    axios.get(`/api/restaurants/${id}`)
     .then(({ data }) => {
       let restaurantInfo = data[0];
       this.setState({
@@ -29,7 +30,7 @@ class About extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchRestaurant();
+    this.fetchRestaurant(3);
   }
 
   handleShowSchedule() {
