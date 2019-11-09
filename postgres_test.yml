@@ -1,0 +1,10 @@
+config:
+  target: 'http://localhost:3301'
+  phases:
+    - duration: 5
+      arrivalRate: 500
+  defaults:
+scenarios:
+  - flow:
+    - get:
+        url: "/restaurants"

@@ -14,6 +14,30 @@ app.use('/restaurants/nav_intro', express.static(path.resolve(__dirname, '../pub
 
 app.get('/api/restaurants/:id', function(req, res) {
   let { id } = req.params;
+  // id <= 5000000 
+  // ?
+  Restaurant.find({ id })
+  .then((result) => {
+    res.status(200).send(result);
+  })
+  .catch((err) => {
+    res.status(404).send('Could not complete get request: ', err);
+  })
+  // :
+  // Restaurant.find({ id }).sort({ id: -1 })
+  // .then((result) => {
+  //   res.status(200).send(result);
+  // })
+  // .catch((err) => {
+  //   res.status(404).send('Could not complete get request: ', err);
+  // })
+});
+
+app.get('/api/restaurant', function(req, res) {
+  // let { name } = req.query;
+  let id = Math.floor(Math.random() * 1000000) + 9000000;
+  
+  // Restaurant.find({ name }).where({ id: { $gte: 9000000, $lte: 10000000 } }).limit(1)
   Restaurant.find({ id })
   .then((result) => {
     res.status(200).send(result);

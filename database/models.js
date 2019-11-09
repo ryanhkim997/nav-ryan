@@ -5,7 +5,7 @@ let restaurantSchema = new mongoose.Schema({
   name: String,
   address: {
     line1: String,
-    line2: String,
+    // line2: String,
     milesAway: Number,
   },       
   phone: String,
@@ -32,7 +32,7 @@ let restaurantSchema = new mongoose.Schema({
   },
   image: String,
   priceRange: Number,
-  categories: [String]
+  categories: String
 });
 
 let Restaurant = mongoose.model('Restaurant', restaurantSchema);
