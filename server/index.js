@@ -38,7 +38,7 @@ app.get('/api/restaurant', function(req, res) {
   let id = Math.floor(Math.random() * 1000000) + 9000000;
   
   // Restaurant.find({ name }).where({ id: { $gte: 9000000, $lte: 10000000 } }).limit(1)
-  Restaurant.find({ id })
+  Restaurant.findOne({ id })
   .then((result) => {
     res.status(200).send(result);
   })

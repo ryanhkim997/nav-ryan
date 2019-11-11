@@ -4,7 +4,7 @@ const pool = new Pool({
   host: 'localhost',
   user: 'ryan',
   database: 'restaurants',
-  max: 15,
+  max: 10,
   // idleTimeoutMillis: 3000,
   // connectionTimeoutMillis: 2000,
 })
