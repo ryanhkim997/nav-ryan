@@ -52,7 +52,9 @@ class Intro extends React.Component {
     // const id = window.location.href.split("id=")[1];
 		// console.log("from 3300/bundle.js : " , window.location.href);
     // axios.get(`https://nav-about.herokuapp.com/api/restaurants/${id}`)
+
     axios.get(`/api/restaurants/${id}`)
+    // axios.get(`api/restaurants`)
     .then(({ data }) => {
       let restaurantInfo = data[0];
       this.setState({
@@ -65,7 +67,7 @@ class Intro extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchRestaurant(3);
+    this.fetchRestaurant(10000);
   }
 
   render() {
