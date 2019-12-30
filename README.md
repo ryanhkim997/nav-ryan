@@ -1,4 +1,6 @@
-# Mock Grubhub - Navbar, Intro, and About
+# Mock Grubhub System Design:
+Used Amazon EC2 to horizontally scale the microservice.
+https://raw.githubusercontent.com/april9288/nav/master/microservice.png
 
 > Recreation of Grubhub's navbar, introduction to the restaurant, and 'about restaurant' information.
 
